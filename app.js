@@ -29,6 +29,8 @@ app.use('/api',api)
 
 app.use('/apidoc',express.static('apidoc', {'index': ['index.html']}))
 
+app.use('/.well-known',express.static('.well-known'))
+
 //ruta angular, poner carpeta dist publica
 app.use(express.static(path.join(__dirname, 'dist')));
 // Send all other requests to the Angular app
