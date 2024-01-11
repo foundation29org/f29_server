@@ -2,7 +2,6 @@
 'use strict'
 
 const express = require('express')
-const langCtrl = require('../controllers/all/lang')
 const supportCtrl = require('../controllers/all/support')
 const openAIserviceCtrl = require('../services/openai')
 const bookCtrl = require('../services/book')
