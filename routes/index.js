@@ -42,9 +42,6 @@ const whitelist = config.allowedOrigins;
     }
   };
 
-// lang routes, using the controller lang, this controller has methods
-api.get('/langs/',  langCtrl.getLangs)
-
 //services OPENAI
 api.post('/callopenai', corsWithOptions, checkApiKey, openAIserviceCtrl.callOpenAi)
 api.post('/callbook', corsWithOptions, checkApiKey, bookCtrl.callBook)
