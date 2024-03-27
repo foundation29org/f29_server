@@ -1,7 +1,6 @@
 const config = require('../config')
 const axios = require('axios');
 const Question = require('../models/question')
-const insights = require('../services/insights')
 
 function callBook (req, res){
   var jsonText = req.body;
@@ -22,7 +21,6 @@ function callBook (req, res){
             })
         res.status(200).send(response.data)
       } catch (error) {
-        insights.error(error);
           console.log(error)
           var respu = {
               "msg": 'error',
@@ -34,7 +32,6 @@ function callBook (req, res){
   })
   .catch(error => {
       console.error(error);
-      insights.error(error);
       var respu = {
           "msg": 'error',
           "status": 500
