@@ -1,4 +1,5 @@
 const { Configuration, OpenAIApi } = require("openai");
+const insights = require('../services/insights')
 const config = require('../config')
 const configuration = new Configuration({
   apiKey: config.OPENAI_API_KEY,
@@ -45,8 +46,8 @@ function callOpenAi (req, res){
         console.log(e.message);
       }
       console.error("[ERROR]: " + e)
-
-      res.status(500).send(e)
+      insights.error(e);
+      res.status(500).send('error')
     }
     
   })();
