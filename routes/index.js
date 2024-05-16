@@ -44,6 +44,7 @@ const whitelist = config.allowedOrigins;
 //services OPENAI
 api.post('/callopenai', corsWithOptions, checkApiKey, openAIserviceCtrl.callOpenAi)
 api.post('/callbook', corsWithOptions, checkApiKey, bookCtrl.callBook)
+api.post('/callguia', corsWithOptions, checkApiKey, bookCtrl.callguia)
 
 //Support
 api.post('/homesupport/', corsWithOptions, checkApiKey, supportCtrl.sendMsgLogoutSupport)
