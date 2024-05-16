@@ -1,9 +1,9 @@
-const { Configuration, OpenAIApi } = require("openai");
+const { OpenAI } = require("openai");
 const config = require('../config')
-const configuration = new Configuration({
-  apiKey: config.OPENAI_API_KEY,
+
+const openai = new OpenAI({
+  apiKey: config.OPENAI_API_KEY // This is also the default, can be omitted
 });
-const openai = new OpenAIApi(configuration);
 
 function callOpenAi (req, res){
   //comprobar créditos del usuario
