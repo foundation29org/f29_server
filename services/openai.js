@@ -15,7 +15,7 @@ function callOpenAi (req, res){
       let gptResponse;
       console.log("Is complex: " + isComplex)
       if (isComplex) {
-        gptResponse = await openai.createChatCompletion({
+        gptResponse = await openai.chat.completions.create({
           model: "gpt-4",
           messages: [{role: "user", content:jsonText}],
           temperature: 0,
@@ -25,7 +25,7 @@ function callOpenAi (req, res){
           presence_penalty: 0,
         });
       } else {
-        gptResponse = await openai.createChatCompletion({
+        gptResponse = await openai.chat.completions.create({
           model: "gpt-4",
           messages: [{role: "user", content:jsonText}],
           //prompt: jsonText,
@@ -36,7 +36,7 @@ function callOpenAi (req, res){
           presence_penalty: 0,
         });
       }
-      res.status(200).send(gptResponse.data)
+      res.status(200).send(gptResponse)
     }catch(e){
       if (e.response) {
         console.log(e.response.status);
