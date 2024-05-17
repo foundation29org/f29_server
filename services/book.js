@@ -49,7 +49,7 @@ async function callBook(req, res) {
   try {
     var jsonText = req.body;
 
-    let prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a complex search of the book. You must be very careful with the answer. Explain the answer in detail but make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. Answer formatted as HTML inside a div for Angular app:';
+    let prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a complex search of the book. You must be very careful with the answer. Explain the answer in detail but make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. Do NOT include figure tags or figures in the answer as you have no access to the figures. Answer formatted as HTML inside a div for Angular app:';
     let messages = [
       {
         role: 'user',
@@ -57,7 +57,7 @@ async function callBook(req, res) {
       },
     ];
     if (!jsonText.isComplexSearch) {
-      prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a simple search of the book. You can answer with a short answer. But make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. Answer formatted as HTML inside a div for Angular app:';
+      prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a simple search of the book. You can answer with a short answer. But make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. Do NEVER include figure tags or figures in the answer as you have no access to the figures. Answer formatted as HTML inside a div for Angular app:';
     }
     const thread = await openai.beta.threads.create({
       messages: messages,
