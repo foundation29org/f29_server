@@ -52,5 +52,8 @@
       "title": "About Storias",
       "filename": "apidoc/footer.md"
     }
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }
