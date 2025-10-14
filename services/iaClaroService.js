@@ -100,11 +100,14 @@ INSTRUCTIONS:
 7. Use an empathetic and reassuring tone
 8. Structure the document with clear headings
 9. Include a "What to do if..." section based on discharge instructions from the report
-10. Anonymize completely: use "Your child", "the treating physician", "the corresponding dates"
-11. Include contact information and service hours
-12. Add a basic glossary of important medical terms that appear in the report
-13. DO NOT anonymize public hospital information (emergency phones, service hours, etc.)
-14. DO NOT add information not in the original report
+10. Anonymize completely: use "the patient", "the treating physician", "the corresponding dates"
+11. ADAPT LANGUAGE ACCORDING TO PATIENT AGE:
+    - If patient is under 18: address "parents/caregivers" and use "your son/daughter"
+    - If patient is 18 or older: address the "patient" and use "you" or "the patient"
+12. Include contact information and service hours
+13. Add a basic glossary of important medical terms that appear in the report
+14. DO NOT anonymize public hospital information (emergency phones, service hours, etc.)
+15. DO NOT add information not in the original report
 
 OUTPUT FORMAT:
 - Title: "Discharge Report - Patient Summary"
@@ -127,12 +130,15 @@ INSTRUCTIONS:
 7. Include detailed information about medications and side effects (only from the report)
 8. Provide specific self-care guides (based on discharge instructions)
 9. Include relevant emergency contacts
-10. Anonymize completely: use "Your child", "the treating physician", "the corresponding dates"
-11. Include specific contact information and service hours
-12. Add a personalized glossary according to medical condition (only terms from the report)
-13. Adapt detail level according to case complexity
-14. DO NOT anonymize public hospital information (emergency phones, service hours, etc.)
-15. DO NOT add information not in the original report
+10. Anonymize completely: use "the patient", "the treating physician", "the corresponding dates"
+11. ADAPT LANGUAGE ACCORDING TO PATIENT AGE:
+    - If patient is under 18: address "parents/caregivers" and use "your son/daughter"
+    - If patient is 18 or older: address the "patient" and use "you" or "the patient"
+12. Include specific contact information and service hours
+13. Add a personalized glossary according to the medical condition (only terms from the report)
+14. Adapt the level of detail according to case complexity
+15. DO NOT anonymize public hospital information (emergency phones, service hours, etc.)
+16. DO NOT add information not in the original report
 
 OUTPUT FORMAT:
 - Title: "Personalized Discharge Report"
@@ -157,14 +163,17 @@ ${anonymizedReport}
 
 SPECIFIC INSTRUCTIONS:
 - Anonymize completely: replace names, specific dates and personal data
+- ADAPT LANGUAGE ACCORDING TO PATIENT AGE:
+  * If patient is under 18: address "parents/caregivers" and use "your son/daughter"
+  * If patient is 18 or older: address the "patient" and use "you" or "the patient"
 - Include a "Contact Information" section with:
   * Hospital emergency phone
-  * Neurology service hours
+  * Corresponding service hours
   * Direct phone number of treating physician (if available)
 - Add a "Medical Terms Glossary" explaining:
   * The most important medical terms from the report
   * Simple and understandable definitions
-- Use warm and empathetic language directed to parents/caregivers
+- Use warm and empathetic language appropriate for the patient's age
 - Include practical advice for home care
 - IMPORTANT: Generate the response in the same language as the original document`
       }
