@@ -5,6 +5,7 @@ const express = require('express')
 const supportCtrl = require('../controllers/all/support')
 const openAIserviceCtrl = require('../services/openai')
 const bookCtrl = require('../services/book')
+const iaClaroServiceCtrl = require('../controllers/iaclaro')
 const cors = require('cors');
 
 const api = express.Router()
@@ -45,6 +46,7 @@ const whitelist = config.allowedOrigins;
 api.post('/callopenai', corsWithOptions, checkApiKey, openAIserviceCtrl.callOpenAi)
 api.post('/callbook', corsWithOptions, checkApiKey, bookCtrl.callBook)
 api.post('/callguia', corsWithOptions, checkApiKey, bookCtrl.callguia)
+api.post('/calliaClaro', corsWithOptions, checkApiKey, iaClaroServiceCtrl.calliaClaro)
 
 //Support
 api.post('/homesupport/', corsWithOptions, checkApiKey, supportCtrl.sendMsgLogoutSupport)
