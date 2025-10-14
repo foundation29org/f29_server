@@ -6,6 +6,7 @@
 const express = require('express')
 const compression = require('compression');
 const bodyParser = require('body-parser');
+const fileUpload = require('express-fileupload');
 const app = express()
 app.use(compression());
 const api = require ('./routes')
@@ -26,8 +27,9 @@ function setCrossDomain(req, res, next) {
   }
 }
 
-app.use(bodyParser.urlencoded({limit: '50mb', extended: false}))
-app.use(bodyParser.json({limit: '50mb'}))
+app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
+app.use(bodyParser.json({limit: '10mb'}))
+app.use(fileUpload());
 app.use(setCrossDomain);
 
 // use the forward slash with the module api api folder created routes
