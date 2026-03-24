@@ -11,6 +11,7 @@ const app = express()
 app.use(compression());
 const api = require ('./routes')
 const path = require('path')
+const fs = require('fs')
 const config= require('./config')
 const allowedOrigins = config.allowedOrigins;
 //CORS middleware
@@ -40,9 +41,15 @@ app.use('/apidoc',express.static('apidoc', {'index': ['index.html']}))
 app.use('/.well-known',express.static('.well-known'))
 
 //ruta angular, poner carpeta dist publica
-app.use(express.static(path.join(__dirname, 'dist')));
+const angularBrowserDist = path.join(__dirname, 'dist', 'browser')
+const angularLegacyDist = path.join(__dirname, 'dist')
+const spaRoot = fs.existsSync(path.join(angularBrowserDist, 'index.html'))
+  ? angularBrowserDist
+  : angularLegacyDist
+
+app.use(express.static(spaRoot));
 // Send all other requests to the Angular app
 app.get('*', function (req, res, next) {
-    res.sendFile('dist/index.html', { root: __dirname });
+    res.sendFile(path.join(spaRoot, 'index.html'));
  });
 module.exports = app
