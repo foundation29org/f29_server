@@ -1,0 +1,25 @@
+node_modules
+dist
+.next
+coverage
+npm-debug.log*
+*.log
+
+# Client app — not needed in the API container
+../client
+
+# Dev files
+.env*
+.env.local
+*.test.js
+jasmine.json
+
+# Git
+.git
+.gitignore
+.github
+
+# Editor
+.vscode
+.idea
+*.pem
