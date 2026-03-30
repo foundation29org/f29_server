@@ -40,8 +40,6 @@ app.use(setCrossDomain);
 // use the forward slash with the module api api folder created routes
 app.use('/api',api)
 
-app.use('/apidoc',express.static('apidoc', {'index': ['index.html']}))
-
 app.use('/.well-known',express.static('.well-known'))
 
 //ruta angular, poner carpeta dist publica

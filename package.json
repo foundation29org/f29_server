@@ -28,23 +28,6 @@
     "jasmine": "^6.1.0",
     "nodemon": "^3.1.14"
   },
-  "apidoc": {
-    "name": "Storias",
-    "version": "1.0.0",
-    "description": "API docs",
-    "apidoc": {
-      "title": "API for Storias",
-      "url": "https://storias.org/api"
-    },
-    "header": {
-      "title": "Introduction",
-      "filename": "apidoc/header.md"
-    },
-    "footer": {
-      "title": "About Storias",
-      "filename": "apidoc/footer.md"
-    }
-  },
   "volta": {
     "node": "22.14.0"
   }
