@@ -6,6 +6,7 @@ const supportCtrl = require('../controllers/all/support')
 const openAIserviceCtrl = require('../services/openai')
 const bookCtrl = require('../services/book')
 const iaClaroServiceCtrl = require('../controllers/iaclaro')
+const evalGradoCtrl = require('../controllers/evalgrado')
 const cors = require('cors');
 
 const api = express.Router()
@@ -47,6 +48,7 @@ api.post('/callopenai', corsWithOptions, checkApiKey, openAIserviceCtrl.callOpen
 api.post('/callbook', corsWithOptions, checkApiKey, bookCtrl.callBook)
 api.post('/callguia', corsWithOptions, checkApiKey, bookCtrl.callguia)
 api.post('/calliaClaro', corsWithOptions, checkApiKey, iaClaroServiceCtrl.calliaClaro)
+api.post('/callevalgrado', corsWithOptions, checkApiKey, evalGradoCtrl.callEvalGrado)
 
 //Support
 api.post('/homesupport/', corsWithOptions, checkApiKey, supportCtrl.sendMsgLogoutSupport)

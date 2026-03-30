@@ -1,0 +1,15 @@
+node_modules
+dist
+.next
+coverage
+npm-debug.log*
+*.log
+.env*
+*.test.js
+jasmine.json
+.git
+.gitignore
+.github
+.vscode
+.idea
+*.pem

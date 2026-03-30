@@ -18,12 +18,16 @@ const allowedOrigins = config.allowedOrigins;
 
 function setCrossDomain(req, res, next) {
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin) || req.method === 'GET' || req.method === 'HEAD')  {
+  // No origin = server-to-server call (e.g. Next.js SSR proxy) — allow if x-api-key is present
+  if (!origin) {
+    return next();
+  }
+  if (allowedOrigins.includes(origin) || req.method === 'GET' || req.method === 'HEAD') {
     res.header('Access-Control-Allow-Origin', origin);
     res.header('Access-Control-Allow-Methods', 'HEAD,GET,PUT,POST,DELETE,OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Access-Control-Allow-Origin, Accept, Accept-Language, Origin, User-Agent, x-api-key');
     next();
-  }else{
+  } else {
     res.status(401).json({ error: 'Origin not allowed' });
   }
 }
@@ -35,8 +39,6 @@ app.use(setCrossDomain);
 
 // use the forward slash with the module api api folder created routes
 app.use('/api',api)
-
-app.use('/apidoc',express.static('apidoc', {'index': ['index.html']}))
 
 app.use('/.well-known',express.static('.well-known'))
 
