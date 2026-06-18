@@ -2,3 +2,10 @@ node_modules
 dist
 config.js
 DEPLOY.md
+
+# Orphadata download cache (generate-rare-diseases.py)
+data/apadrina/.cache/
+
+# Python bytecode
+**/__pycache__/
+*.pyc
