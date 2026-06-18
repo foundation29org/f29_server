@@ -11,7 +11,6 @@ const FEED_EVENT_KEYS = [
   'event_dxgpt',
   'event_first_dx',
   'event_second_opinion',
-  'event_specialist',
   'event_confirmed',
 ]
 
