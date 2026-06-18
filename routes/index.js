@@ -7,6 +7,9 @@ const openAIserviceCtrl = require('../services/openai')
 const bookCtrl = require('../services/book')
 const iaClaroServiceCtrl = require('../controllers/iaclaro')
 const evalGradoCtrl = require('../controllers/evalgrado')
+const apadrinaCtrl = require('../controllers/apadrina')
+const sponsorshipsCtrl = require('../controllers/sponsorships')
+const liveStatsCtrl = require('../controllers/liveStats')
 const cors = require('cors');
 
 const api = express.Router()
@@ -18,14 +21,15 @@ const whitelist = config.allowedOrigins;
   function corsWithOptions(req, res, next) {
     const corsOptions = {
       origin: function (origin, callback) {
-        if (whitelist.includes(origin)) {
+        // No origin = server-to-server (e.g. Next.js proxy on GET) — same rule as app.js setCrossDomain
+        if (!origin || whitelist.includes(origin)) {
           callback(null, true);
         } else {
-            callback(new Error('Not allowed by CORS'));
+          callback(new Error('Not allowed by CORS'));
         }
       },
     };
-  
+
     cors(corsOptions)(req, res, next);
   }
 
@@ -52,5 +56,21 @@ api.post('/callevalgrado', corsWithOptions, checkApiKey, evalGradoCtrl.callEvalG
 
 //Support
 api.post('/homesupport/', corsWithOptions, checkApiKey, supportCtrl.sendMsgLogoutSupport)
+
+// Apadrina campaign
+api.get('/apadrina/diseases', corsWithOptions, checkApiKey, apadrinaCtrl.getDiseases)
+api.get('/apadrina/diseases/random', corsWithOptions, checkApiKey, apadrinaCtrl.getRandomDisease)
+api.get('/apadrina/diseases/:code/detail', corsWithOptions, checkApiKey, apadrinaCtrl.getDiseaseDetail)
+
+// Apadrina sponsorships (Fase 2)
+api.post('/sponsorships', corsWithOptions, checkApiKey, sponsorshipsCtrl.createSponsorship)
+api.get('/sponsorships/stats', corsWithOptions, checkApiKey, sponsorshipsCtrl.getStats)
+api.post('/sponsorships/webhook/donorbox', corsWithOptions, sponsorshipsCtrl.donorboxWebhook)
+
+// Apadrina live activity (DxGPT push + public read via Next proxy)
+api.post('/live-events', corsWithOptions, checkApiKey, liveStatsCtrl.createLiveEvent)
+api.get('/live/recent', corsWithOptions, checkApiKey, liveStatsCtrl.getRecent)
+api.get('/live/stats', corsWithOptions, checkApiKey, liveStatsCtrl.getStats)
+api.post('/live/stats/import', corsWithOptions, checkApiKey, liveStatsCtrl.importStats)
 
 module.exports = api
