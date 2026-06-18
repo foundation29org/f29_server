@@ -63,6 +63,20 @@ function normalizeOrphaCode(value) {
   return raw.replace(/^orpha:/i, '').replace(/\D/g, '') || raw.replace(/^orpha:/i, '')
 }
 
+/** Orphadata uses literal "Unknown" inside prevalence strings — treat as no data. */
+function normalizePrevalenceValue(value) {
+  const text = String(value || '').trim()
+  if (!text) return null
+  if (/^unknown$/i.test(text)) return null
+  if (/[:\u2014-]\s*unknown\s*$/i.test(text)) return null
+  if (/\bunknown\b/i.test(text) && !/\d/.test(text)) return null
+  return text
+}
+
+function prevalenceFromRecord(record) {
+  return normalizePrevalenceValue(record.prevalence?.value)
+}
+
 function findByOrphaCode(code) {
   const orphaCode = normalizeOrphaCode(code)
   if (!orphaCode) return null
@@ -83,7 +97,7 @@ function getDiseaseContext(record, locale) {
     localizedName: localized?.name || enText?.name || esText?.name || '',
     synonymsEn: enText?.synonyms || [],
     synonymsEs: esText?.synonyms || [],
-    prevalence: record.prevalence?.value || null,
+    prevalence: prevalenceFromRecord(record),
     prevalenceSource: record.prevalence?.source || null
   }
 }
@@ -102,7 +116,7 @@ function compactRecord(record, locale) {
       en: enText.name,
       es: esText && esText.name ? esText.name : enText.name
     },
-    prev: record.prevalence && record.prevalence.value ? record.prevalence.value : null,
+    prev: prevalenceFromRecord(record),
     source: record.prevalence && record.prevalence.source ? record.prevalence.source : 'Orphadata / Orphanet'
   }
 }
