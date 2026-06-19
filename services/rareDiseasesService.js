@@ -164,8 +164,16 @@ function isObsoleteRecord(record) {
   })
 }
 
+/** Orphanet: not rare in Europe (e.g. Crohn, MS) — out of Apadrina catalog. */
+function isNonRareInEuropeRecord(record) {
+  return getAllText(record.id).some((text) => {
+    const name = String(text?.name || '').trim().toUpperCase()
+    return name.startsWith('NON RARE IN EUROPE:') || name.startsWith('NO ES ENFERMEDAD RARA EN EUROPA:')
+  })
+}
+
 function publicPool(base) {
-  return base.filter((record) => !isObsoleteRecord(record))
+  return base.filter((record) => !isObsoleteRecord(record) && !isNonRareInEuropeRecord(record))
 }
 
 function featuredPool(base) {

@@ -3,7 +3,9 @@ const axios = require('axios');
 const Question = require('../models/question')
 const { OpenAI } = require("openai");
 const openai = new OpenAI({
-  apiKey: config.OPENAI_API_KEY // This is also the default, can be omitted
+  apiKey: config.OPENAI_API_KEY,
+  // Node 22 native fetch — avoids node-fetch ERR_STREAM_PREMATURE_CLOSE in Azure Container Apps
+  fetch: globalThis.fetch,
 });
 
 

@@ -9,6 +9,7 @@ const iaClaroServiceCtrl = require('../controllers/iaclaro')
 const evalGradoCtrl = require('../controllers/evalgrado')
 const apadrinaCtrl = require('../controllers/apadrina')
 const sponsorshipsCtrl = require('../controllers/sponsorships')
+const ambassadorsCtrl = require('../controllers/ambassadors')
 const liveStatsCtrl = require('../controllers/liveStats')
 const cors = require('cors');
 
@@ -61,6 +62,7 @@ api.post('/homesupport/', corsWithOptions, checkApiKey, supportCtrl.sendMsgLogou
 api.get('/apadrina/diseases', corsWithOptions, checkApiKey, apadrinaCtrl.getDiseases)
 api.get('/apadrina/diseases/random', corsWithOptions, checkApiKey, apadrinaCtrl.getRandomDisease)
 api.get('/apadrina/diseases/:code/detail', corsWithOptions, checkApiKey, apadrinaCtrl.getDiseaseDetail)
+api.post('/apadrina/ambassadors', corsWithOptions, checkApiKey, ambassadorsCtrl.createSignup)
 
 // Apadrina sponsorships (Fase 2)
 api.post('/sponsorships', corsWithOptions, checkApiKey, sponsorshipsCtrl.createSponsorship)

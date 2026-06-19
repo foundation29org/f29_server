@@ -121,6 +121,14 @@ def is_obsolete_name(name: str) -> bool:
     return normalized.startswith("OBSOLETE:") or normalized.startswith("OBSOLETO:")
 
 
+def is_non_rare_in_europe_name(name: str) -> bool:
+    normalized = name.strip().upper()
+    return (
+        normalized.startswith("NON RARE IN EUROPE:")
+        or normalized.startswith("NO ES ENFERMEDAD RARA EN EUROPA:")
+    )
+
+
 def compute_status(en_entry: dict[str, Any], es_entry: dict[str, Any], prevalence_value: str | None) -> str:
     if en_entry.get("name") and not es_entry.get("name"):
         return "missing_translation"
@@ -221,6 +229,8 @@ def build(refresh: bool = False) -> tuple[list[dict[str, Any]], dict[str, Any], 
         es_entry = localized["es"].get(code, {"name": "", "synonyms": []})
         if is_obsolete_name(en_entry.get("name", "")) or is_obsolete_name(es_entry.get("name", "")):
             continue
+        if is_non_rare_in_europe_name(en_entry.get("name", "")) or is_non_rare_in_europe_name(es_entry.get("name", "")):
+            continue
         prevalence = prevalence_by_code.get(code) or empty_prevalence()
         status = compute_status(en_entry, es_entry, prevalence["value"])
 
@@ -301,6 +311,7 @@ Orphadata cache lives in `.cache/orphadata/` next to this script.
 - `orphaCode`: used in the UI and IA detail lookups (`GET /api/apadrina/diseases/:code/detail`).
 - Language files store only `name` and `synonyms` (search). Detail text is generated on demand via Azure OpenAI.
 - Orphanet entries whose preferred name starts with `OBSOLETE:` / `OBSOLETO:` are excluded (deprecated).
+- Orphanet entries labeled `NON RARE IN EUROPE:` / `NO ES ENFERMEDAD RARA EN EUROPA:` are excluded (not rare in EU; e.g. Crohn, MS).
 """
     path.write_text(readme, encoding="utf-8")
 

@@ -2,7 +2,8 @@ const { OpenAI } = require("openai");
 const config = require('../config')
 
 const openai = new OpenAI({
-  apiKey: config.OPENAI_API_KEY // This is also the default, can be omitted
+  apiKey: config.OPENAI_API_KEY,
+  fetch: globalThis.fetch,
 });
 
 function callOpenAi (req, res){

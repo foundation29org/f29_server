@@ -1,6 +1,6 @@
 # Rare disease dataset for Apadrina una enfermedad
 
-Generated on `2026-06-18` by `generate-rare-diseases.py` in this folder.
+Generated on `2026-06-19` by `generate-rare-diseases.py` in this folder.
 
 ## Files
 
@@ -10,11 +10,11 @@ Generated on `2026-06-18` by `generate-rare-diseases.py` in this folder.
 
 ## Coverage
 
-- Base records: `10432` Orphanet clinical entities from Orphadata product 1.
-- English language records: `10432`.
-- Spanish language records: `10432`.
+- Base records: `10288` Orphanet clinical entities from Orphadata product 1.
+- English language records: `10288`.
+- Spanish language records: `10288`.
 - Records with an Orphadata product 9 prevalence value/class selected: `6440`.
-- Status counts: `verified=6440`, `partial=3992`, `missing_translation=0`, `review_needed=0`.
+- Status counts: `verified=6440`, `partial=3848`, `missing_translation=0`, `review_needed=0`.
 
 ## Update process
 
@@ -32,3 +32,4 @@ Orphadata cache lives in `.cache/orphadata/` next to this script.
 - `orphaCode`: used in the UI and IA detail lookups (`GET /api/apadrina/diseases/:code/detail`).
 - Language files store only `name` and `synonyms` (search). Detail text is generated on demand via Azure OpenAI.
 - Orphanet entries whose preferred name starts with `OBSOLETE:` / `OBSOLETO:` are excluded (deprecated).
+- Orphanet entries labeled `NON RARE IN EUROPE:` / `NO ES ENFERMEDAD RARA EN EUROPA:` are excluded (not rare in EU; e.g. Crohn, MS).

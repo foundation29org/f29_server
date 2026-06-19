@@ -653,10 +653,6 @@
       "Urethral atresia"
     ]
   },
-  "orpha:106": {
-    "name": "NON RARE IN EUROPE: Autism",
-    "synonyms": []
-  },
   "orpha:107": {
     "name": "BOR syndrome",
     "synonyms": [
@@ -750,17 +746,6 @@
       "LGMD type 2E",
       "LGMD due to beta-sarcoglycan deficiency",
       "Limb-girdle muscular dystrophy type 2E"
-    ]
-  },
-  "orpha:120": {
-    "name": "NON RARE IN EUROPE: Pernicious anemia",
-    "synonyms": [
-      "NON RARE IN EUROPE: Biermer anemia",
-      "NON RARE IN EUROPE: Biermer disease",
-      "NON RARE IN EUROPE: Juvenile onset pernicious anemia",
-      "NON RARE IN EUROPE: Addison-Biermer anemia",
-      "NON RARE IN EUROPE: Acquired pernicious anemia",
-      "NON RARE IN EUROPE: Addisonian anemia"
     ]
   },
   "orpha:122": {
@@ -953,18 +938,6 @@
       "Familial or idiopathic dilated cardiomyopathy"
     ]
   },
-  "orpha:155": {
-    "name": "NON RARE IN EUROPE: Familial isolated hypertrophic cardiomyopathy",
-    "synonyms": [
-      "NON RARE IN EUROPE: Primitive hypertrophic subaortic stenosis",
-      "NON RARE IN EUROPE: Familial isolated hypertrophic subaortic stenosis",
-      "NON RARE IN EUROPE: Primitive hypertrophic obstructive cardiomyopathy",
-      "NON RARE IN EUROPE: Familial or idiopathic hypertrophic subaortic stenosis",
-      "NON RARE IN EUROPE: Familial isolated hypertrophic obstructive cardiomyopathy",
-      "NON RARE IN EUROPE: Familila or idiopathic hypertrophic obstructive cardiomyopathy",
-      "NON RARE IN EUROPE: Hypertrophic obstructive cardiomyopathy"
-    ]
-  },
   "orpha:156": {
     "name": "Carnitine palmitoyl transferase 1A deficiency",
     "synonyms": [
@@ -1023,14 +996,6 @@
       "Hereditary hyperferritinemia-cataract disease",
       "HHCS",
       "Hereditary hyperferritinemia with cataracts"
-    ]
-  },
-  "orpha:164": {
-    "name": "NON RARE IN EUROPE: Cerebral cavernous malformations",
-    "synonyms": [
-      "NON RARE IN EUROPE: Cerebral cavernoma",
-      "NON RARE IN EUROPE: Brain cavernous angioma",
-      "NON RARE IN EUROPE: Brain cavernous hemangioma"
     ]
   },
   "orpha:165": {
@@ -1269,10 +1234,6 @@
       "Bilirubin-UGT deficiency"
     ]
   },
-  "orpha:206": {
-    "name": "NON RARE IN EUROPE: Crohn disease",
-    "synonyms": []
-  },
   "orpha:207": {
     "name": "Crouzon syndrome",
     "synonyms": [
@@ -1382,14 +1343,6 @@
       "Congenital diabetes mellitus",
       "Diabetes of infancy",
       "Monogenic diabetes of infancy"
-    ]
-  },
-  "orpha:225": {
-    "name": "NON RARE IN EUROPE: Maternally-inherited diabetes and deafness",
-    "synonyms": [
-      "NON RARE IN EUROPE: Maternally-inherited diabetes and hearing loss",
-      "NON RARE IN EUROPE: Mitochondrial diabetes",
-      "NON RARE IN EUROPE: MIDD"
     ]
   },
   "orpha:226": {
@@ -1732,10 +1685,6 @@
       "SCID due to adenosine deaminase deficiency"
     ]
   },
-  "orpha:279": {
-    "name": "NON RARE IN EUROPE: Age-related macular degeneration",
-    "synonyms": []
-  },
   "orpha:280": {
     "name": "Wolf-Hirschhorn syndrome",
     "synonyms": [
@@ -2029,10 +1978,6 @@
       "EEC"
     ]
   },
-  "orpha:323": {
-    "name": "NON RARE IN EUROPE: FG syndrome phenotypic spectrum",
-    "synonyms": []
-  },
   "orpha:324": {
     "name": "Fabry disease",
     "synonyms": [
@@ -2116,10 +2061,6 @@
   },
   "orpha:335": {
     "name": "Congenital fibrinogen deficiency",
-    "synonyms": []
-  },
-  "orpha:336": {
-    "name": "NON RARE IN EUROPE: Fibromuscular dysplasia of arteries",
     "synonyms": []
   },
   "orpha:337": {
@@ -2235,13 +2176,6 @@
       "Subacute spongiform encephalopathy, Gerstmann-Straussler type"
     ]
   },
-  "orpha:357": {
-    "name": "NON RARE IN EUROPE: Gilbert syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Familial cholemia",
-      "NON RARE IN EUROPE: Hyperbilirubinemia type 1"
-    ]
-  },
   "orpha:358": {
     "name": "Gitelman syndrome",
     "synonyms": []
@@ -2262,13 +2196,6 @@
   "orpha:361": {
     "name": "Familial glucocorticoid deficiency",
     "synonyms": []
-  },
-  "orpha:362": {
-    "name": "NON RARE IN EUROPE: Glucose-6-phosphate-dehydrogenase deficiency",
-    "synonyms": [
-      "NON RARE IN EUROPE: Favism",
-      "NON RARE IN EUROPE: G6PD deficiency"
-    ]
   },
   "orpha:364": {
     "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency",
@@ -2438,13 +2365,6 @@
       "Nevoid basal cell carcinoma syndrome"
     ]
   },
-  "orpha:378": {
-    "name": "NON RARE IN EUROPE: Sjögren syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Sicca syndrome",
-      "NON RARE IN EUROPE: Sjögren-Gougerot syndrome"
-    ]
-  },
   "orpha:379": {
     "name": "Chronic granulomatous disease",
     "synonyms": [
@@ -2509,16 +2429,6 @@
       "Mesenchymal hamartoma of liver",
       "VMC",
       "Von Meyenburg complexes disease"
-    ]
-  },
-  "orpha:387": {
-    "name": "NON RARE IN EUROPE: Hidradenitis suppurativa",
-    "synonyms": [
-      "NON RARE IN EUROPE: Pyoderma fistulans significa",
-      "NON RARE IN EUROPE: Acne inversa",
-      "NON RARE IN EUROPE: Ectopic acne",
-      "NON RARE IN EUROPE: Fox den disease",
-      "NON RARE IN EUROPE: Verneuil disease"
     ]
   },
   "orpha:388": {
@@ -2642,12 +2552,6 @@
       "Familial benign hypocalciuric hypercalcemia"
     ]
   },
-  "orpha:406": {
-    "name": "NON RARE IN EUROPE: Heterozygous familial hypercholesterolemia",
-    "synonyms": [
-      "NON RARE IN EUROPE: HeFH"
-    ]
-  },
   "orpha:407": {
     "name": "Glycine encephalopathy",
     "synonyms": [
@@ -2682,13 +2586,6 @@
       "Broad-beta disease",
       "Hyperlipoproteinemia type 3",
       "Familial dyslipidemia type 3"
-    ]
-  },
-  "orpha:413": {
-    "name": "NON RARE IN EUROPE: Hyperlipoproteinemia type 4",
-    "synonyms": [
-      "NON RARE IN EUROPE: Familial hypertriglyceridemia",
-      "NON RARE IN EUROPE: HLP type 4"
     ]
   },
   "orpha:414": {
@@ -2758,10 +2655,6 @@
       "Familial apoA-I deficiency",
       "Familial hypoalphalipoproteinemia"
     ]
-  },
-  "orpha:426": {
-    "name": "NON RARE IN EUROPE: Familial hypobetalipoproteinemia",
-    "synonyms": []
   },
   "orpha:427": {
     "name": "Familial hypoaldosteronism",
@@ -2897,14 +2790,6 @@
       "XLI"
     ]
   },
-  "orpha:462": {
-    "name": "NON RARE IN EUROPE: Autosomal dominant ichthyosis vulgaris",
-    "synonyms": []
-  },
-  "orpha:463": {
-    "name": "NON RARE IN EUROPE: Adrenal incidentaloma",
-    "synonyms": []
-  },
   "orpha:464": {
     "name": "Incontinentia pigmenti",
     "synonyms": [
@@ -3012,12 +2897,6 @@
     "name": "Congenital high-molecular-weight kininogen deficiency",
     "synonyms": []
   },
-  "orpha:484": {
-    "name": "NON RARE IN EUROPE: Klinefelter syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: 47,XXY syndrome"
-    ]
-  },
   "orpha:485": {
     "name": "Kniest dysplasia",
     "synonyms": []
@@ -3038,12 +2917,6 @@
   "orpha:488": {
     "name": "Urachal cyst",
     "synonyms": []
-  },
-  "orpha:489": {
-    "name": "NON RARE IN EUROPE: Thyroglossal duct cyst",
-    "synonyms": [
-      "NON RARE IN EUROPE: Thyroglossal tract cyst"
-    ]
   },
   "orpha:490": {
     "name": "Omphalomesenteric cyst",
@@ -3405,19 +3278,6 @@
     "name": "MODY",
     "synonyms": [
       "Maturity-onset diabetes of the young"
-    ]
-  },
-  "orpha:555": {
-    "name": "NON RARE IN EUROPE: Celiac disease",
-    "synonyms": [
-      "NON RARE IN EUROPE: Celiac sprue",
-      "NON RARE IN EUROPE: Coeliac sprue",
-      "NON RARE IN EUROPE: Coeliac disease",
-      "NON RARE IN EUROPE: Nontropical sprue",
-      "NON RARE IN EUROPE: Gluten intolerance",
-      "NON RARE IN EUROPE: Idiopathic steatorrhea",
-      "NON RARE IN EUROPE: Gluten-induced enteropathy",
-      "NON RARE IN EUROPE: Gluten-sensitive enteropathy"
     ]
   },
   "orpha:556": {
@@ -3818,22 +3678,6 @@
     "name": "Familial melanoma",
     "synonyms": []
   },
-  "orpha:619": {
-    "name": "NON RARE IN EUROPE: Primary ovarian failure",
-    "synonyms": [
-      "NON RARE IN EUROPE: Premature ovarian insufficiency",
-      "NON RARE IN EUROPE: Hypergonadotropic ovarian failure",
-      "NON RARE IN EUROPE: Premature ovarian failure",
-      "NON RARE IN EUROPE: Premature menopause",
-      "NON RARE IN EUROPE: Primary ovarian insufficiency"
-    ]
-  },
-  "orpha:620": {
-    "name": "NON RARE IN EUROPE: Common mesentery",
-    "synonyms": [
-      "NON RARE IN EUROPE: Universal mesentery"
-    ]
-  },
   "orpha:621": {
     "name": "Autosomal recessive methemoglobinemia",
     "synonyms": []
@@ -3855,13 +3699,6 @@
     "name": "Familial multiple nevi flammei",
     "synonyms": [
       "Familial multiple port-wine stains"
-    ]
-  },
-  "orpha:625": {
-    "name": "NON RARE IN EUROPE: Atypical mole",
-    "synonyms": [
-      "NON RARE IN EUROPE: Clark nevus",
-      "NON RARE IN EUROPE: Dysplastic nevus"
     ]
   },
   "orpha:626": {
@@ -4030,14 +3867,6 @@
     "name": "LCAT deficiency",
     "synonyms": [
       "Lecithin-cholesterol acyltransferase deficiency"
-    ]
-  },
-  "orpha:651": {
-    "name": "NON RARE IN EUROPE: Idiopathic infantile nystagmus",
-    "synonyms": [
-      "NON RARE IN EUROPE: Motor congenital nystagmus",
-      "NON RARE IN EUROPE: Congenital idiopathic nystagmus",
-      "NON RARE IN EUROPE: Infantile nystagmus syndrome"
     ]
   },
   "orpha:652": {
@@ -4302,13 +4131,6 @@
     "synonyms": [
       "Goiter-deafness syndrome",
       "Goiter-hearing loss syndrome"
-    ]
-  },
-  "orpha:706": {
-    "name": "NON RARE IN EUROPE: Patent arterial duct",
-    "synonyms": [
-      "NON RARE IN EUROPE: Patent ductus arteriosus",
-      "NON RARE IN EUROPE: Persistent patency of the arterial duct"
     ]
   },
   "orpha:707": {
@@ -4599,10 +4421,6 @@
       "Pseudoachondroplastic spondyloepiphyseal dysplasia"
     ]
   },
-  "orpha:751": {
-    "name": "NON RARE IN EUROPE: Pseudoarylsulfatase A deficiency",
-    "synonyms": []
-  },
   "orpha:752": {
     "name": "46,XY difference of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency",
     "synonyms": [
@@ -4666,13 +4484,6 @@
     "synonyms": [
       "Gronblad-Strandberg-Touraine syndrome",
       "PXE"
-    ]
-  },
-  "orpha:759": {
-    "name": "NON RARE IN EUROPE: Central precocious puberty",
-    "synonyms": [
-      "NON RARE IN EUROPE: Gonadotropin-dependant precocious puberty",
-      "NON RARE IN EUROPE: CPP"
     ]
   },
   "orpha:760": {
@@ -4743,13 +4554,6 @@
   "orpha:770": {
     "name": "Rabies",
     "synonyms": []
-  },
-  "orpha:771": {
-    "name": "NON RARE IN EUROPE: Ulcerative colitis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Ulcerative proctitis",
-      "NON RARE IN EUROPE: Ulcerative proctosigmoiditis"
-    ]
   },
   "orpha:772": {
     "name": "Infantile Refsum disease",
@@ -4910,10 +4714,6 @@
     "name": "Scleroderma",
     "synonyms": []
   },
-  "orpha:802": {
-    "name": "NON RARE IN EUROPE: Multiple sclerosis",
-    "synonyms": []
-  },
   "orpha:803": {
     "name": "Amyotrophic lateral sclerosis",
     "synonyms": [
@@ -5044,13 +4844,6 @@
       "Myelofibrosis with myeloid metaplasia"
     ]
   },
-  "orpha:825": {
-    "name": "NON RARE IN EUROPE: Ankylosing spondylitis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Bechterew syndrome",
-      "NON RARE IN EUROPE: Ankylosing spondylarthritis"
-    ]
-  },
   "orpha:826": {
     "name": "Sporotrichosis",
     "synonyms": []
@@ -5074,10 +4867,6 @@
       "AOSD",
       "Wissler-Fanconi syndrome"
     ]
-  },
-  "orpha:830": {
-    "name": "NON RARE IN EUROPE: Stuccokeratosis",
-    "synonyms": []
   },
   "orpha:831": {
     "name": "Congenital cervical spinal stenosis",
@@ -5199,21 +4988,6 @@
       "Non-malignant non-cirrhotic PVT"
     ]
   },
-  "orpha:855": {
-    "name": "NON RARE IN EUROPE: Hashimoto thyroiditis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Hashimoto hypothyroidism",
-      "NON RARE IN EUROPE: Hashimoto struma"
-    ]
-  },
-  "orpha:856": {
-    "name": "NON RARE IN EUROPE: Tourette syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Tourette disease",
-      "NON RARE IN EUROPE: Gilles de la Tourette syndrome",
-      "NON RARE IN EUROPE: GTS"
-    ]
-  },
   "orpha:857": {
     "name": "Townes-Brocks syndrome",
     "synonyms": [
@@ -5254,10 +5028,6 @@
       "Franceschetti-Klein syndrome",
       "Mandibulofacial dysostosis without limb anomalies"
     ]
-  },
-  "orpha:862": {
-    "name": "NON RARE IN EUROPE: Hereditary essential tremor",
-    "synonyms": []
   },
   "orpha:863": {
     "name": "Trichinellosis",
@@ -5529,12 +5299,6 @@
       "WAS"
     ]
   },
-  "orpha:907": {
-    "name": "NON RARE IN EUROPE: Wolff-Parkinson-White syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Ventricular familial preexcitation syndrome"
-    ]
-  },
   "orpha:908": {
     "name": "Fragile X syndrome",
     "synonyms": [
@@ -5614,10 +5378,6 @@
   },
   "orpha:922": {
     "name": "Familial nasal acilia",
-    "synonyms": []
-  },
-  "orpha:924": {
-    "name": "NON RARE IN EUROPE: Acanthosis nigricans",
     "synonyms": []
   },
   "orpha:926": {
@@ -5933,21 +5693,6 @@
       "Del(2)(q37)",
       "Deletion 2q37",
       "Brachydactyly-intellectual disability syndrome"
-    ]
-  },
-  "orpha:1002": {
-    "name": "NON RARE IN EUROPE: Cluster headache",
-    "synonyms": [
-      "NON RARE IN EUROPE: Histaminic cephalalgia",
-      "NON RARE IN EUROPE: Erythroprosopalgia of Bing",
-      "NON RARE IN EUROPE: Erythromelalgia of the head",
-      "NON RARE IN EUROPE: Red migraine",
-      "NON RARE IN EUROPE: Horton headache",
-      "NON RARE IN EUROPE: Cluster migraine",
-      "NON RARE IN EUROPE: Ciliary neuralgia",
-      "NON RARE IN EUROPE: Histamine headache",
-      "NON RARE IN EUROPE: Migrainous neuralgia",
-      "NON RARE IN EUROPE: Histamine cephalalgia"
     ]
   },
   "orpha:1003": {
@@ -6433,10 +6178,6 @@
     "name": "Chylous ascites",
     "synonyms": []
   },
-  "orpha:1162": {
-    "name": "NON RARE IN EUROPE: Asperger syndrome",
-    "synonyms": []
-  },
   "orpha:1163": {
     "name": "Aspergillosis",
     "synonyms": []
@@ -6756,10 +6497,6 @@
       "Hypertrichosis-atrophic skin-ectropion-macrostomia syndrome"
     ]
   },
-  "orpha:1232": {
-    "name": "NON RARE IN EUROPE: Barrett esophagus",
-    "synonyms": []
-  },
   "orpha:1234": {
     "name": "Bartsocas-Papas syndrome",
     "synonyms": [
@@ -6808,10 +6545,6 @@
       "Polymorphic vitelline macular degeneration",
       "Vitelliform macular dystrophy type 2"
     ]
-  },
-  "orpha:1244": {
-    "name": "NON RARE IN EUROPE: Bicuspid aortic valve",
-    "synonyms": []
   },
   "orpha:1245": {
     "name": "BIDS syndrome",
@@ -7012,12 +6745,6 @@
       "Microcephaly-oculo-digito-esophageal-duodenal syndrome syndrome",
       "ODED syndrome",
       "Oculo-digito-esophageal-duodenal syndrome"
-    ]
-  },
-  "orpha:1306": {
-    "name": "NON RARE IN EUROPE: Buschke-Ollendorff syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Disseminated dermatofibrosis with osteopoikilosis"
     ]
   },
   "orpha:1307": {
@@ -7736,13 +7463,6 @@
     "name": "Atrial septal defect-atrioventricular conduction defects syndrome",
     "synonyms": []
   },
-  "orpha:1480": {
-    "name": "NON RARE IN EUROPE: Ventricular septal defect",
-    "synonyms": [
-      "NON RARE IN EUROPE: VSD",
-      "NON RARE IN EUROPE: Interventricular communication"
-    ]
-  },
   "orpha:1482": {
     "name": "Gonococcal conjunctivitis",
     "synonyms": []
@@ -8281,15 +8001,6 @@
       "Leichtman-Wood-Rohn syndrome",
       "OCCS",
       "Orbital cyst with cerebral and focal dermal malformations"
-    ]
-  },
-  "orpha:1648": {
-    "name": "NON RARE IN EUROPE: Dementia with Lewy body",
-    "synonyms": [
-      "NON RARE IN EUROPE: DLB",
-      "NON RARE IN EUROPE: Lewy body dementia",
-      "NON RARE IN EUROPE: Diffuse Lewy body disease",
-      "NON RARE IN EUROPE: Cortical Lewy body disease"
     ]
   },
   "orpha:1652": {
@@ -8995,13 +8706,6 @@
     "name": "Thoracic dysplasia-hydrocephalus syndrome",
     "synonyms": []
   },
-  "orpha:1863": {
-    "name": "NON RARE IN EUROPE: Trochlear dysplasia",
-    "synonyms": [
-      "NON RARE IN EUROPE: Hypoplasia of the femoral trochlea",
-      "NON RARE IN EUROPE: Femoral trochlear groove insufficiency"
-    ]
-  },
   "orpha:1865": {
     "name": "Dyssegmental dysplasia, Silverman-Handmaker type",
     "synonyms": []
@@ -9530,13 +9234,6 @@
     "name": "Fanconi syndrome-ichthyosis-dysmorphism syndrome",
     "synonyms": [
       "Deal-Barrat-Dillon syndrome"
-    ]
-  },
-  "orpha:1983": {
-    "name": "NON RARE IN EUROPE: Chronic fatigue syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Myalgic encephalomyelitis",
-      "NON RARE IN EUROPE: Chronic fatigue immune dysfunction syndrome"
     ]
   },
   "orpha:1984": {
@@ -10587,12 +10284,6 @@
     "name": "Hypertryptophanemia",
     "synonyms": []
   },
-  "orpha:2227": {
-    "name": "NON RARE IN EUROPE: Hypodontia",
-    "synonyms": [
-      "NON RARE IN EUROPE: Tooth agenesis"
-    ]
-  },
   "orpha:2228": {
     "name": "Hypodontia-dysplasia of nails syndrome",
     "synonyms": [
@@ -11048,10 +10739,6 @@
     "synonyms": [
       "Hereditary keratitis"
     ]
-  },
-  "orpha:2335": {
-    "name": "NON RARE IN EUROPE: Isolated keratoconus",
-    "synonyms": []
   },
   "orpha:2337": {
     "name": "Diffuse palmoplantar keratoderma, Bothnian type",
@@ -12840,10 +12527,6 @@
     "name": "Otoonychoperoneal syndrome",
     "synonyms": []
   },
-  "orpha:2794": {
-    "name": "NON RARE IN EUROPE: Familial otosclerosis",
-    "synonyms": []
-  },
   "orpha:2795": {
     "name": "Fowler urethral sphincter dysfunction syndrome",
     "synonyms": [
@@ -12927,12 +12610,6 @@
     "name": "Familial recurrent peripheral facial palsy",
     "synonyms": [
       "Familial recurrent Bell palsy"
-    ]
-  },
-  "orpha:2810": {
-    "name": "NON RARE IN EUROPE: Idiopathic facial palsy",
-    "synonyms": [
-      "NON RARE IN EUROPE: Bell palsy"
     ]
   },
   "orpha:2812": {
@@ -13174,13 +12851,6 @@
     "synonyms": [
       "Hamartomatous intestinal polyposis",
       "PJS"
-    ]
-  },
-  "orpha:2870": {
-    "name": "NON RARE IN EUROPE: Peyronie syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Induratio penis plastica",
-      "NON RARE IN EUROPE: Plastic induration of penis"
     ]
   },
   "orpha:2871": {
@@ -13865,10 +13535,6 @@
       "Caudal regression sequence"
     ]
   },
-  "orpha:3029": {
-    "name": "NON RARE IN EUROPE: Horseshoe kidney",
-    "synonyms": []
-  },
   "orpha:3032": {
     "name": "NPHP3-related Meckel-like syndrome",
     "synonyms": [
@@ -14213,13 +13879,6 @@
     "name": "SCARF syndrome",
     "synonyms": []
   },
-  "orpha:3135": {
-    "name": "NON RARE IN EUROPE: Scheuermann's disease",
-    "synonyms": [
-      "NON RARE IN EUROPE: Spinal osteochondrosis",
-      "NON RARE IN EUROPE: Scheuermann juvenile kyphosis"
-    ]
-  },
   "orpha:3137": {
     "name": "Alpha-N-acetylgalactosaminidase deficiency",
     "synonyms": [
@@ -14234,10 +13893,6 @@
       "Schinzel syndrome",
       "UMS"
     ]
-  },
-  "orpha:3140": {
-    "name": "NON RARE IN EUROPE: Schizophrenia",
-    "synonyms": []
   },
   "orpha:3143": {
     "name": "Autoimmune polyendocrinopathy type 2",
@@ -14283,10 +13938,6 @@
     "synonyms": [
       "Cortical hyperostosis-syndactyly syndrome"
     ]
-  },
-  "orpha:3153": {
-    "name": "NON RARE IN EUROPE: Adolescent idiopathic scoliosis",
-    "synonyms": []
   },
   "orpha:3156": {
     "name": "Senior-Loken syndrome",
@@ -14391,14 +14042,6 @@
   "orpha:3184": {
     "name": "Steatocystoma multiplex-natal teeth syndrome",
     "synonyms": []
-  },
-  "orpha:3185": {
-    "name": "NON RARE IN EUROPE: Polycystic ovary syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: PCOS",
-      "NON RARE IN EUROPE: Polycystic ovarian syndrome",
-      "NON RARE IN EUROPE: Stein-Leventhal syndrome"
-    ]
   },
   "orpha:3186": {
     "name": "Holoprosencephaly-radial heart renal anomalies syndrome",
@@ -14884,10 +14527,6 @@
   },
   "orpha:3287": {
     "name": "Takayasu arteritis",
-    "synonyms": []
-  },
-  "orpha:3289": {
-    "name": "NON RARE IN EUROPE: Taurodontism",
     "synonyms": []
   },
   "orpha:3291": {
@@ -15458,10 +15097,6 @@
       "Viljoen-Smart syndrome"
     ]
   },
-  "orpha:3435": {
-    "name": "NON RARE IN EUROPE: Vitiligo",
-    "synonyms": []
-  },
   "orpha:3437": {
     "name": "Vogt-Koyanagi-Harada disease",
     "synonyms": [
@@ -15719,10 +15354,6 @@
       "VLCADD"
     ]
   },
-  "orpha:26823": {
-    "name": "NON RARE IN EUROPE: Pigment-dispersion syndrome",
-    "synonyms": []
-  },
   "orpha:28378": {
     "name": "Tyrosinemia type 2",
     "synonyms": [
@@ -15800,10 +15431,6 @@
     "synonyms": [
       "DFSP"
     ]
-  },
-  "orpha:31142": {
-    "name": "NON RARE IN EUROPE: Oral erosive lichen",
-    "synonyms": []
   },
   "orpha:31150": {
     "name": "Tangier disease",
@@ -15923,12 +15550,6 @@
     "name": "Waldenström macroglobulinemia",
     "synonyms": []
   },
-  "orpha:33271": {
-    "name": "NON RARE IN EUROPE: Non-alcoholic fatty liver disease",
-    "synonyms": [
-      "NON RARE IN EUROPE: NAFLD"
-    ]
-  },
   "orpha:33276": {
     "name": "Kaposi sarcoma",
     "synonyms": []
@@ -15965,12 +15586,6 @@
   "orpha:33408": {
     "name": "Bullous lichen planus",
     "synonyms": []
-  },
-  "orpha:33409": {
-    "name": "NON RARE IN EUROPE: Lichen sclerosus",
-    "synonyms": [
-      "NON RARE IN EUROPE: Lichen sclerosus et atrophicus"
-    ]
   },
   "orpha:33445": {
     "name": "Neuroectodermal melanolysosomal disease",
@@ -16043,12 +15658,6 @@
       "Palmoplantar hyperkeratosis with arrythmogenic cardiomyopathy",
       "Palmoplantar keratoderma with arrythmogenic cardiomyopathy",
       "Naxos syndrome"
-    ]
-  },
-  "orpha:34412": {
-    "name": "NON RARE IN EUROPE: HAIR-AN syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Hyperandrogenic-insulin resistant-acanthosis nigricans syndrome"
     ]
   },
   "orpha:34514": {
@@ -16134,12 +15743,6 @@
       "Bare lymphocyte syndrome type 1"
     ]
   },
-  "orpha:35056": {
-    "name": "NON RARE IN EUROPE: Trimethylaminuria",
-    "synonyms": [
-      "NON RARE IN EUROPE: Fish-odor syndrome"
-    ]
-  },
   "orpha:35062": {
     "name": "Severe disseminated cytomegalovirus infection in immunocompetent patients",
     "synonyms": [
@@ -16149,12 +15752,6 @@
   "orpha:35063": {
     "name": "Fulminant viral hepatitis",
     "synonyms": []
-  },
-  "orpha:35066": {
-    "name": "NON RARE IN EUROPE: Idiopathic cutaneous and mucosal candidosis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Idiopathic cutaneous and mucosal candidiasis"
-    ]
   },
   "orpha:35069": {
     "name": "Infantile neuroaxonal dystrophy",
@@ -16416,10 +16013,6 @@
       "Linitis plastica of the stomach"
     ]
   },
-  "orpha:36297": {
-    "name": "NON RARE IN EUROPE: Anorexia nervosa",
-    "synonyms": []
-  },
   "orpha:36355": {
     "name": "Bleeding disorder due to P2Y12 defect",
     "synonyms": [
@@ -16573,10 +16166,6 @@
       "GvHD"
     ]
   },
-  "orpha:40050": {
-    "name": "NON RARE IN EUROPE: Psoriatic arthritis",
-    "synonyms": []
-  },
   "orpha:40366": {
     "name": "Acitretin/etretinate embryopathy",
     "synonyms": [
@@ -16598,10 +16187,6 @@
       "Bietti crystalline corneoretinal dystrophy",
       "Bietti crystalline retinopathy"
     ]
-  },
-  "orpha:41842": {
-    "name": "NON RARE IN EUROPE: Fibromyalgia",
-    "synonyms": []
   },
   "orpha:42062": {
     "name": "Iminoglycinuria",
@@ -16673,10 +16258,6 @@
     "synonyms": [
       "FEOM"
     ]
-  },
-  "orpha:45360": {
-    "name": "NON RARE IN EUROPE: Menière disease",
-    "synonyms": []
   },
   "orpha:45448": {
     "name": "Miyoshi myopathy",
@@ -16960,10 +16541,6 @@
     "synonyms": [
       "Verloes-Deprez syndrome"
     ]
-  },
-  "orpha:50838": {
-    "name": "NON RARE IN EUROPE: Carpal tunnel syndrome",
-    "synonyms": []
   },
   "orpha:50839": {
     "name": "Cat-scratch disease",
@@ -17465,10 +17042,6 @@
       "Osteitis condensans of the clavicle"
     ]
   },
-  "orpha:57777": {
-    "name": "NON RARE IN EUROPE: Cirrhotic cardiomyopathy",
-    "synonyms": []
-  },
   "orpha:57782": {
     "name": "Mazabraud syndrome",
     "synonyms": [
@@ -17484,10 +17057,6 @@
   },
   "orpha:58040": {
     "name": "Osteoblastoma",
-    "synonyms": []
-  },
-  "orpha:58208": {
-    "name": "NON RARE IN EUROPE: Pericarditis",
     "synonyms": []
   },
   "orpha:59135": {
@@ -17731,19 +17300,11 @@
       "ICE syndrome"
     ]
   },
-  "orpha:64738": {
-    "name": "NON RARE IN EUROPE: Non rare thrombophilia",
-    "synonyms": []
-  },
   "orpha:64739": {
     "name": "Ovarian hyperstimulation syndrome",
     "synonyms": [
       "OHSS"
     ]
-  },
-  "orpha:64740": {
-    "name": "NON RARE IN EUROPE: Recurrent acute pancreatitis",
-    "synonyms": []
   },
   "orpha:64741": {
     "name": "Pulmonary blastoma",
@@ -17847,12 +17408,6 @@
       "Becker melanosis",
       "Pigmentary hairy epidermal nevus",
       "Pigmented hairy epidermal nevus"
-    ]
-  },
-  "orpha:65250": {
-    "name": "NON RARE IN EUROPE: Perineural cyst",
-    "synonyms": [
-      "NON RARE IN EUROPE: Tarlov cyst"
     ]
   },
   "orpha:65282": {
@@ -18370,15 +17925,6 @@
       "Pyogenic arthritis-pyoderma gangrenosum-acne syndrome"
     ]
   },
-  "orpha:69127": {
-    "name": "NON RARE IN EUROPE: Immunoglobulin A deficiency",
-    "synonyms": [
-      "NON RARE IN EUROPE: Selective immunoglobulin A deficiency",
-      "NON RARE IN EUROPE: IgAD",
-      "NON RARE IN EUROPE: SIgAD",
-      "NON RARE IN EUROPE: IgA deficiency"
-    ]
-  },
   "orpha:69663": {
     "name": "Low phospholipid-associated cholelithiasis",
     "synonyms": [
@@ -18818,12 +18364,6 @@
     "name": "Visceral neuropathy-brain anomalies-facial dysmorphism-developmental delay syndrome",
     "synonyms": []
   },
-  "orpha:73247": {
-    "name": "NON RARE IN EUROPE: Eosinophilic esophagitis",
-    "synonyms": [
-      "NON RARE IN EUROPE: EoE"
-    ]
-  },
   "orpha:73256": {
     "name": "Central neurocytoma",
     "synonyms": []
@@ -19085,10 +18625,6 @@
   },
   "orpha:77240": {
     "name": "Primary lymphedema",
-    "synonyms": []
-  },
-  "orpha:77243": {
-    "name": "NON RARE IN EUROPE: Lipedema",
     "synonyms": []
   },
   "orpha:77258": {
@@ -19440,10 +18976,6 @@
       "Plamoplantar hyperkeratosis nummularis",
       "Plamoplantar keratoderma nummularis"
     ]
-  },
-  "orpha:79142": {
-    "name": "NON RARE IN EUROPE: Familial Dupuytren contracture",
-    "synonyms": []
   },
   "orpha:79143": {
     "name": "Isolated congenital anonychia",
@@ -21062,12 +20594,6 @@
       "Spinal muscular atrophy, adult form"
     ]
   },
-  "orpha:83449": {
-    "name": "NON RARE IN EUROPE: Inappropriate antidiuretic hormone secretion syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: SIADH"
-    ]
-  },
   "orpha:83450": {
     "name": "Regional odontodysplasia",
     "synonyms": [
@@ -21379,15 +20905,6 @@
       "Classic Addison disease",
       "Autoimmune Addison disease",
       "Primary adrenal insufficiency"
-    ]
-  },
-  "orpha:85142": {
-    "name": "NON RARE IN EUROPE: Aldosterone-producing adenoma",
-    "synonyms": [
-      "NON RARE IN EUROPE: Aldosterone-secreting adenoma",
-      "NON RARE IN EUROPE: Conn adenoma",
-      "NON RARE IN EUROPE: Primary aldosteronism due to Conn adenoma",
-      "NON RARE IN EUROPE: Aldosteronoma"
     ]
   },
   "orpha:85146": {
@@ -22615,12 +22132,6 @@
       "Bartter syndrome with sensorineural hearing loss",
       "Bartter syndrome with sensorineural deafness",
       "Bartter syndrome type IV"
-    ]
-  },
-  "orpha:89939": {
-    "name": "NON RARE IN EUROPE: Hyperkalemic renal tubular acidosis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Renal tubular acidosis type 4"
     ]
   },
   "orpha:90000": {
@@ -24122,10 +23633,6 @@
     "name": "Brachydactyly type C",
     "synonyms": []
   },
-  "orpha:93385": {
-    "name": "NON RARE IN EUROPE: Brachydactyly type D",
-    "synonyms": []
-  },
   "orpha:93387": {
     "name": "Brachydactyly type E",
     "synonyms": []
@@ -24139,13 +23646,6 @@
   "orpha:93389": {
     "name": "Brachydactyly type A5",
     "synonyms": []
-  },
-  "orpha:93393": {
-    "name": "NON RARE IN EUROPE: Brachydactyly type A3",
-    "synonyms": [
-      "NON RARE IN EUROPE: Brachymesophalangy V",
-      "NON RARE IN EUROPE: Brachydactyly-clinodactyly"
-    ]
   },
   "orpha:93394": {
     "name": "Brachydactyly type A4",
@@ -24504,12 +24004,6 @@
     "name": "Juvenile polymyositis",
     "synonyms": [
       "Juvenile PM"
-    ]
-  },
-  "orpha:93569": {
-    "name": "NON RARE IN EUROPE: Polymyalgia rheumatica",
-    "synonyms": [
-      "NON RARE IN EUROPE: Rhizomelic pseudopolyarthritis"
     ]
   },
   "orpha:93571": {
@@ -24912,10 +24406,6 @@
     "name": "Uremic pruritus",
     "synonyms": []
   },
-  "orpha:94062": {
-    "name": "NON RARE IN EUROPE: Coronary artery disease-hyperlipidemia-hypertension-diabetes-osteoporosis syndrome",
-    "synonyms": []
-  },
   "orpha:94063": {
     "name": "12q14 microdeletion syndrome",
     "synonyms": [
@@ -25216,12 +24706,6 @@
       "Premature closure of the patent ductus arteriosus"
     ]
   },
-  "orpha:95487": {
-    "name": "NON RARE IN EUROPE: Atypical arterial duct",
-    "synonyms": [
-      "NON RARE IN EUROPE: Atypical patent ductus arteriosus"
-    ]
-  },
   "orpha:95488": {
     "name": "Non-acquired pituitary hormone deficiency",
     "synonyms": []
@@ -25335,12 +24819,6 @@
     "synonyms": [
       "Acquired CDI",
       "Acquired neurogenic diabetes insipidus"
-    ]
-  },
-  "orpha:95698": {
-    "name": "NON RARE IN EUROPE: Non-classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency",
-    "synonyms": [
-      "NON RARE IN EUROPE: NCAH"
     ]
   },
   "orpha:95699": {
@@ -26298,12 +25776,6 @@
       "Punch-drunk syndrome"
     ]
   },
-  "orpha:97354": {
-    "name": "NON RARE IN EUROPE: Wernicke encephalopathy",
-    "synonyms": [
-      "NON RARE IN EUROPE: Dementia due to thiamine deficiency"
-    ]
-  },
   "orpha:97355": {
     "name": "Caribbean parkinsonism",
     "synonyms": [
@@ -26342,12 +25814,6 @@
       "Bilateral multicystic renal dysplasia"
     ]
   },
-  "orpha:97365": {
-    "name": "NON RARE IN EUROPE: Solitary renal cyst",
-    "synonyms": [
-      "NON RARE IN EUROPE: Simple kidney cyst"
-    ]
-  },
   "orpha:97366": {
     "name": "Multiloculated renal cyst",
     "synonyms": [
@@ -26383,22 +25849,12 @@
     "name": "Congenital and infantile nephrotic syndrome",
     "synonyms": []
   },
-  "orpha:97557": {
-    "name": "NON RARE IN EUROPE: Chronic proteinuria with focal and segmental hyalinosis",
-    "synonyms": [
-      "NON RARE IN EUROPE: Permanent proteinuria with focal and segmental hyalinosis without nephrotic syndrome"
-    ]
-  },
   "orpha:97560": {
     "name": "Primary membranous glomerulonephritis",
     "synonyms": [
       "Primary membranous nephropathy",
       "Idiopathic membranous glomerulonephritis"
     ]
-  },
-  "orpha:97562": {
-    "name": "NON RARE IN EUROPE: Benign familial hematuria",
-    "synonyms": []
   },
   "orpha:97563": {
     "name": "Pauci-immune glomerulonephritis with ANCA",
@@ -27405,10 +26861,6 @@
   },
   "orpha:98681": {
     "name": "Rare disorder with strabismus",
-    "synonyms": []
-  },
-  "orpha:98682": {
-    "name": "NON RARE IN EUROPE: Essential strabismus",
     "synonyms": []
   },
   "orpha:98683": {
@@ -28966,10 +28418,6 @@
     "name": "Atrial septal aneurysm",
     "synonyms": []
   },
-  "orpha:99108": {
-    "name": "NON RARE IN EUROPE: Patent foramen ovale",
-    "synonyms": []
-  },
   "orpha:99109": {
     "name": "Persistent left superior vena cava connecting through coronary sinus to left-sided atrium",
     "synonyms": [
@@ -29103,14 +28551,6 @@
       "Acquired von Willebrand disease"
     ]
   },
-  "orpha:99151": {
-    "name": "NON RARE IN EUROPE: Hippocampal tauopathy in cerebral aging",
-    "synonyms": []
-  },
-  "orpha:99166": {
-    "name": "NON RARE IN EUROPE: Familial combined hyperlipoproteinemia",
-    "synonyms": []
-  },
   "orpha:99169": {
     "name": "Epiblepharon",
     "synonyms": []
@@ -29209,10 +28649,6 @@
     "synonyms": [
       "DYT2"
     ]
-  },
-  "orpha:99665": {
-    "name": "NON RARE IN EUROPE: Ventral hernia",
-    "synonyms": []
   },
   "orpha:99672": {
     "name": "Fried's tooth and nail syndrome",
@@ -29653,10 +29089,6 @@
       "Acute megakaryoblastic leukemia in children with trisomy 21",
       "DS-AMKL in children with Down syndrome"
     ]
-  },
-  "orpha:99888": {
-    "name": "NON RARE IN EUROPE: Adrenocortical adenoma",
-    "synonyms": []
   },
   "orpha:99889": {
     "name": "Cushing syndrome due to ectopic ACTH secretion",
@@ -30439,10 +29871,6 @@
   },
   "orpha:100101": {
     "name": "Neuroendocrine tumor with other location",
-    "synonyms": []
-  },
-  "orpha:100642": {
-    "name": "NON RARE IN EUROPE: Gonorrhea",
     "synonyms": []
   },
   "orpha:100924": {
@@ -31945,14 +31373,6 @@
       "SCAR9"
     ]
   },
-  "orpha:139498": {
-    "name": "NON RARE IN EUROPE: Hemochromatosis type 1",
-    "synonyms": [
-      "NON RARE IN EUROPE: Classic hemochromatosis",
-      "NON RARE IN EUROPE: HFE-related hemochromatosis",
-      "NON RARE IN EUROPE: C282Y/C282Y hemochromatosis"
-    ]
-  },
   "orpha:139507": {
     "name": "Dietary iron overload disease",
     "synonyms": [
@@ -32935,10 +32355,6 @@
       "L-CMD",
       "LMNA-related congenital muscular dystrophy"
     ]
-  },
-  "orpha:157980": {
-    "name": "NON RARE IN EUROPE: Bladder cancer",
-    "synonyms": []
   },
   "orpha:157987": {
     "name": "Non-Langerhans cell histiocytosis",
@@ -34190,14 +33606,6 @@
     "name": "Recurrent Neisseria infections due to factor D deficiency",
     "synonyms": []
   },
-  "orpha:169615": {
-    "name": "NON RARE IN EUROPE: Idiopathic central precocious puberty",
-    "synonyms": []
-  },
-  "orpha:169618": {
-    "name": "NON RARE IN EUROPE: Secondary central precocious puberty",
-    "synonyms": []
-  },
   "orpha:169793": {
     "name": "Severe hemophilia B",
     "synonyms": [
@@ -34310,10 +33718,6 @@
   },
   "orpha:171673": {
     "name": "Limbal stem cell deficiency",
-    "synonyms": []
-  },
-  "orpha:171676": {
-    "name": "NON RARE IN EUROPE: Periventricular leukomalacia",
     "synonyms": []
   },
   "orpha:171680": {
@@ -34701,12 +34105,6 @@
       "Infant-like botulism"
     ]
   },
-  "orpha:178493": {
-    "name": "NON RARE IN EUROPE: Myopic macular degeneration",
-    "synonyms": [
-      "NON RARE IN EUROPE: Myopic maculopathy"
-    ]
-  },
   "orpha:178503": {
     "name": "Dursun syndrome",
     "synonyms": [
@@ -34867,13 +34265,6 @@
   "orpha:180114": {
     "name": "Unicervical bicornuate uterus",
     "synonyms": []
-  },
-  "orpha:180118": {
-    "name": "NON RARE IN EUROPE: Cordiform uterus",
-    "synonyms": [
-      "NON RARE IN EUROPE: Uterus arcuatus",
-      "NON RARE IN EUROPE: Uterus cordiformis"
-    ]
   },
   "orpha:180122": {
     "name": "Septate uterus",
@@ -35043,10 +34434,6 @@
       "Paget disease of the breast",
       "Mammary Paget disease"
     ]
-  },
-  "orpha:180284": {
-    "name": "NON RARE IN EUROPE: Benign ductal tumor of breast",
-    "synonyms": []
   },
   "orpha:180303": {
     "name": "Rare non-malformative uterine adnexal disease",
@@ -36449,12 +35836,6 @@
     "name": "Autosomal dominant rhegmatogenous retinal detachment",
     "synonyms": []
   },
-  "orpha:209893": {
-    "name": "NON RARE IN EUROPE: Congenital isolated thyroxine-binding globulin deficiency",
-    "synonyms": [
-      "NON RARE IN EUROPE: Congenital isolated TBG deficiency"
-    ]
-  },
   "orpha:209902": {
     "name": "Hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency",
     "synonyms": []
@@ -36546,12 +35927,6 @@
     "name": "IRIDA syndrome",
     "synonyms": [
       "Iron-refractory iron deficiency anemia"
-    ]
-  },
-  "orpha:209989": {
-    "name": "NON RARE IN EUROPE: Non-papillary transitional cell carcinoma of the bladder",
-    "synonyms": [
-      "NON RARE IN EUROPE: Non-papillary urothelial carcinoma"
     ]
   },
   "orpha:210110": {
@@ -37131,10 +36506,6 @@
       "Hadziselimovic syndrome",
       "Microcephaly-faciocardioskeletal syndrome"
     ]
-  },
-  "orpha:217031": {
-    "name": "NON RARE IN EUROPE: Obesity due to MC3R deficiency",
-    "synonyms": []
   },
   "orpha:217034": {
     "name": "Male infertility with normal virilization due to meiosis defect",
@@ -38787,10 +38158,6 @@
       "POT"
     ]
   },
-  "orpha:238616": {
-    "name": "NON RARE IN EUROPE: Alzheimer disease",
-    "synonyms": []
-  },
   "orpha:238621": {
     "name": "Ileal pouch anal anastomosis related faecal incontinence",
     "synonyms": []
@@ -38960,16 +38327,6 @@
     "synonyms": [
       "AFLP"
     ]
-  },
-  "orpha:243377": {
-    "name": "NON RARE IN EUROPE: Diabetes mellitus type 1",
-    "synonyms": [
-      "NON RARE IN EUROPE: Insulin-dependent diabetes mellitus"
-    ]
-  },
-  "orpha:243761": {
-    "name": "NON RARE IN EUROPE: Essential hypertension",
-    "synonyms": []
   },
   "orpha:244242": {
     "name": "HELLP syndrome",
@@ -42842,14 +42199,6 @@
       "Spinocerebellar ataxia type 3, Machado type"
     ]
   },
-  "orpha:276271": {
-    "name": "NON RARE IN EUROPE: Familial dysalbuminemic hyperthyroxinemia",
-    "synonyms": [
-      "NON RARE IN EUROPE: Bisalbuminemia",
-      "NON RARE IN EUROPE: FDH",
-      "NON RARE IN EUROPE: Analbuminemia"
-    ]
-  },
   "orpha:276280": {
     "name": "Hemihyperplasia-multiple lipomatosis syndrome",
     "synonyms": [
@@ -43045,12 +42394,6 @@
       "Carbohydrate deficient glycoprotein syndrome type Ip",
       "Congenital disorder of glycosylation type 1p",
       "Congenital disorder of glycosylation type Ip"
-    ]
-  },
-  "orpha:280110": {
-    "name": "NON RARE IN EUROPE: Paget disease of bone",
-    "synonyms": [
-      "NON RARE IN EUROPE: Osteitis deformans"
     ]
   },
   "orpha:280133": {
@@ -43567,10 +42910,6 @@
       "Autoimmune polyglandular syndrome"
     ]
   },
-  "orpha:284130": {
-    "name": "NON RARE IN EUROPE: Rheumatoid arthritis",
-    "synonyms": []
-  },
   "orpha:284139": {
     "name": "Larsen-like syndrome, B3GAT3 type",
     "synonyms": [
@@ -43931,12 +43270,6 @@
     "synonyms": [
       "Primary Sjögren syndrome",
       "Primary SjD"
-    ]
-  },
-  "orpha:289395": {
-    "name": "NON RARE IN EUROPE: Secondary Sjögren syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: Secondary Sjögren-Gougerot syndrome"
     ]
   },
   "orpha:289465": {
@@ -46607,12 +45940,6 @@
       "Juvenile Canavan disease"
     ]
   },
-  "orpha:314928": {
-    "name": "NON RARE IN EUROPE: Normal pressure hydrocephalus",
-    "synonyms": [
-      "NON RARE IN EUROPE: Chronic adult hydrocephalus"
-    ]
-  },
   "orpha:314950": {
     "name": "Primary hypereosinophilic syndrome",
     "synonyms": [
@@ -47103,10 +46430,6 @@
       "Dihydrofolate reductase deficiency"
     ]
   },
-  "orpha:319658": {
-    "name": "NON RARE IN EUROPE: Unexplained intellectual disability",
-    "synonyms": []
-  },
   "orpha:319667": {
     "name": "Primary lymphoma of the conjunctiva",
     "synonyms": [
@@ -47125,32 +46448,6 @@
   },
   "orpha:319678": {
     "name": "Encephalopathy-hypertrophic cardiomyopathy-renal tubular disease syndrome",
-    "synonyms": []
-  },
-  "orpha:319681": {
-    "name": "NON RARE IN EUROPE: Lactase non-persistence in adulthood",
-    "synonyms": []
-  },
-  "orpha:319684": {
-    "name": "NON RARE IN EUROPE: Inosine triphosphate pyrophosphatase deficiency",
-    "synonyms": []
-  },
-  "orpha:319691": {
-    "name": "NON RARE IN EUROPE: Partial color blindness, protan type",
-    "synonyms": [
-      "NON RARE IN EUROPE: Protanopia",
-      "NON RARE IN EUROPE: Partial achromatopsia, protan type"
-    ]
-  },
-  "orpha:319698": {
-    "name": "NON RARE IN EUROPE: Partial color blindness, deutan type",
-    "synonyms": [
-      "NON RARE IN EUROPE: Partial achromatopsia, deutan type",
-      "NON RARE IN EUROPE: Deuteranopia"
-    ]
-  },
-  "orpha:319705": {
-    "name": "NON RARE IN EUROPE: Parkinson disease",
     "synonyms": []
   },
   "orpha:319719": {
@@ -48028,10 +47325,6 @@
       "Wild type ATTR-related amyloidosis"
     ]
   },
-  "orpha:330006": {
-    "name": "NON RARE IN EUROPE: Macular telangiectasia type 2",
-    "synonyms": []
-  },
   "orpha:330012": {
     "name": "High altitude pulmonary edema",
     "synonyms": [
@@ -48475,12 +47768,6 @@
     "name": "Familial primary localized cutaneous amyloidosis",
     "synonyms": [
       "FPLCA"
-    ]
-  },
-  "orpha:353225": {
-    "name": "NON RARE IN EUROPE: Primary adult open-angle glaucoma",
-    "synonyms": [
-      "NON RARE IN EUROPE: POAG"
     ]
   },
   "orpha:353253": {
@@ -51042,10 +50329,6 @@
       "CRVO"
     ]
   },
-  "orpha:411533": {
-    "name": "NON RARE IN EUROPE: Melanoma",
-    "synonyms": []
-  },
   "orpha:411536": {
     "name": "Mild phosphoribosylpyrophosphate synthetase superactivity",
     "synonyms": [
@@ -51121,10 +50404,6 @@
     "name": "Familial isolated trichomegaly",
     "synonyms": []
   },
-  "orpha:411969": {
-    "name": "NON RARE IN EUROPE: Metabolic syndrome",
-    "synonyms": []
-  },
   "orpha:411986": {
     "name": "Early-onset epileptic encephalopathy-cortical blindness-intellectual disability-facial dysmorphism syndrome",
     "synonyms": [
@@ -51193,26 +50472,10 @@
       "Genetic craniofacial cleft"
     ]
   },
-  "orpha:415268": {
-    "name": "NON RARE IN EUROPE: Adenocarcinoma of the lung",
-    "synonyms": []
-  },
   "orpha:415286": {
     "name": "Bilirubin encephalopathy",
     "synonyms": [
       "Kernicterus"
-    ]
-  },
-  "orpha:415300": {
-    "name": "NON RARE IN EUROPE: Non-arteritic anterior ischemic optic neuropathy",
-    "synonyms": [
-      "NON RARE IN EUROPE: NAION"
-    ]
-  },
-  "orpha:415687": {
-    "name": "NON RARE IN EUROPE: Sudden infant death syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: SIDS"
     ]
   },
   "orpha:418945": {
@@ -51432,10 +50695,6 @@
   },
   "orpha:423662": {
     "name": "Rare autonomic nervous system disorder",
-    "synonyms": []
-  },
-  "orpha:423668": {
-    "name": "NON RARE IN EUROPE: Cortisol-producing adrenal tumor",
     "synonyms": []
   },
   "orpha:423693": {
@@ -52827,10 +52086,6 @@
     "name": "Genetic primary orthostatic hypotension",
     "synonyms": []
   },
-  "orpha:449262": {
-    "name": "NON RARE IN EUROPE: Primary bile acid malabsorption",
-    "synonyms": []
-  },
   "orpha:449266": {
     "name": "Pleural empyema",
     "synonyms": []
@@ -53183,10 +52438,6 @@
       "MINDS syndrome"
     ]
   },
-  "orpha:458713": {
-    "name": "NON RARE IN EUROPE: Specific language impairment",
-    "synonyms": []
-  },
   "orpha:458718": {
     "name": "Idiopathic spontaneous coronary artery dissection",
     "synonyms": [
@@ -53315,14 +52566,6 @@
     "name": "Rare genetic venous malformation",
     "synonyms": []
   },
-  "orpha:459690": {
-    "name": "NON RARE IN EUROPE: Gender dysphoria",
-    "synonyms": []
-  },
-  "orpha:459696": {
-    "name": "NON RARE IN EUROPE: Juvenile idiopathic scoliosis",
-    "synonyms": []
-  },
   "orpha:459787": {
     "name": "Lethal multiple congenital anomalies/dysmorphic syndrome",
     "synonyms": []
@@ -53339,10 +52582,6 @@
     "synonyms": [
       "SBIDDS"
     ]
-  },
-  "orpha:464293": {
-    "name": "NON RARE IN EUROPE: Infantile capillary hemangioma",
-    "synonyms": []
   },
   "orpha:464306": {
     "name": "DYRK1A-related intellectual disability syndrome",
@@ -53425,12 +52664,6 @@
       "Acetaminophen poisoning"
     ]
   },
-  "orpha:464463": {
-    "name": "NON RARE IN EUROPE: Adenocarcinoma of stomach",
-    "synonyms": [
-      "NON RARE IN EUROPE: Gastric adenocarcinoma"
-    ]
-  },
   "orpha:464724": {
     "name": "Fever-associated acute infantile liver failure syndrome",
     "synonyms": []
@@ -53489,16 +52722,8 @@
     "name": "Rare disease with malignant hyperthermia",
     "synonyms": []
   },
-  "orpha:466667": {
-    "name": "NON RARE IN EUROPE: Colorectal cancer",
-    "synonyms": []
-  },
   "orpha:466670": {
     "name": "Cyanide poisoning",
-    "synonyms": []
-  },
-  "orpha:466673": {
-    "name": "NON RARE IN EUROPE: Post-herpetic neuralgia",
     "synonyms": []
   },
   "orpha:466677": {
@@ -54247,12 +53472,6 @@
   "orpha:488197": {
     "name": "Familial progressive retinal dystrophy-iris coloboma-congenital cataract syndrome",
     "synonyms": []
-  },
-  "orpha:488201": {
-    "name": "NON RARE IN EUROPE: Non-small cell lung cancer",
-    "synonyms": [
-      "NON RARE IN EUROPE: NSCLC"
-    ]
   },
   "orpha:488232": {
     "name": "Split-foot malformation-mesoaxial polydactyly syndrome",
@@ -55466,10 +54685,6 @@
       "SINO syndrome"
     ]
   },
-  "orpha:521399": {
-    "name": "NON RARE IN EUROPE: Non rare obesity",
-    "synonyms": []
-  },
   "orpha:521406": {
     "name": "Dystonia-parkinsonism-hypermanganesemia syndrome",
     "synonyms": []
@@ -55796,13 +55011,6 @@
       "KSD",
       "Bilirubin-induced neurological dysfunction",
       "BIND"
-    ]
-  },
-  "orpha:529819": {
-    "name": "NON RARE IN EUROPE: Exfoliation syndrome",
-    "synonyms": [
-      "NON RARE IN EUROPE: XFS",
-      "NON RARE IN EUROPE: Pseudoexfoliation syndrome"
     ]
   },
   "orpha:529831": {
@@ -57944,10 +57152,6 @@
   },
   "orpha:619340": {
     "name": "Inherited hematologic cancer-predisposing syndrome",
-    "synonyms": []
-  },
-  "orpha:619360": {
-    "name": "NON RARE IN EUROPE: Isolated hereditary persistence of fetal hemoglobin",
     "synonyms": []
   },
   "orpha:619363": {
