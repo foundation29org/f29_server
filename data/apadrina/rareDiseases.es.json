@@ -621,10 +621,6 @@
       "Atresia de la uretra"
     ]
   },
-  "orpha:106": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Autismo",
-    "synonyms": []
-  },
   "orpha:107": {
     "name": "Síndrome BOR",
     "synonyms": [
@@ -714,17 +710,6 @@
       "LGMD2E",
       "Beta-sarcoglicocanopatía",
       "Distrofia muscular de cinturas autosómica recesiva tipo 2E"
-    ]
-  },
-  "orpha:120": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Anemia perniciosa",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Biermer",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Anemia addisoniana",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Anemia de Addison-Biermer",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Anemia de Biermer",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Anemia perniciosa adquirida",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Anemia perniciosa de inicio juvenil"
     ]
   },
   "orpha:122": {
@@ -912,18 +897,6 @@
     "name": "Miocardiopatía dilatada familiar aislada",
     "synonyms": []
   },
-  "orpha:155": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía hipertrófica familiar aislada",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía obstructiva hipertrófica primitiva",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía obstructiva hipertrófica",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Estenosis subaórtica hipertrófica familiar aislada",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Estenosis subaórtica hipertrófica idiopática o familiar",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Estenosis subaórtica hipertrófica primitiva",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía obstructiva hipertrófica familiar aislada",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía obstructiva hipertrófica idiopática o familiar"
-    ]
-  },
   "orpha:156": {
     "name": "Deficiencia de carnitina palmitoiltransferasa 1A",
     "synonyms": [
@@ -972,14 +945,6 @@
       "Enfermedad de hiperferritinemia hereditaria-cataratas",
       "HHCS",
       "Hiperferritinemia hereditaria con cataratas"
-    ]
-  },
-  "orpha:164": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Malformaciones cavernosas cerebrales",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Angioma cavernoso cerebral",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Cavernoma cerebral",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hemangioma cavernoso cerebral"
     ]
   },
   "orpha:165": {
@@ -1203,10 +1168,6 @@
       "Deficiencia de bilirrubina-UGT"
     ]
   },
-  "orpha:206": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Crohn",
-    "synonyms": []
-  },
   "orpha:207": {
     "name": "Síndrome de Crouzon",
     "synonyms": [
@@ -1308,14 +1269,6 @@
       "Diabetes de la infancia",
       "Diabetes mellitus congénita",
       "Diabetes monogénica de la infancia"
-    ]
-  },
-  "orpha:225": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Diabetes de herencia materna y sordera",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Diabetes de herencia materna e hipoacusia",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Diabetes mitocondrial",
-      "NO ES ENFERMEDAD RARA EN EUROPA: MIDD"
     ]
   },
   "orpha:226": {
@@ -1646,10 +1599,6 @@
       "IDCG por deficiencia de adenosina desaminasa"
     ]
   },
-  "orpha:279": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Degeneración macular asociada a la edad",
-    "synonyms": []
-  },
   "orpha:280": {
     "name": "Síndrome de Wolf-Hirschhorn",
     "synonyms": [
@@ -1932,10 +1881,6 @@
       "Complejo extrofia vesical-epispadias-extrofia cloacal"
     ]
   },
-  "orpha:323": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Espectro fenotípico del síndrome FG",
-    "synonyms": []
-  },
   "orpha:324": {
     "name": "Enfermedad de Fabry",
     "synonyms": [
@@ -2007,10 +1952,6 @@
   },
   "orpha:335": {
     "name": "Deficiencia congénita de fibrinógeno",
-    "synonyms": []
-  },
-  "orpha:336": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Displasia fibromuscular arterial",
     "synonyms": []
   },
   "orpha:337": {
@@ -2121,13 +2062,6 @@
     "name": "Síndrome de Gerstmann-Straussler-Scheinker",
     "synonyms": []
   },
-  "orpha:357": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Gilbert",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Colemia familiar",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hiperbilirrubinemia tipo 1"
-    ]
-  },
   "orpha:358": {
     "name": "Síndrome de Gitelman",
     "synonyms": []
@@ -2148,13 +2082,6 @@
   "orpha:361": {
     "name": "Deficiencia familiar de glucocorticoides",
     "synonyms": []
-  },
-  "orpha:362": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de glucosa-6-fosfato-deshidrogenasa",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Favismo",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de G6PD"
-    ]
   },
   "orpha:364": {
     "name": "Enfermedad de almacenamiento de glucógeno por deficiencia de glucosa-6-fosfatasa",
@@ -2325,13 +2252,6 @@
       "Síndrome de Gorlin-Goltz"
     ]
   },
-  "orpha:378": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Sjögren",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Sicca",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Sjögren-Gougerot"
-    ]
-  },
   "orpha:379": {
     "name": "Enfermedad granulomatosa crónica",
     "synonyms": [
@@ -2397,14 +2317,6 @@
       "Hamartoma biliar",
       "Hamartoma mesenquimal hepático",
       "VMC"
-    ]
-  },
-  "orpha:387": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hidradenitis supurativa",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Verneuil",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Acné ectópico",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Acné inverso"
     ]
   },
   "orpha:388": {
@@ -2522,10 +2434,6 @@
       "Hipercalcemia hipocalciúrica familiar benigna"
     ]
   },
-  "orpha:406": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hipercolesterolemia familiar heterocigota",
-    "synonyms": []
-  },
   "orpha:407": {
     "name": "Encefalopatía por glicina",
     "synonyms": [
@@ -2560,13 +2468,6 @@
       "HLP tipo 3",
       "Hiperlipidemia tipo 3",
       "Hiperlipoproteinemia remanente"
-    ]
-  },
-  "orpha:413": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hiperlipoproteinemia tipo 4",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: HLP tipo 4",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hipertrigliceridemia familiar"
     ]
   },
   "orpha:414": {
@@ -2637,10 +2538,6 @@
       "Deficiencia de apoA-I familiar",
       "Hipoalfalipoproteinemia familiar"
     ]
-  },
-  "orpha:426": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hipobetalipoproteinemia familiar",
-    "synonyms": []
   },
   "orpha:427": {
     "name": "Hipoaldosteronismo familiar",
@@ -2768,14 +2665,6 @@
       "Ictiosis ligada al cromosoma X"
     ]
   },
-  "orpha:462": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Ictiosis vulgar con transmisión autosómica dominante",
-    "synonyms": []
-  },
-  "orpha:463": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Incidentaloma suprarrenal",
-    "synonyms": []
-  },
   "orpha:464": {
     "name": "Incontinencia pigmentaria",
     "synonyms": [
@@ -2876,12 +2765,6 @@
     "name": "Deficiencia congénita de quininógeno de alto peso molecular",
     "synonyms": []
   },
-  "orpha:484": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Klinefelter",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome 47,XXY"
-    ]
-  },
   "orpha:485": {
     "name": "Displasia de Kniest",
     "synonyms": []
@@ -2902,12 +2785,6 @@
   "orpha:488": {
     "name": "Quiste uracal",
     "synonyms": []
-  },
-  "orpha:489": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Quiste del conducto tirogloso",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Quiste del tracto tirogloso"
-    ]
   },
   "orpha:490": {
     "name": "Quiste onfalo-mesentérico",
@@ -3268,17 +3145,6 @@
       "Diabetes de la edad madura que se presenta en el joven",
       "Diabetes del adulto joven",
       "Diabetes del adulto de inicio juvenil"
-    ]
-  },
-  "orpha:555": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad celíaca",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enteropatía inducida por gluten",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enteropatía sensible al gluten",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Esprúe celíaco",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Esprúe no tropical",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Esteatorrea idiopática",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Intolerancia al gluten"
     ]
   },
   "orpha:556": {
@@ -3673,22 +3539,6 @@
     "name": "Melanoma familiar",
     "synonyms": []
   },
-  "orpha:619": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Fallo ovárico primario",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Menopausia prematura",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Fallo ovárico hipergonadotrópico",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Fallo ovárico prematuro",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Insuficiencia ovárica prematura",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Insuficiencia ovárica primaria"
-    ]
-  },
-  "orpha:620": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Mesenterio común",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Mesenterio universal"
-    ]
-  },
   "orpha:621": {
     "name": "Metahemoglobinemia hereditaria",
     "synonyms": [
@@ -3711,13 +3561,6 @@
     "name": "Nevus flammeus múltiple familiar",
     "synonyms": [
       "Nevo flamigero múltiple familiar"
-    ]
-  },
-  "orpha:625": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Lunar atípico",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Nevo de Clark",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Nevo displásico"
     ]
   },
   "orpha:626": {
@@ -3879,14 +3722,6 @@
     "name": "Deficiencia de LCAT",
     "synonyms": [
       "Deficiencia de lecitina-colesterol-acil-transferasa"
-    ]
-  },
-  "orpha:651": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Nistagmo infantil idiopático",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Nistagmo congénito idiopático",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Nistagmo congénito motor",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de nistagmo infantil"
     ]
   },
   "orpha:652": {
@@ -4140,14 +3975,6 @@
     "synonyms": [
       "Síndrome de bocio-sordera",
       "Síndrome de bocio-hipoacusia"
-    ]
-  },
-  "orpha:706": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterioso persistente",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterioso permeable persistente",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Ductus arterioso persistente",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterial persistente"
     ]
   },
   "orpha:707": {
@@ -4434,10 +4261,6 @@
       "Displasia pseudoacondroplásica"
     ]
   },
-  "orpha:751": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pseudo-deficiencia de arilsulfatasa A",
-    "synonyms": []
-  },
   "orpha:752": {
     "name": "Desarrollo sexual diferente 46,XY por deficiencia de 17-beta-hidroxiesteroide deshidrogenasa",
     "synonyms": [
@@ -4497,13 +4320,6 @@
   "orpha:758": {
     "name": "Pseudoxantoma elástico",
     "synonyms": []
-  },
-  "orpha:759": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pubertad precoz central",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: PPC",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Pubertad precoz dependiente de gonadotropinas"
-    ]
   },
   "orpha:760": {
     "name": "Deficiencia de purina nucleósido fosforilasa",
@@ -4568,13 +4384,6 @@
   "orpha:770": {
     "name": "Rabia",
     "synonyms": []
-  },
-  "orpha:771": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Colitis ulcerosa",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Proctitis ulcerosa",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Proctosigmoiditis ulcerosa"
-    ]
   },
   "orpha:772": {
     "name": "Enfermedad de Refsum infantil",
@@ -4729,12 +4538,6 @@
     "name": "Esclerodermia",
     "synonyms": []
   },
-  "orpha:802": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Esclerosis múltiple",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Esclerosis en placas"
-    ]
-  },
   "orpha:803": {
     "name": "Esclerosis lateral amiotrófica",
     "synonyms": [
@@ -4858,13 +4661,6 @@
       "Osteomielofibrosis"
     ]
   },
-  "orpha:825": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Espondilitis anquilosante",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Espondilitis anquilopoyética",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Bechterew"
-    ]
-  },
   "orpha:826": {
     "name": "Esporotricosis",
     "synonyms": []
@@ -4886,10 +4682,6 @@
       "AOSD",
       "Síndrome de Wissler-Fanconi"
     ]
-  },
-  "orpha:830": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Estucoqueratosis",
-    "synonyms": []
   },
   "orpha:831": {
     "name": "Estenosis espinal cervical congénita",
@@ -5010,21 +4802,6 @@
       "Trombosis venosa portal no cirrótica y no tumoral"
     ]
   },
-  "orpha:855": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Tiroiditis de Hashimoto",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Estruma de Hashimoto",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hipotiroidismo de Hashimoto"
-    ]
-  },
-  "orpha:856": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Tourette",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Tourette",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Gilles de la Tourette",
-      "NO ES ENFERMEDAD RARA EN EUROPA: SGT"
-    ]
-  },
   "orpha:857": {
     "name": "Síndrome de Townes-Brocks",
     "synonyms": [
@@ -5062,10 +4839,6 @@
   },
   "orpha:861": {
     "name": "Síndrome de Treacher-Collins",
-    "synonyms": []
-  },
-  "orpha:862": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Temblor esencial hereditario",
     "synonyms": []
   },
   "orpha:863": {
@@ -5328,12 +5101,6 @@
       "WAS"
     ]
   },
-  "orpha:907": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Wolff-Parkinson-White",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de preexcitación ventricular familiar"
-    ]
-  },
   "orpha:908": {
     "name": "Síndrome X frágil",
     "synonyms": [
@@ -5410,10 +5177,6 @@
   },
   "orpha:922": {
     "name": "Acilia nasal familiar",
-    "synonyms": []
-  },
-  "orpha:924": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Acantosis nigricans",
     "synonyms": []
   },
   "orpha:926": {
@@ -5719,21 +5482,6 @@
       "Osteodistrofia hereditaria de Albright tipo 3",
       "Síndrome de braquidactilia-discapacidad intelectual",
       "Síndrome de osteodistrofia hereditaria similar a Albright"
-    ]
-  },
-  "orpha:1002": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Cefalea en racimos",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Migraña roja",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Neuralgia ciliar",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Neuralgia migrañosa",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Migraña en racimos",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Cefalea histamínica",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Cefalea por histamina",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Dolor de cabeza por histamina",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Eritromelalgia cefálica",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Eritroprosopalgia de Bing",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Dolor de cabeza de Horton"
     ]
   },
   "orpha:1003": {
@@ -6206,10 +5954,6 @@
     "name": "Ascitis quilosa",
     "synonyms": []
   },
-  "orpha:1162": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Asperger",
-    "synonyms": []
-  },
   "orpha:1163": {
     "name": "Aspergilosis",
     "synonyms": []
@@ -6510,10 +6254,6 @@
     "name": "Síndrome de Barber-Say",
     "synonyms": []
   },
-  "orpha:1232": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Esófago de Barrett",
-    "synonyms": []
-  },
   "orpha:1234": {
     "name": "Síndrome de Bartsocas-Papas",
     "synonyms": [
@@ -6562,10 +6302,6 @@
       "Distrofia viteliforme macular tipo 2",
       "Distrofia viteliforme macular de inicio precoz"
     ]
-  },
-  "orpha:1244": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Bicúspide valvular aórtica",
-    "synonyms": []
   },
   "orpha:1245": {
     "name": "Síndrome BIDS",
@@ -6757,12 +6493,6 @@
       "Síndrome MODED",
       "Síndrome ODED",
       "Síndrome de Brunner-Winter"
-    ]
-  },
-  "orpha:1306": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Buschke-Ollendorff",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Dermatofibrosis diseminada con osteopoiquilia"
     ]
   },
   "orpha:1307": {
@@ -7443,13 +7173,6 @@
     "name": "Síndrome de comunicación interauricular con defecto de conducción",
     "synonyms": []
   },
-  "orpha:1480": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Defecto septal ventricular",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Comunicación interventricular",
-      "NO ES ENFERMEDAD RARA EN EUROPA: CIV"
-    ]
-  },
   "orpha:1482": {
     "name": "Conjuntivitis gonocócica",
     "synonyms": []
@@ -7961,13 +7684,6 @@
       "Síndrome de Delleman",
       "Síndrome de Delleman-Oorthuys",
       "Síndrome de Leichtman-Wood-Rohn"
-    ]
-  },
-  "orpha:1648": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Demencia con cuerpos de Lewy",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad difusa con cuerpos de Lewy",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad cortical con cuerpos de Lewy"
     ]
   },
   "orpha:1652": {
@@ -8641,13 +8357,6 @@
     "name": "Síndrome de displasia torácica-hidrocefalia",
     "synonyms": []
   },
-  "orpha:1863": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Displasia troclear",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hipoplasia de la tróclea femoral",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Insuficiencia del surco troclear femoral"
-    ]
-  },
   "orpha:1865": {
     "name": "Displasia disegmentaria tipo Silverman-Handmaker",
     "synonyms": []
@@ -9147,13 +8856,6 @@
     "name": "Síndrome de Fanconi-ictiosis-dismorfia",
     "synonyms": [
       "Síndrome de Deal-Barratt-Dillon"
-    ]
-  },
-  "orpha:1983": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de fatiga crónica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de disfunción inmunitaria por fatiga crónica",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Encefalomielitis miálgica"
     ]
   },
   "orpha:1984": {
@@ -10166,12 +9868,6 @@
     "name": "Hipertriptofanemia familiar",
     "synonyms": []
   },
-  "orpha:2227": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hipodoncia",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Agenesia dental"
-    ]
-  },
   "orpha:2228": {
     "name": "Síndrome de hipodoncia-displasia ungueal",
     "synonyms": [
@@ -10605,10 +10301,6 @@
     "synonyms": [
       "Queratitis hereditaria"
     ]
-  },
-  "orpha:2335": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Queratocono aislado",
-    "synonyms": []
   },
   "orpha:2337": {
     "name": "Queratodermia palmoplantar difusa tipo Botnia",
@@ -12354,10 +12046,6 @@
     "name": "Síndrome oto-ónico-peroneal",
     "synonyms": []
   },
-  "orpha:2794": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Otoespongiosis, forma familiar",
-    "synonyms": []
-  },
   "orpha:2795": {
     "name": "Síndrome de ovarios poliquísticos-disfunción del esfínter uretral",
     "synonyms": [
@@ -12436,12 +12124,6 @@
     "name": "Parálisis facial periférica familiar recurrente",
     "synonyms": [
       "Parálisis familiar recurrente de Bell"
-    ]
-  },
-  "orpha:2810": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Parálisis facial idiopática",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Parálisis de Bell"
     ]
   },
   "orpha:2812": {
@@ -12675,12 +12357,6 @@
     "synonyms": [
       "PJS",
       "Poliposis intestinal hamartomatosa"
-    ]
-  },
-  "orpha:2870": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Peyronie",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Induración plástica del pene"
     ]
   },
   "orpha:2871": {
@@ -13343,10 +13019,6 @@
       "Síndrome de disgenesia caudal"
     ]
   },
-  "orpha:3029": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Riñón en herradura",
-    "synonyms": []
-  },
   "orpha:3032": {
     "name": "Síndrome similar a Meckel asociado a NPHP3",
     "synonyms": [
@@ -13681,13 +13353,6 @@
     "name": "Síndrome SCARF",
     "synonyms": []
   },
-  "orpha:3135": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Scheuermann",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Cifosis juvenil de Scheuermann",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Osteocondrosis espinal"
-    ]
-  },
   "orpha:3137": {
     "name": "Deficiencia de N-acetil-alfa-D-galactosaminidasa",
     "synonyms": [
@@ -13702,10 +13367,6 @@
       "Síndrome de Schinzel",
       "UMS"
     ]
-  },
-  "orpha:3140": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Esquizofrenia, formas genéticas",
-    "synonyms": []
   },
   "orpha:3143": {
     "name": "Poliendocrinopatía autoinmune tipo 2",
@@ -13749,10 +13410,6 @@
     "synonyms": [
       "Hiperostosis cortical sindactilia"
     ]
-  },
-  "orpha:3153": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Escoliosis idiopática del adolescente",
-    "synonyms": []
   },
   "orpha:3156": {
     "name": "Síndrome de Senior-Loken",
@@ -13855,13 +13512,6 @@
   "orpha:3184": {
     "name": "Síndrome de esteatocistoma múltiple-dientes neonatales",
     "synonyms": []
-  },
-  "orpha:3185": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome del ovario poliquístico",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: PCOS",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Stein-Leventhal"
-    ]
   },
   "orpha:3186": {
     "name": "Síndrome de holoprosencefalia-anomalías radiales, cardíacas y renales",
@@ -14336,10 +13986,6 @@
     "synonyms": [
       "Enfermedad de Takayasu"
     ]
-  },
-  "orpha:3289": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Taurodontismo",
-    "synonyms": []
   },
   "orpha:3291": {
     "name": "Síndrome de Teebi-Shaltout",
@@ -14861,10 +14507,6 @@
       "Síndrome de Viljoen-Smart"
     ]
   },
-  "orpha:3435": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Vitíligo",
-    "synonyms": []
-  },
   "orpha:3437": {
     "name": "Enfermedad de Vogt-Koyanagi-Harada",
     "synonyms": [
@@ -15116,10 +14758,6 @@
       "VLCADD"
     ]
   },
-  "orpha:26823": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de dispersión pigmentaria",
-    "synonyms": []
-  },
   "orpha:28378": {
     "name": "Tirosinemia tipo 2",
     "synonyms": [
@@ -15198,10 +14836,6 @@
     "synonyms": [
       "DFSP"
     ]
-  },
-  "orpha:31142": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Liquen erosivo oral",
-    "synonyms": []
   },
   "orpha:31150": {
     "name": "Enfermedad de Tangier",
@@ -15322,12 +14956,6 @@
     "name": "Macroglobulinemia de Waldenström",
     "synonyms": []
   },
-  "orpha:33271": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad del hígado graso no alcohólico",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: NAFLD"
-    ]
-  },
   "orpha:33276": {
     "name": "Sarcoma de Kaposi",
     "synonyms": []
@@ -15368,12 +14996,6 @@
   "orpha:33408": {
     "name": "Liquen plano ampollar",
     "synonyms": []
-  },
-  "orpha:33409": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Liquen escleroso",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Liquen escleroatrófico"
-    ]
   },
   "orpha:33445": {
     "name": "Enfermedad neuroectodérmica melanolisosomal",
@@ -15443,12 +15065,6 @@
       "Queratodermia palmoplantar con miocardiopatía arritmogénica",
       "Queratosis palmoplantar con miocardiopatía arritmogénica",
       "Síndrome de Naxos"
-    ]
-  },
-  "orpha:34412": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome HAIR-AN",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de hiperandrogenia-resistencia a insulina-acantosis nigricans"
     ]
   },
   "orpha:34514": {
@@ -15524,12 +15140,6 @@
       "Deficiencia de CMH de clase I"
     ]
   },
-  "orpha:35056": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Trimetilaminuria",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome del olor a pescado"
-    ]
-  },
   "orpha:35062": {
     "name": "Infección diseminada por citomegalovirus grave en pacientes inmunocompetentes",
     "synonyms": [
@@ -15539,12 +15149,6 @@
   "orpha:35063": {
     "name": "Hepatitis viral fulminante",
     "synonyms": []
-  },
-  "orpha:35066": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Candidiasis mucocutánea idiopática",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Candidosis mucocutánea idiopática"
-    ]
   },
   "orpha:35069": {
     "name": "Distrofia neuroaxonal infantil",
@@ -15807,10 +15411,6 @@
     "name": "Linitis plástica gástrica",
     "synonyms": []
   },
-  "orpha:36297": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Anorexia nerviosa",
-    "synonyms": []
-  },
   "orpha:36355": {
     "name": "Trastorno de sangrado por un defecto de P2Y12",
     "synonyms": [
@@ -15960,10 +15560,6 @@
       "Enfermedad de injerto versus huésped"
     ]
   },
-  "orpha:40050": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Artritis psoriásica",
-    "synonyms": []
-  },
   "orpha:40366": {
     "name": "Embriofetopatía por acitretina/etretinato",
     "synonyms": [
@@ -15985,10 +15581,6 @@
       "Distrofia corneo-retiniana cristalina de Bietti",
       "Retinopatía cristalina de Bietti"
     ]
-  },
-  "orpha:41842": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Fibromialgia",
-    "synonyms": []
   },
   "orpha:42062": {
     "name": "Iminoglicinuria",
@@ -16055,10 +15647,6 @@
     "synonyms": [
       "FEOM"
     ]
-  },
-  "orpha:45360": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Menière",
-    "synonyms": []
   },
   "orpha:45448": {
     "name": "Miopatía de Miyoshi",
@@ -16337,10 +15925,6 @@
     "synonyms": [
       "Síndrome de Verloes-Deprez"
     ]
-  },
-  "orpha:50838": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome del túnel carpiano",
-    "synonyms": []
   },
   "orpha:50839": {
     "name": "Enfermedad por arañazo de gato",
@@ -16816,12 +16400,6 @@
       "Osteítis condensante de la clavícula"
     ]
   },
-  "orpha:57777": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Miocardiopatía cirrótica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Cardiomiopatía cirrótica"
-    ]
-  },
   "orpha:57782": {
     "name": "Síndrome de Mazabraud",
     "synonyms": []
@@ -16837,10 +16415,6 @@
   },
   "orpha:58040": {
     "name": "Osteoblastoma",
-    "synonyms": []
-  },
-  "orpha:58208": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pericarditis",
     "synonyms": []
   },
   "orpha:59135": {
@@ -17071,19 +16645,11 @@
       "Síndrome ICE"
     ]
   },
-  "orpha:64738": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Trombofilia no rara",
-    "synonyms": []
-  },
   "orpha:64739": {
     "name": "Síndrome de hiperestimulación ovárica",
     "synonyms": [
       "SHO"
     ]
-  },
-  "orpha:64740": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pancreatitis aguda recurrente",
-    "synonyms": []
   },
   "orpha:64741": {
     "name": "Blastoma pulmonar",
@@ -17181,12 +16747,6 @@
     "synonyms": [
       "Melanosis de Becker",
       "Nevo epidérmico pigmentado y piloso"
-    ]
-  },
-  "orpha:65250": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Quiste perineural",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Quiste de Tarlov"
     ]
   },
   "orpha:65282": {
@@ -17675,15 +17235,6 @@
       "Artritis recurrente familiar"
     ]
   },
-  "orpha:69127": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de inmunoglobulina A",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de IgA",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de inmunoglobulina A selectiva",
-      "NO ES ENFERMEDAD RARA EN EUROPA: IgAD",
-      "NO ES ENFERMEDAD RARA EN EUROPA: SIgAD"
-    ]
-  },
   "orpha:69663": {
     "name": "Colelitiasis asociada a fosfolípidos bajos",
     "synonyms": [
@@ -18090,12 +17641,6 @@
     "name": "Síndrome de neuropatía visceral-anomalías cerebrales-dismorfia facial-retraso del desarrollo",
     "synonyms": []
   },
-  "orpha:73247": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Esofagitis eosinofílica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: EEo"
-    ]
-  },
   "orpha:73256": {
     "name": "Neurocitoma central",
     "synonyms": []
@@ -18351,10 +17896,6 @@
   },
   "orpha:77240": {
     "name": "Linfedema primario",
-    "synonyms": []
-  },
-  "orpha:77243": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Lipedema",
     "synonyms": []
   },
   "orpha:77258": {
@@ -18675,10 +18216,6 @@
       "Queratodermia palmoplantar numular",
       "Queratosis palmoplantar numular"
     ]
-  },
-  "orpha:79142": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Contractura familiar de Dupuytren",
-    "synonyms": []
   },
   "orpha:79143": {
     "name": "Anoniquia congénita aislada",
@@ -20300,12 +19837,6 @@
       "Atrofia muscular espinal del adulto"
     ]
   },
-  "orpha:83449": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de secreción inapropiada de hormona antidiurética",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: SIADH"
-    ]
-  },
   "orpha:83450": {
     "name": "Odontodisplasia regional",
     "synonyms": [
@@ -20612,15 +20143,6 @@
       "Enfermedad de Addison autoinmune",
       "Enfermedad de Addison clásica",
       "Enfermedad de Addison primaria"
-    ]
-  },
-  "orpha:85142": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Adenoma productor de aldosterona",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Adenoma de Conn",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Adenoma secretor de aldosterona",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Aldosteronismo primario por un adenoma de Conn",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Aldosteronoma"
     ]
   },
   "orpha:85146": {
@@ -21827,12 +21349,6 @@
       "Síndrome de Bartter con hipoacusia neurosensorial",
       "Síndrome de Bartter con sordera neurosensorial",
       "Síndrome de Bartter tipo IV"
-    ]
-  },
-  "orpha:89939": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Acidosis tubular renal hipercaliémica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Acidosis tubular renal tipo 4"
     ]
   },
   "orpha:90000": {
@@ -23299,10 +22815,6 @@
     "name": "Braquidactilia tipo C",
     "synonyms": []
   },
-  "orpha:93385": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Braquidactilia tipo D",
-    "synonyms": []
-  },
   "orpha:93387": {
     "name": "Braquidactilia tipo E",
     "synonyms": []
@@ -23314,13 +22826,6 @@
   "orpha:93389": {
     "name": "Braquidactilia tipo A5",
     "synonyms": []
-  },
-  "orpha:93393": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Braquidactilia tipo A3",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Braquidactilia-clinodactilia",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Braquimesofalangia V"
-    ]
   },
   "orpha:93394": {
     "name": "Braquidactilia tipo A4",
@@ -23659,12 +23164,6 @@
     "name": "Polimiositis juvenil",
     "synonyms": [
       "PM juvenil"
-    ]
-  },
-  "orpha:93569": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Polimialgia reumática",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Pseudopoliartritis rizomélica"
     ]
   },
   "orpha:93571": {
@@ -24049,10 +23548,6 @@
     "name": "Prurito urémico",
     "synonyms": []
   },
-  "orpha:94062": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de enfermedad de la arteria coronaria-hiperlipidemia-hipertensión-diabetes-osteoporosis",
-    "synonyms": []
-  },
   "orpha:94063": {
     "name": "Síndrome de microdeleción 12q14",
     "synonyms": [
@@ -24345,13 +23840,6 @@
       "Constricción prematura del ductus arterioso"
     ]
   },
-  "orpha:95487": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterioso atípico",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterial atípico",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Conducto arterioso persistente atípico"
-    ]
-  },
   "orpha:95488": {
     "name": "Deficiencia no adquirida de hormonas hipofisarias",
     "synonyms": []
@@ -24456,12 +23944,6 @@
       "Diabetes insipida neurogénica adquirida",
       "DIC adquirida",
       "Diabetes insipida central adquirida"
-    ]
-  },
-  "orpha:95698": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hiperplasia suprarrenal congénita no clásica por deficiencia de 21 hidroxilasa",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: NCAH"
     ]
   },
   "orpha:95699": {
@@ -25394,12 +24876,6 @@
       "Demencia del boxeador"
     ]
   },
-  "orpha:97354": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Encefalopatía de Wernicke",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Demencia por deficiencia de tiamina"
-    ]
-  },
   "orpha:97355": {
     "name": "Parkinsonismo caribeño",
     "synonyms": [
@@ -25438,12 +24914,6 @@
       "MCDK bilateral"
     ]
   },
-  "orpha:97365": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Quiste renal solitario",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Quiste renal simple"
-    ]
-  },
   "orpha:97366": {
     "name": "Quiste renal múltiple",
     "synonyms": [
@@ -25478,22 +24948,12 @@
     "name": "Síndrome nefrótico, forma congénita e infantil",
     "synonyms": []
   },
-  "orpha:97557": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Proteinuria crónica con hialinosis focal y segmentaria",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Proteinuria permanente con hialinosis focal y segmentaria sin síndrome nefrótico"
-    ]
-  },
   "orpha:97560": {
     "name": "Glomerulonefritis membranosa primaria",
     "synonyms": [
       "Glomerulonefritis membranosa idiopática",
       "Nefropatía membranosa primaria"
     ]
-  },
-  "orpha:97562": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hematuria familiar benigna",
-    "synonyms": []
   },
   "orpha:97563": {
     "name": "Glomerulonefritis pauciinmune con ANCA",
@@ -26453,10 +25913,6 @@
   },
   "orpha:98681": {
     "name": "Estrabismo raro con síndrome de restricción",
-    "synonyms": []
-  },
-  "orpha:98682": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Estrabismo esencial",
     "synonyms": []
   },
   "orpha:98683": {
@@ -27958,10 +27414,6 @@
       "Aneurisma del septo atrial"
     ]
   },
-  "orpha:99108": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Foramen oval patente",
-    "synonyms": []
-  },
   "orpha:99109": {
     "name": "Vena cava superior izquierda persistente que conecta con la aurícula izquierda a través del seno coronario",
     "synonyms": [
@@ -28079,14 +27531,6 @@
     "name": "Síndrome de Von Willebrand adquirido",
     "synonyms": []
   },
-  "orpha:99151": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Taupatía del hipocampo asociada al envejecimiento cerebral",
-    "synonyms": []
-  },
-  "orpha:99166": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hiperlipoproteinemia familiar combinada",
-    "synonyms": []
-  },
   "orpha:99169": {
     "name": "Epiblefaron",
     "synonyms": []
@@ -28180,10 +27624,6 @@
   },
   "orpha:99657": {
     "name": "Distonía primaria tipo DYT2",
-    "synonyms": []
-  },
-  "orpha:99665": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hernia ventral",
     "synonyms": []
   },
   "orpha:99672": {
@@ -28610,10 +28050,6 @@
       "LMCA-SD en niños con síndrome de Down",
       "LMCA-SD en niños con trisomía 21"
     ]
-  },
-  "orpha:99888": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Adenoma adrenocortical",
-    "synonyms": []
   },
   "orpha:99889": {
     "name": "Síndrome de Cushing por secreción ectópica de ACTH",
@@ -29333,10 +28769,6 @@
   },
   "orpha:100101": {
     "name": "Tumor neuroendocrino con otra localización",
-    "synonyms": []
-  },
-  "orpha:100642": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Gonorrea",
     "synonyms": []
   },
   "orpha:100924": {
@@ -30755,14 +30187,6 @@
       "SCAR9"
     ]
   },
-  "orpha:139498": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hemocromatosis tipo 1",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hemocromatosis C282Y/C282Y",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hemocromatosis asociada a HFE",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hemocromatosis clásica"
-    ]
-  },
   "orpha:139507": {
     "name": "Sobrecarga de hierro tipo africano",
     "synonyms": []
@@ -31751,10 +31175,6 @@
       "L-CMD",
       "Distrofia muscular congénita asociada a LMNA"
     ]
-  },
-  "orpha:157980": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Cáncer de vejiga",
-    "synonyms": []
   },
   "orpha:157987": {
     "name": "Histiocitosis de células no Langerhans",
@@ -33010,14 +32430,6 @@
     "name": "Infecciones recurrentes de Neisseria por deficiencia de factor D",
     "synonyms": []
   },
-  "orpha:169615": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pubertad precoz central idiopática",
-    "synonyms": []
-  },
-  "orpha:169618": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Pubertad precoz central secundaria",
-    "synonyms": []
-  },
   "orpha:169793": {
     "name": "Hemofilia B grave",
     "synonyms": [
@@ -33124,10 +32536,6 @@
       "Insuficiencia del limbo esclerocorneal",
       "Deficiencia de las células progenitoras del limbo esclerocorneal"
     ]
-  },
-  "orpha:171676": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Leucomalacia periventricular",
-    "synonyms": []
   },
   "orpha:171680": {
     "name": "Lisencefalia por una mutación en el gen TUBA1A",
@@ -33507,12 +32915,6 @@
       "Botulismo similar al infantil"
     ]
   },
-  "orpha:178493": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Degeneración macular miópica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Maculopatía miópica"
-    ]
-  },
   "orpha:178503": {
     "name": "Síndrome de Dursun",
     "synonyms": [
@@ -33667,13 +33069,6 @@
   "orpha:180114": {
     "name": "Útero bicorne unicervical",
     "synonyms": []
-  },
-  "orpha:180118": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Útero cordiforme",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Uterus cordiformis",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Útero arcuato"
-    ]
   },
   "orpha:180122": {
     "name": "Útero septo",
@@ -33845,10 +33240,6 @@
       "Enfermedad de Paget del pecho",
       "Enfermedad de Paget mamaria"
     ]
-  },
-  "orpha:180284": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Tumor benigno ductal de la mama",
-    "synonyms": []
   },
   "orpha:180303": {
     "name": "Enfermedad rara no malformativa de los anexos uterinos",
@@ -35236,12 +34627,6 @@
     "name": "Desprendimiento de retina regmatógeno autosómico dominante",
     "synonyms": []
   },
-  "orpha:209893": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia congénita aislada de la globulina de unión a la tiroxina",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia congénita aislada de TBG"
-    ]
-  },
   "orpha:209902": {
     "name": "Hipercolesterolemia por deficiencia de colesterol 7-alfa-hidroxilasa",
     "synonyms": []
@@ -35330,12 +34715,6 @@
     "name": "Síndrome IRIDA",
     "synonyms": [
       "Anemia por deficiencia de hierro resistente al tratamiento por hierro"
-    ]
-  },
-  "orpha:209989": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Carcinoma no papilar de células transicionales de la vejiga",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Carcinoma no papilar urotelial"
     ]
   },
   "orpha:210110": {
@@ -35910,10 +35289,6 @@
       "Síndrome de Hadziselimovic",
       "Síndrome de microcefalia-faciocardioesquelética"
     ]
-  },
-  "orpha:217031": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Obesidad por deficiencia de MC3R",
-    "synonyms": []
   },
   "orpha:217034": {
     "name": "Infertilidad masculina con virilización normal por un error meiótico",
@@ -37561,10 +36936,6 @@
       "TOP"
     ]
   },
-  "orpha:238616": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Alzheimer",
-    "synonyms": []
-  },
   "orpha:238621": {
     "name": "Tratamiento de la incontinencia fecal ligada a una anastomosis íleo-anal con bolsa",
     "synonyms": []
@@ -37731,16 +37102,6 @@
     "synonyms": [
       "AFLP"
     ]
-  },
-  "orpha:243377": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Diabetes mellitus tipo 1",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Diabetes mellitus insulinodependiente"
-    ]
-  },
-  "orpha:243761": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hipertensión esencial",
-    "synonyms": []
   },
   "orpha:244242": {
     "name": "Síndrome HELLP",
@@ -41583,13 +40944,6 @@
       "SCA3 tipo Machado"
     ]
   },
-  "orpha:276271": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hipertiroxinemia disalbuminémica familiar",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Analbuminemia",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Bisalbuminemia"
-    ]
-  },
   "orpha:276280": {
     "name": "Síndrome de hemihiperplasia-lipomatosis múltiple",
     "synonyms": [
@@ -41782,12 +41136,6 @@
       "Trastorno congénito de la glicosilación tipo 1p",
       "Trastorno congénito de la glicosilación tipo Ip",
       "CDG-Ip"
-    ]
-  },
-  "orpha:280110": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad ósea de Paget",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Osteítis deformante"
     ]
   },
   "orpha:280133": {
@@ -42304,10 +41652,6 @@
       "Síndrome poliglandular autoinmune"
     ]
   },
-  "orpha:284130": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Artritis reumatoide",
-    "synonyms": []
-  },
   "orpha:284139": {
     "name": "Síndrome similar al Larsen, tipo B3GAT3",
     "synonyms": [
@@ -42664,12 +42008,6 @@
     "name": "Enfermedad de Sjögren primaria",
     "synonyms": [
       "Síndrome de Sjögren primario"
-    ]
-  },
-  "orpha:289395": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Sjögren secundario",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de Sjögren-Gougerot secundario"
     ]
   },
   "orpha:289465": {
@@ -45334,12 +44672,6 @@
       "Enfermedad de Canavan juvenil"
     ]
   },
-  "orpha:314928": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hidrocefalia de presión normal",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Hidrocefalia crónica del adulto"
-    ]
-  },
   "orpha:314950": {
     "name": "Síndrome hipereosinofílico primario",
     "synonyms": [
@@ -45822,10 +45154,6 @@
       "Deficiencia de dihidrofolato reductasa"
     ]
   },
-  "orpha:319658": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Discapacidad intelectual inexplicada",
-    "synonyms": []
-  },
   "orpha:319667": {
     "name": "Linfoma primario de la conjuntiva",
     "synonyms": [
@@ -45846,32 +45174,6 @@
   },
   "orpha:319678": {
     "name": "Síndrome de encefalopatía-miocardiopatía hipertrófica-enfermedad tubular renal",
-    "synonyms": []
-  },
-  "orpha:319681": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: No persistencia de la lactasa en el adulto",
-    "synonyms": []
-  },
-  "orpha:319684": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Deficiencia de inosina trifosfatasa",
-    "synonyms": []
-  },
-  "orpha:319691": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Ceguera parcial para los colores tipo protan",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Acromatopsia parcial tipo protan",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Protanopía"
-    ]
-  },
-  "orpha:319698": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Ceguera parcial para los colores tipo deutan",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Acromatopsia parcial tipo deutan",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Deuteranopía"
-    ]
-  },
-  "orpha:319705": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Enfermedad de Parkinson",
     "synonyms": []
   },
   "orpha:319719": {
@@ -46748,10 +46050,6 @@
       "Amiloidosis ATTRwt"
     ]
   },
-  "orpha:330006": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Telangiectasia macular tipo 2",
-    "synonyms": []
-  },
   "orpha:330012": {
     "name": "Edema pulmonar de gran altitud",
     "synonyms": [
@@ -47188,12 +46486,6 @@
     "name": "Amiloidosis cutánea primaria familiar localizada",
     "synonyms": [
       "FPLCA"
-    ]
-  },
-  "orpha:353225": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Glaucoma primario de ángulo abierto del adulto",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: GPPA"
     ]
   },
   "orpha:353253": {
@@ -49743,10 +49035,6 @@
       "CRVO"
     ]
   },
-  "orpha:411533": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Melanoma",
-    "synonyms": []
-  },
   "orpha:411536": {
     "name": "Hiperactividad leve de la fosforibosilpirofosfato sintetasa",
     "synonyms": [
@@ -49824,10 +49112,6 @@
     "name": "Tricomegalia familiar aislada",
     "synonyms": []
   },
-  "orpha:411969": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome metabólico",
-    "synonyms": []
-  },
   "orpha:411986": {
     "name": "Síndrome de encefalopatía epiléptica-ceguera cortical-discapacidad intelectual-dismorfia facial de inicio precoz",
     "synonyms": [
@@ -49898,26 +49182,10 @@
       "Hendidura craneofacial genética"
     ]
   },
-  "orpha:415268": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Adenocarcinoma de pulmón",
-    "synonyms": []
-  },
   "orpha:415286": {
     "name": "Encefalopatía bilirrubínica",
     "synonyms": [
       "Kernícterus"
-    ]
-  },
-  "orpha:415300": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Neuropatía óptica isquémica anterior no arterítica",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: NOIANA"
-    ]
-  },
-  "orpha:415687": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de muerte súbita del lactante",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: SMSL"
     ]
   },
   "orpha:418945": {
@@ -50134,10 +49402,6 @@
   },
   "orpha:423662": {
     "name": "Trastorno del sistema nervioso autónomo raro",
-    "synonyms": []
-  },
-  "orpha:423668": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Tumor suprarrenal productor de cortisol",
     "synonyms": []
   },
   "orpha:423693": {
@@ -51514,10 +50778,6 @@
     "name": "Hipotensión ortostática primaria genética",
     "synonyms": []
   },
-  "orpha:449262": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Malabsorción primaria de ácidos biliares",
-    "synonyms": []
-  },
   "orpha:449266": {
     "name": "Empiema pleural",
     "synonyms": []
@@ -51864,10 +51124,6 @@
       "Síndrome de Smith-Kingsmore"
     ]
   },
-  "orpha:458713": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Trastorno específico del lenguaje",
-    "synonyms": []
-  },
   "orpha:458718": {
     "name": "Disección coronaria espontánea idiopática",
     "synonyms": [
@@ -51989,14 +51245,6 @@
     "name": "Malformación venosa genética rara",
     "synonyms": []
   },
-  "orpha:459690": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Disforia de género",
-    "synonyms": []
-  },
-  "orpha:459696": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Escoliosis juvenil idiopática",
-    "synonyms": []
-  },
   "orpha:459787": {
     "name": "Anomalías congénitas múltiples/síndrome dismórfico letal",
     "synonyms": []
@@ -52012,10 +51260,6 @@
     "synonyms": [
       "SBIDDS"
     ]
-  },
-  "orpha:464293": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Hemangioma capilar infantil",
-    "synonyms": []
   },
   "orpha:464306": {
     "name": "Síndrome de discapacidad intelectual asociado al gen DYRK1A",
@@ -52094,12 +51338,6 @@
     "name": "Intoxicación por paracetamol",
     "synonyms": []
   },
-  "orpha:464463": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Adenocarcinoma del estómago",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: Adenocarcinoma gástrico"
-    ]
-  },
   "orpha:464724": {
     "name": "Síndrome de insuficiencia hepática aguda infantil asociada a fiebre",
     "synonyms": [
@@ -52160,16 +51398,8 @@
     "name": "Enfermedad rara con hipertermia maligna",
     "synonyms": []
   },
-  "orpha:466667": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Cáncer colorrectal",
-    "synonyms": []
-  },
   "orpha:466670": {
     "name": "Intoxicación por cianuro",
-    "synonyms": []
-  },
-  "orpha:466673": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Neuralgia postherpética",
     "synonyms": []
   },
   "orpha:466677": {
@@ -52898,12 +52128,6 @@
   "orpha:488197": {
     "name": "Síndrome de distrofia retiniana progresiva-coloboma de iris-catarata congénita familiar",
     "synonyms": []
-  },
-  "orpha:488201": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Cáncer de pulmón de células no pequeñas",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: CPCNP"
-    ]
   },
   "orpha:488232": {
     "name": "Síndrome de malformación de pie hendido-polidactilia mesoaxial",
@@ -54107,10 +53331,6 @@
       "Síndrome SINO"
     ]
   },
-  "orpha:521399": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Obesidad no rara",
-    "synonyms": []
-  },
   "orpha:521406": {
     "name": "Síndrome de distonía-parkinsonismo-hipermanganesemia",
     "synonyms": []
@@ -54438,13 +53658,6 @@
       "CBE",
       "Trastorno del espectro del kernícterus",
       "KSD"
-    ]
-  },
-  "orpha:529819": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de exfoliación",
-    "synonyms": [
-      "NO ES ENFERMEDAD RARA EN EUROPA: SXF",
-      "NO ES ENFERMEDAD RARA EN EUROPA: Síndrome de pseudoexfoliación"
     ]
   },
   "orpha:529831": {
@@ -56504,10 +55717,6 @@
   },
   "orpha:619340": {
     "name": "Síndrome de predisposición al cáncer hematológico hereditario",
-    "synonyms": []
-  },
-  "orpha:619360": {
-    "name": "NO ES ENFERMEDAD RARA EN EUROPA: Persistencia hereditaria de hemoglobina fetal aislada",
     "synonyms": []
   },
   "orpha:619363": {

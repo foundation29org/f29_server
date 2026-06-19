@@ -846,15 +846,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:106",
-    "orphaCode": "106",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:107",
     "orphaCode": "107",
     "prevalence": {
@@ -970,15 +961,6 @@
       "source": "European Medicines Agency 2011[INST]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:120",
-    "orphaCode": "120",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:122",
@@ -1242,15 +1224,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:155",
-    "orphaCode": "155",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:156",
     "orphaCode": "156",
     "prevalence": {
@@ -1312,15 +1285,6 @@
       "source": "34789084[PMID]_36287435[PMID]_ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:164",
-    "orphaCode": "164",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:165",
@@ -1656,15 +1620,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:206",
-    "orphaCode": "206",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:207",
     "orphaCode": "207",
     "prevalence": {
@@ -1816,15 +1771,6 @@
       "source": "20546293[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:225",
-    "orphaCode": "225",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:226",
@@ -2241,15 +2187,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:279",
-    "orphaCode": "279",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:280",
     "orphaCode": "280",
     "prevalence": {
@@ -2619,15 +2556,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:323",
-    "orphaCode": "323",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:324",
     "orphaCode": "324",
     "prevalence": {
@@ -2734,15 +2662,6 @@
       "source": "National haemophilia foundation[OTHER]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:336",
-    "orphaCode": "336",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:337",
@@ -2898,15 +2817,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:357",
-    "orphaCode": "357",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:358",
     "orphaCode": "358",
     "prevalence": {
@@ -2941,15 +2851,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:362",
-    "orphaCode": "362",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:364",
@@ -3069,15 +2970,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:378",
-    "orphaCode": "378",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:379",
     "orphaCode": "379",
     "prevalence": {
@@ -3143,15 +3035,6 @@
   {
     "id": "orpha:386",
     "orphaCode": "386",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:387",
-    "orphaCode": "387",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -3303,15 +3186,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:406",
-    "orphaCode": "406",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:407",
     "orphaCode": "407",
     "prevalence": {
@@ -3355,15 +3229,6 @@
       "source": "21354122[PMID]_24314366[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:413",
-    "orphaCode": "413",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:414",
@@ -3454,15 +3319,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:426",
-    "orphaCode": "426",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:427",
@@ -3663,24 +3519,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:462",
-    "orphaCode": "462",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:463",
-    "orphaCode": "463",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:464",
     "orphaCode": "464",
     "prevalence": {
@@ -3816,15 +3654,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:484",
-    "orphaCode": "484",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:485",
     "orphaCode": "485",
     "prevalence": {
@@ -3859,15 +3688,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:489",
-    "orphaCode": "489",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:490",
@@ -4354,15 +4174,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:555",
-    "orphaCode": "555",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:556",
@@ -4869,24 +4680,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:619",
-    "orphaCode": "619",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:620",
-    "orphaCode": "620",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:621",
     "orphaCode": "621",
     "prevalence": {
@@ -4916,15 +4709,6 @@
   {
     "id": "orpha:624",
     "orphaCode": "624",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:625",
-    "orphaCode": "625",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -5137,15 +4921,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:651",
-    "orphaCode": "651",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:652",
@@ -5506,15 +5281,6 @@
       "source": "[EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:706",
-    "orphaCode": "706",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:707",
@@ -5895,15 +5661,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:751",
-    "orphaCode": "751",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:752",
     "orphaCode": "752",
     "prevalence": {
@@ -5965,15 +5722,6 @@
       "source": "22209248[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:759",
-    "orphaCode": "759",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:760",
@@ -6064,15 +5812,6 @@
       "source": "[EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:771",
-    "orphaCode": "771",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:772",
@@ -6300,15 +6039,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:802",
-    "orphaCode": "802",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:803",
     "orphaCode": "803",
     "prevalence": {
@@ -6480,15 +6210,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:825",
-    "orphaCode": "825",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:826",
     "orphaCode": "826",
     "prevalence": {
@@ -6523,15 +6244,6 @@
       "source": "ORPHANET_16467042[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:830",
-    "orphaCode": "830",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:831",
@@ -6705,24 +6417,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:855",
-    "orphaCode": "855",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:856",
-    "orphaCode": "856",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:857",
     "orphaCode": "857",
     "prevalence": {
@@ -6766,15 +6460,6 @@
       "source": "6024864[PMID]_14198411[PMID]_ [EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:862",
-    "orphaCode": "862",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:863",
@@ -7119,15 +6804,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:907",
-    "orphaCode": "907",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:908",
     "orphaCode": "908",
     "prevalence": {
@@ -7234,15 +6910,6 @@
       "source": "ORPHANET_4002006[PMID]_8813877[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:924",
-    "orphaCode": "924",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:926",
@@ -7684,15 +7351,6 @@
       "source": "36833393[PMID]_ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:1002",
-    "orphaCode": "1002",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:1003",
@@ -8433,15 +8091,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:1162",
-    "orphaCode": "1162",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:1163",
     "orphaCode": "1163",
     "prevalence": {
@@ -8883,15 +8532,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:1232",
-    "orphaCode": "1232",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:1234",
     "orphaCode": "1234",
     "prevalence": {
@@ -8953,15 +8593,6 @@
       "source": "ORPHANET_22633354[PMID]_4448697[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:1244",
-    "orphaCode": "1244",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:1245",
@@ -9259,15 +8890,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:1306",
-    "orphaCode": "1306",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:1307",
@@ -10251,15 +9873,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:1480",
-    "orphaCode": "1480",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:1482",
     "orphaCode": "1482",
     "prevalence": {
@@ -10987,15 +10600,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:1648",
-    "orphaCode": "1648",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:1652",
@@ -12015,15 +11619,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:1863",
-    "orphaCode": "1863",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:1865",
     "orphaCode": "1865",
     "prevalence": {
@@ -12728,15 +12323,6 @@
   {
     "id": "orpha:1981",
     "orphaCode": "1981",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:1983",
-    "orphaCode": "1983",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -14274,15 +13860,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:2227",
-    "orphaCode": "2227",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:2228",
     "orphaCode": "2228",
     "prevalence": {
@@ -14938,15 +14515,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:2335",
-    "orphaCode": "2335",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:2337",
@@ -17559,15 +17127,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:2794",
-    "orphaCode": "2794",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:2795",
     "orphaCode": "2795",
     "prevalence": {
@@ -17674,15 +17233,6 @@
       "source": "38435234[PMID]_ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:2810",
-    "orphaCode": "2810",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:2812",
@@ -18052,15 +17602,6 @@
       "source": "24260271[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:2870",
-    "orphaCode": "2870",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:2871",
@@ -19035,15 +18576,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:3029",
-    "orphaCode": "3029",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:3032",
     "orphaCode": "3032",
     "prevalence": {
@@ -19575,15 +19107,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:3135",
-    "orphaCode": "3135",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:3137",
     "orphaCode": "3137",
     "prevalence": {
@@ -19600,15 +19123,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:3140",
-    "orphaCode": "3140",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:3143",
@@ -19663,15 +19177,6 @@
       "source": "ORPHANET_20301406[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:3153",
-    "orphaCode": "3153",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:3156",
@@ -19843,15 +19348,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:3185",
-    "orphaCode": "3185",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:3186",
@@ -20527,15 +20023,6 @@
       "source": "ORPHANET_27159262[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:3289",
-    "orphaCode": "3289",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:3291",
@@ -21366,15 +20853,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:3435",
-    "orphaCode": "3435",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:3437",
     "orphaCode": "3437",
     "prevalence": {
@@ -21717,15 +21195,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:26823",
-    "orphaCode": "26823",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:28378",
     "orphaCode": "28378",
     "prevalence": {
@@ -21814,15 +21283,6 @@
       "source": "[EXPERT]_European Medicines Agency[INST]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:31142",
-    "orphaCode": "31142",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:31150",
@@ -22032,15 +21492,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:33271",
-    "orphaCode": "33271",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:33276",
     "orphaCode": "33276",
     "prevalence": {
@@ -22093,15 +21544,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:33409",
-    "orphaCode": "33409",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:33445",
@@ -22194,15 +21636,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:34412",
-    "orphaCode": "34412",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:34514",
     "orphaCode": "34514",
     "prevalence": {
@@ -22293,15 +21726,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:35056",
-    "orphaCode": "35056",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:35062",
     "orphaCode": "35062",
     "prevalence": {
@@ -22313,15 +21737,6 @@
   {
     "id": "orpha:35063",
     "orphaCode": "35063",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:35066",
-    "orphaCode": "35066",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -22689,15 +22104,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:36297",
-    "orphaCode": "36297",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:36355",
     "orphaCode": "36355",
     "prevalence": {
@@ -22896,15 +22302,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:40050",
-    "orphaCode": "40050",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:40366",
     "orphaCode": "40366",
     "prevalence": {
@@ -22930,15 +22327,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:41842",
-    "orphaCode": "41842",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:42062",
@@ -23047,15 +22435,6 @@
       "source": "ORPHANET_9797671[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:45360",
-    "orphaCode": "45360",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:45448",
@@ -23465,15 +22844,6 @@
   {
     "id": "orpha:50817",
     "orphaCode": "50817",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:50838",
-    "orphaCode": "50838",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -24174,15 +23544,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:57777",
-    "orphaCode": "57777",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:57782",
     "orphaCode": "57782",
     "prevalence": {
@@ -24203,15 +23564,6 @@
   {
     "id": "orpha:58040",
     "orphaCode": "58040",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:58208",
-    "orphaCode": "58208",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -24570,15 +23922,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:64738",
-    "orphaCode": "64738",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:64739",
     "orphaCode": "64739",
     "prevalence": {
@@ -24586,15 +23929,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:64740",
-    "orphaCode": "64740",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:64741",
@@ -24721,15 +24055,6 @@
       "source": "ORPHANET_26265883[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:65250",
-    "orphaCode": "65250",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:65282",
@@ -25488,15 +24813,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:69127",
-    "orphaCode": "69127",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:69663",
     "orphaCode": "69663",
     "prevalence": {
@@ -26109,15 +25425,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:73247",
-    "orphaCode": "73247",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:73256",
     "orphaCode": "73256",
     "prevalence": {
@@ -26467,15 +25774,6 @@
       "source": "[EXPERT]_24212289[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:77243",
-    "orphaCode": "77243",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:77258",
@@ -26971,15 +26269,6 @@
       "source": "ORPHANET_646376[PMID]_3812560[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:79142",
-    "orphaCode": "79142",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:79143",
@@ -29223,15 +28512,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:83449",
-    "orphaCode": "83449",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:83450",
     "orphaCode": "83450",
     "prevalence": {
@@ -29671,15 +28951,6 @@
       "source": "21164269[PMID]_12788587[PMID]_ [EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:85142",
-    "orphaCode": "85142",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:85146",
@@ -31507,15 +30778,6 @@
       "source": "ORPHANET_[EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:89939",
-    "orphaCode": "89939",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:90000",
@@ -33777,15 +33039,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:93385",
-    "orphaCode": "93385",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:93387",
     "orphaCode": "93387",
     "prevalence": {
@@ -33806,15 +33059,6 @@
   {
     "id": "orpha:93389",
     "orphaCode": "93389",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:93393",
-    "orphaCode": "93393",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -34400,15 +33644,6 @@
   {
     "id": "orpha:93568",
     "orphaCode": "93568",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:93569",
-    "orphaCode": "93569",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -35037,15 +34272,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:94062",
-    "orphaCode": "94062",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:94063",
     "orphaCode": "94063",
     "prevalence": {
@@ -35496,15 +34722,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:95487",
-    "orphaCode": "95487",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:95488",
     "orphaCode": "95488",
     "prevalence": {
@@ -35701,15 +34918,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:95698",
-    "orphaCode": "95698",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:95699",
@@ -37026,15 +36234,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:97354",
-    "orphaCode": "97354",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:97355",
     "orphaCode": "97355",
     "prevalence": {
@@ -37087,15 +36286,6 @@
       "source": "[EXPERT]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:97365",
-    "orphaCode": "97365",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:97366",
@@ -37161,15 +36351,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:97557",
-    "orphaCode": "97557",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:97560",
     "orphaCode": "97560",
     "prevalence": {
@@ -37177,15 +36358,6 @@
       "source": "21068142[PMID]_34593809[PMID]_ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:97562",
-    "orphaCode": "97562",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:97563",
@@ -39062,15 +38234,6 @@
   {
     "id": "orpha:98681",
     "orphaCode": "98681",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:98682",
-    "orphaCode": "98682",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -41427,15 +40590,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:99108",
-    "orphaCode": "99108",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:99109",
     "orphaCode": "99109",
     "prevalence": {
@@ -41652,24 +40806,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:99151",
-    "orphaCode": "99151",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:99166",
-    "orphaCode": "99166",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:99169",
     "orphaCode": "99169",
     "prevalence": {
@@ -41857,15 +40993,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:99665",
-    "orphaCode": "99665",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:99672",
@@ -42518,15 +41645,6 @@
   {
     "id": "orpha:99887",
     "orphaCode": "99887",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:99888",
-    "orphaCode": "99888",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -43706,15 +42824,6 @@
   {
     "id": "orpha:100101",
     "orphaCode": "100101",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:100642",
-    "orphaCode": "100642",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -46143,15 +45252,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:139498",
-    "orphaCode": "139498",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:139507",
     "orphaCode": "139507",
     "prevalence": {
@@ -47707,15 +46807,6 @@
       "source": "ORPHANET_28125586[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:157980",
-    "orphaCode": "157980",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:157987",
@@ -49770,24 +48861,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:169615",
-    "orphaCode": "169615",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:169618",
-    "orphaCode": "169618",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:169793",
     "orphaCode": "169793",
     "prevalence": {
@@ -49966,15 +49039,6 @@
       "source": "European Medicines Agency 2018[INST]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:171676",
-    "orphaCode": "171676",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:171680",
@@ -50598,15 +49662,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:178493",
-    "orphaCode": "178493",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:178503",
     "orphaCode": "178503",
     "prevalence": {
@@ -50879,15 +49934,6 @@
   {
     "id": "orpha:180114",
     "orphaCode": "180114",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:180118",
-    "orphaCode": "180118",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -51217,15 +50263,6 @@
       "source": "RARECARE surveillance of rare cancers in Europe[REG]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:180284",
-    "orphaCode": "180284",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:180303",
@@ -53874,15 +52911,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:209893",
-    "orphaCode": "209893",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:209902",
     "orphaCode": "209902",
     "prevalence": {
@@ -54025,15 +53053,6 @@
       "source": "ORPHANET_28491880[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:209989",
-    "orphaCode": "209989",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:210110",
@@ -54889,15 +53908,6 @@
       "source": "ORPHANET_11152145[PMID]_19373080[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:217031",
-    "orphaCode": "217031",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:217034",
@@ -57321,15 +56331,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:238616",
-    "orphaCode": "238616",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:238621",
     "orphaCode": "238621",
     "prevalence": {
@@ -57566,24 +56567,6 @@
   {
     "id": "orpha:243367",
     "orphaCode": "243367",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:243377",
-    "orphaCode": "243377",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:243761",
-    "orphaCode": "243761",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -63171,15 +62154,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:276271",
-    "orphaCode": "276271",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:276280",
     "orphaCode": "276280",
     "prevalence": {
@@ -63502,15 +62476,6 @@
       "source": "ORPHANET_28122681[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:280110",
-    "orphaCode": "280110",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:280133",
@@ -64278,15 +63243,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:284130",
-    "orphaCode": "284130",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:284139",
     "orphaCode": "284139",
     "prevalence": {
@@ -64807,15 +63763,6 @@
       "source": "24938285[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:289395",
-    "orphaCode": "289395",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:289465",
@@ -68886,15 +67833,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:314928",
-    "orphaCode": "314928",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:314950",
     "orphaCode": "314950",
     "prevalence": {
@@ -69588,15 +68526,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:319658",
-    "orphaCode": "319658",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:319667",
     "orphaCode": "319667",
     "prevalence": {
@@ -69631,51 +68560,6 @@
       "source": "ORPHANET_11562630[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:319681",
-    "orphaCode": "319681",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:319684",
-    "orphaCode": "319684",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:319691",
-    "orphaCode": "319691",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:319698",
-    "orphaCode": "319698",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:319705",
-    "orphaCode": "319705",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:319719",
@@ -70947,15 +69831,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:330006",
-    "orphaCode": "330006",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:330012",
     "orphaCode": "330012",
     "prevalence": {
@@ -71602,15 +70477,6 @@
       "source": "ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:353225",
-    "orphaCode": "353225",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:353253",
@@ -75492,15 +74358,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:411533",
-    "orphaCode": "411533",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:411536",
     "orphaCode": "411536",
     "prevalence": {
@@ -75618,15 +74475,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:411969",
-    "orphaCode": "411969",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:411986",
     "orphaCode": "411986",
     "prevalence": {
@@ -75726,15 +74574,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:415268",
-    "orphaCode": "415268",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:415286",
     "orphaCode": "415286",
     "prevalence": {
@@ -75742,24 +74581,6 @@
       "source": "15254556[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:415300",
-    "orphaCode": "415300",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:415687",
-    "orphaCode": "415687",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:418945",
@@ -76070,15 +74891,6 @@
   {
     "id": "orpha:423662",
     "orphaCode": "423662",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:423668",
-    "orphaCode": "423668",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
@@ -78228,15 +77040,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:449262",
-    "orphaCode": "449262",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:449266",
     "orphaCode": "449266",
     "prevalence": {
@@ -78822,15 +77625,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:458713",
-    "orphaCode": "458713",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:458718",
     "orphaCode": "458718",
     "prevalence": {
@@ -79056,24 +77850,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:459690",
-    "orphaCode": "459690",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:459696",
-    "orphaCode": "459696",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:459787",
     "orphaCode": "459787",
     "prevalence": {
@@ -79099,15 +77875,6 @@
       "source": "ORPHANET_26437029[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:464293",
-    "orphaCode": "464293",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:464306",
@@ -79236,15 +78003,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:464463",
-    "orphaCode": "464463",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:464724",
     "orphaCode": "464724",
     "prevalence": {
@@ -79353,15 +78111,6 @@
     "status": "partial"
   },
   {
-    "id": "orpha:466667",
-    "orphaCode": "466667",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:466670",
     "orphaCode": "466670",
     "prevalence": {
@@ -79369,15 +78118,6 @@
       "source": "ORPHANET_7662055[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:466673",
-    "orphaCode": "466673",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:466677",
@@ -80566,15 +79306,6 @@
       "source": "ORPHANET_26056285[PMID]"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:488201",
-    "orphaCode": "488201",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:488232",
@@ -82611,15 +81342,6 @@
     "status": "verified"
   },
   {
-    "id": "orpha:521399",
-    "orphaCode": "521399",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
     "id": "orpha:521406",
     "orphaCode": "521406",
     "prevalence": {
@@ -83230,15 +81952,6 @@
       "source": "15466085[PMID]_ORPHANET"
     },
     "status": "verified"
-  },
-  {
-    "id": "orpha:529819",
-    "orphaCode": "529819",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
   },
   {
     "id": "orpha:529831",
@@ -86483,15 +85196,6 @@
   {
     "id": "orpha:619340",
     "orphaCode": "619340",
-    "prevalence": {
-      "value": null,
-      "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
-    },
-    "status": "partial"
-  },
-  {
-    "id": "orpha:619360",
-    "orphaCode": "619360",
     "prevalence": {
       "value": null,
       "source": "No prevalence record for this ORPHAcode in Orphadata product 9 prevalence file"
