@@ -22,7 +22,8 @@
     "mongoose": "^8.23.0",
     "nodemailer": "^8.0.2",
     "nodemailer-express-handlebars": "^7.0.0",
-    "openai": "^4.47.1"
+    "openai": "^4.47.1",
+    "stripe": "^22.2.2"
   },
   "devDependencies": {
     "jasmine": "^6.1.0",

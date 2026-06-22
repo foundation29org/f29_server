@@ -105,6 +105,108 @@ async function getStats() {
   }
 }
 
+const PENDING_MATCH_MS = () =>
+  Math.max(1, Number(config.STRIPE_SPONSORSHIP_MATCH_HOURS) || 72) * 60 * 60 * 1000
+
+function extractDonorEmailFromCharge(charge = {}) {
+  const metadata = charge.metadata || {}
+  const fromMeta = String(metadata.donorbox_email || metadata.donor_email || '').trim().toLowerCase()
+  if (fromMeta) return fromMeta
+  return String(charge.billing_details?.email || '').trim().toLowerCase()
+}
+
+function isApadrinaDonorboxCharge(charge = {}) {
+  const description = String(charge.description || '').toLowerCase()
+  if (description.includes('apadrina')) return true
+  const slug = String(config.DONORBOX_APADRINA_SLUG || '').toLowerCase().replace(/-/g, ' ')
+  return Boolean(slug && description.includes(slug))
+}
+
+function chargePaidAmountEur(charge = {}) {
+  const cents = Number(charge.amount)
+  if (!Number.isFinite(cents) || cents <= 0) return null
+  return Math.round(cents / 100)
+}
+
+function pickPendingSponsorship(pendingList, paidAmountEur) {
+  if (pendingList.length === 1) return pendingList[0]
+  if (paidAmountEur != null) {
+    const byAmount = pendingList.filter((doc) => doc.amount === paidAmountEur)
+    if (byAmount.length === 1) return byAmount[0]
+    if (byAmount.length > 1) return byAmount[0]
+  }
+  return pendingList[0]
+}
+
+async function confirmFromStripeCharge(charge = {}) {
+  const chargeId = String(charge.id || '').trim()
+  if (!chargeId) {
+    return { error: 'missing_charge_id' }
+  }
+
+  if (charge.paid !== true && charge.status !== 'succeeded') {
+    return { ignored: true, reason: 'not_paid' }
+  }
+
+  if (!isApadrinaDonorboxCharge(charge)) {
+    return { ignored: true, reason: 'not_apadrina' }
+  }
+
+  const existing = await Sponsorship.findOne({
+    donorboxDonationId: chargeId,
+    status: 'confirmed',
+  })
+  if (existing) {
+    return {
+      sponsorship: { id: String(existing._id), status: existing.status },
+      alreadyConfirmed: true,
+    }
+  }
+
+  const donorEmail = extractDonorEmailFromCharge(charge)
+  if (!donorEmail) {
+    return { ignored: true, reason: 'missing_email' }
+  }
+
+  const since = new Date(Date.now() - PENDING_MATCH_MS())
+  const pendingList = await Sponsorship.find({
+    status: 'pending',
+    donorEmailHash: hashEmail(donorEmail),
+    createdAt: { $gte: since },
+  })
+  pendingList.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+
+  if (pendingList.length === 0) {
+    return { ignored: true, reason: 'no_pending' }
+  }
+
+  const paidAmountEur = chargePaidAmountEur(charge)
+  const doc = pickPendingSponsorship(pendingList, paidAmountEur)
+
+  if (doc.status === 'confirmed') {
+    return {
+      sponsorship: { id: String(doc._id), status: doc.status },
+      alreadyConfirmed: true,
+    }
+  }
+
+  doc.status = 'confirmed'
+  doc.confirmedAt = new Date()
+  doc.donorboxDonationId = chargeId
+  if (paidAmountEur != null) {
+    doc.amount = paidAmountEur
+  }
+  await doc.save()
+
+  return {
+    sponsorship: {
+      id: String(doc._id),
+      status: doc.status,
+    },
+    source: 'stripe_charge',
+  }
+}
+
 async function confirmFromWebhook(payload = {}) {
   const sponsorshipId = String(payload.sponsorshipId || payload.metadata?.sponsorshipId || '').trim()
   const donorboxDonationId = String(payload.donorboxDonationId || payload.donation_id || payload.id || '').trim()
@@ -141,5 +243,6 @@ module.exports = {
   createSponsorship,
   getStats,
   confirmFromWebhook,
+  confirmFromStripeCharge,
   hashEmail,
 }

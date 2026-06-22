@@ -1,5 +1,6 @@
 'use strict'
 
+const Stripe = require('stripe')
 const sponsorshipService = require('../services/sponsorshipService')
 const config = require('../config')
 
@@ -57,8 +58,46 @@ function donorboxWebhook(req, res) {
     })
 }
 
+function stripeWebhook(req, res) {
+  const secret = config.STRIPE_WEBHOOK_SECRET
+  if (!secret) {
+    console.error('STRIPE_WEBHOOK_SECRET is not configured')
+    return res.status(503).json({ error: 'stripe_webhook_not_configured' })
+  }
+
+  const signature = req.get('stripe-signature')
+  if (!signature) {
+    return res.status(400).json({ error: 'missing_stripe_signature' })
+  }
+
+  let event
+  try {
+    event = Stripe.webhooks.constructEvent(req.body, signature, secret)
+  } catch (error) {
+    console.error('Stripe webhook signature verification failed:', error.message)
+    return res.status(400).json({ error: 'invalid_stripe_signature' })
+  }
+
+  if (event.type !== 'charge.succeeded') {
+    return res.json({ received: true, ignored: true, type: event.type })
+  }
+
+  sponsorshipService.confirmFromStripeCharge(event.data.object)
+    .then((result) => {
+      if (result.error === 'missing_charge_id') {
+        return res.status(400).json({ error: result.error })
+      }
+      return res.json(result)
+    })
+    .catch((error) => {
+      console.error('Stripe webhook error:', error.message)
+      res.status(500).json({ error: 'stripe_webhook_failed' })
+    })
+}
+
 module.exports = {
   createSponsorship,
   getStats,
   donorboxWebhook,
+  stripeWebhook,
 }
