@@ -7,6 +7,7 @@ const express = require('express')
 const compression = require('compression');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
+const sponsorshipsCtrl = require('./controllers/sponsorships')
 const app = express()
 app.use(compression());
 const api = require ('./routes')
@@ -31,6 +32,13 @@ function setCrossDomain(req, res, next) {
     res.status(401).json({ error: 'Origin not allowed' });
   }
 }
+
+// Stripe webhooks require the raw body for signature verification.
+app.post(
+  '/api/sponsorships/webhook/stripe',
+  bodyParser.raw({ type: 'application/json', limit: '1mb' }),
+  sponsorshipsCtrl.stripeWebhook,
+)
 
 app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
 app.use(bodyParser.json({limit: '10mb'}))
