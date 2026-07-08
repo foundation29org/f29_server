@@ -64,7 +64,7 @@ function trimText(text) {
 
 async function extractWithDocumentIntelligence(buffer, contentType) {
   const modelId = 'prebuilt-layout';
-  const apiVersion = '2023-10-31-preview';
+  const apiVersion = '2024-11-30';
   const analyzeUrl =
     `${FORM_RECOGNIZER_ENDPOINT}/documentintelligence/documentModels/${modelId}:analyze` +
     `?_overload=analyzeDocument&api-version=${apiVersion}&outputContentFormat=markdown`;

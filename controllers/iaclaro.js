@@ -137,7 +137,7 @@ async function form_recognizer(userId, documentId, containerName, url) {
 	  const url2 = `https://${accountname}.blob.core.windows.net/${containerName}/${url}${sas}`;
 	  const modelId = "prebuilt-layout";
 	  const endpoint = form_recognizer_endpoint;
-	  const apiVersion = "2023-10-31-preview";
+	  const apiVersion = "2024-11-30";
 	  const analyzeUrl =
 		`${endpoint}/documentintelligence/documentModels/${modelId}:analyze` +
 		`?_overload=analyzeDocument&api-version=${apiVersion}&outputContentFormat=markdown`;
