@@ -22,12 +22,12 @@
     "mongoose": "^8.24.3",
     "nodemailer": "^9.0.5",
     "nodemailer-express-handlebars": "^7.0.0",
-    "openai": "^4.47.1",
     "stripe": "^22.2.2"
   },
   "devDependencies": {
     "jasmine": "^6.1.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "unpdf": "^1.8.1"
   },
   "volta": {
     "node": "22.14.0"

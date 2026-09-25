@@ -1,198 +1,97 @@
+const axios = require('axios')
 const config = require('../config')
-const axios = require('axios');
-const Question = require('../models/question')
-const { OpenAI } = require("openai");
-const openai = new OpenAI({
-  apiKey: config.OPENAI_API_KEY,
-  // Node 22 native fetch — avoids node-fetch ERR_STREAM_PREMATURE_CLOSE in Azure Container Apps
-  fetch: globalThis.fetch,
-});
 
+const AZURE_OPENAI_BASE_URL = `https://${config.OPENAI_API_BASE}.openai.azure.com/openai/deployments`
+const SEARCH = config.AZURE_SEARCH
+const TOP_CHUNKS = 8
 
-function callBook2(req, res) {
-  var jsonText = req.body;
-  //const functionUrl = `http://127.0.0.1:7071/api/HttpTrigger2?code=${config.functionKey}`;
-  const functionUrl = `https://af29.azurewebsites.net/api/HttpTrigger2?code=${config.functionKey}`;
-  axios.post(functionUrl, jsonText)
-    .then(async response => {
-      try {
-        // const jsonObject = JSON.parse(response.data.table);
-        let question = new Question()
-        question.question = jsonText.question
-        question.isComplexSearch = jsonText.isComplexSearch
-        question.response = response.data
-        question.save((err, questionStored) => {
-          if (err) {
-            console.log(err)
-          }
-        })
-        res.status(200).send(response.data)
-      } catch (error) {
-        console.log(error)
-        var respu = {
-          "msg": 'error',
-          "status": 500
-        }
-        res.status(500).send(respu)
-      }
-
-    })
-    .catch(error => {
-      console.error(error);
-      var respu = {
-        "msg": 'error',
-        "status": 500
-      }
-      res.status(500).send(respu)
-    });
+const BOOK_TITLES = {
+  libro: '¿Por qué mi hijo tiene una enfermedad rara?',
+  guia: 'Guía de Signos y Síntomas de Sospecha de Enfermedades Raras (Junta de Extremadura)'
 }
 
-async function callBook(req, res) {
+async function embedQuestion(question) {
+  const url = `${AZURE_OPENAI_BASE_URL}/${config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT}/embeddings?api-version=${config.BOOKS_OPENAI_API_VERSION}`
+  const response = await axios.post(url, { input: question }, {
+    headers: { 'Content-Type': 'application/json', 'api-key': config.OPENAI_API_KEY2 },
+    timeout: 30000
+  })
+  return response.data.data[0].embedding
+}
+
+async function searchBook(book, question) {
+  const vector = await embedQuestion(question)
+  const url = `${SEARCH.ENDPOINT}/indexes/${SEARCH.INDEX_BOOKS}/docs/search?api-version=2024-07-01`
+  const response = await axios.post(url, {
+    search: question,
+    filter: `book eq '${book}'`,
+    top: TOP_CHUNKS,
+    select: 'content,page',
+    vectorQueries: [{ kind: 'vector', vector, fields: 'contentVector', k: TOP_CHUNKS }]
+  }, {
+    headers: { 'Content-Type': 'application/json', 'api-key': SEARCH.KEY },
+    timeout: 30000
+  })
+  return response.data.value
+}
+
+function buildMessages(book, question, chunks, lang, isComplexSearch) {
+  const language = lang === 'es' ? 'Spanish' : 'English'
+  const noAnswer = lang === 'es' ? 'No sé' : "I don't know"
+  const detail = isComplexSearch
+    ? 'The user has chosen a complex search. Explain the answer in detail but make sure it is easy to understand.'
+    : 'The user has chosen a simple search. You can give a short answer, but make sure it is easy to understand.'
+  const context = chunks.map(c => `[Page ${c.page}]\n${c.content}`).join('\n\n---\n\n')
+
+  return [
+    {
+      role: 'system',
+      content: `You answer questions about the book "${BOOK_TITLES[book]}" using ONLY the excerpts provided. ` +
+        `If the excerpts do not contain the answer, reply exactly "${noAnswer}" and nothing else. ` +
+        `${detail} Do NEVER repeat the question in the answer. ` +
+        `ALWAYS and ONLY use HTML tags and HTML formatting to make the answer readable and visually appealing, inside a single <div> for an Angular app (no markdown, no code fences). ` +
+        `When useful, mention the page numbers you relied on. Answer in ${language}.`
+    },
+    {
+      role: 'user',
+      content: `Book excerpts:\n\n${context}\n\nQuestion from the user: ${question}`
+    }
+  ]
+}
+
+async function askBook(book, req, res) {
   try {
-    var jsonText = req.body;
-
-    let promtInLang = 'Give me the answer in english'
-    if(jsonText.lang == 'es'){
-      promtInLang = 'Give me the answer in spanish'
+    const { question, lang, isComplexSearch } = req.body
+    if (typeof question !== 'string' || !question.trim()) {
+      return res.status(400).send({ msg: 'question is required', status: 400 })
     }
 
-    let prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a complex search of the book. You must be very careful with the answer. Explain the answer in detail but make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. '+promtInLang+' Answer formatted as HTML inside a div for Angular app:';
-    let messages = [
-      {
-        role: 'user',
-        content: prompt,
-      },
-    ];
-    if (!jsonText.isComplexSearch) {
-      prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a simple search of the book. You can answer with a short answer. But make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. '+promtInLang+' Answer formatted as HTML inside a div for Angular app:';
-    }
-    const thread = await openai.beta.threads.create({
-      messages: messages,
-    });
+    const chunks = await searchBook(book, question)
+    const url = `${AZURE_OPENAI_BASE_URL}/${config.BOOKS_OPENAI_DEPLOYMENT}/chat/completions?api-version=${config.BOOKS_OPENAI_API_VERSION}`
+    const response = await axios.post(url, {
+      messages: buildMessages(book, question, chunks, lang, isComplexSearch),
+      temperature: 0.2,
+      max_completion_tokens: isComplexSearch ? 2500 : 1200
+    }, {
+      headers: { 'Content-Type': 'application/json', 'api-key': config.OPENAI_API_KEY2 },
+      timeout: 90000
+    })
 
-    let threadId = thread.id;
-    console.log('Created thread with Id: ' + threadId);
-
-    const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
-      assistant_id: config.ASSISTANT_ID_BOOK,
-      additional_instructions: '',
-    });
-
-    console.log('Run finished with status: ' + run.status);
-
-    if (run.status == 'completed') {
-      const messages = await openai.beta.threads.messages.list(thread.id);
-      let response = messages.getPaginatedItems()[0].content[0].text.value;
-      console.log(response)
-      res.status(200).send({ data: response })
-      for (const message of messages.getPaginatedItems()) {
-        console.log(message);
-      }
-    } else {
-      throw new Error("The run did not complete successfully.");
-    }
+    const answer = response.data?.choices?.[0]?.message?.content?.trim() || ''
+    res.status(200).send({ data: answer })
   } catch (error) {
-    console.error('Error occurred:', error);
-    var respu = {
-      "msg": 'error',
-      "status": 500
-    }
-    res.status(500).send(respu)
-    
+    console.error(`Error occurred in ${book}:`, error.response?.data || error.message)
+    res.status(500).send({ msg: 'error', status: 500 })
   }
 }
 
-function callguia2(req, res) {
-  var jsonText = req.body;
-  const functionUrl = `http://127.0.0.1:7071/api/guia?code=${config.functionKey}`;
-  //const functionUrl = `https://af29.azurewebsites.net/api/guia?code=${config.functionKey}`;
-  axios.post(functionUrl, jsonText)
-    .then(async response => {
-      try {
-        // const jsonObject = JSON.parse(response.data.table);
-        let question = new Question()
-        question.question = jsonText.question
-        question.isComplexSearch = jsonText.isComplexSearch
-        question.response = response.data
-        question.save((err, questionStored) => {
-          if (err) {
-            console.log(err)
-          }
-        })
-        res.status(200).send(response.data)
-      } catch (error) {
-        console.log(error)
-        var respu = {
-          "msg": 'error',
-          "status": 500
-        }
-        res.status(500).send(respu)
-      }
-
-    })
-    .catch(error => {
-      console.error(error);
-      var respu = {
-        "msg": 'error',
-        "status": 500
-      }
-      res.status(500).send(respu)
-    });
+function callBook(req, res) {
+  return askBook('libro', req, res)
 }
 
-async function callguia(req, res) {
-  try {
-    var jsonText = req.body;
-    
-    let promtInLang = 'Give me the answer in english.'
-    if(jsonText.lang == 'es'){
-      promtInLang = 'Give me the answer in spanish.'
-    }
-    let prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a complex search of the book. You must be very careful with the answer. Explain the answer in detail but make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. '+promtInLang+' Answer formatted as HTML inside a div for Angular app:';
-    let messages = [
-      {
-        role: 'user',
-        content: prompt,
-      },
-    ];
-    if (!jsonText.isComplexSearch) {
-      prompt = 'This is the question from the user: ' + jsonText.question + ' The user has chosen a simple search of the book. You can answer with a short answer. But make sure that is easy to understand. Do NEVER return the question as part of the answer. Also ALWAYS and ONLY use HTML tags and HTML formating to make the answer more readable and visually appealing. '+promtInLang+' Answer formatted as HTML inside a div for Angular app:';
-    }
-    const thread = await openai.beta.threads.create({
-      messages: messages,
-    });
-
-    let threadId = thread.id;
-    console.log('Created thread with Id: ' + threadId);
-
-    const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
-      assistant_id: config.ASSISTANT_ID_GUIA,
-      additional_instructions: '',
-    });
-
-    console.log('Run finished with status: ' + run.status);
-
-    if (run.status == 'completed') {
-      const messages = await openai.beta.threads.messages.list(thread.id);
-      let response = messages.getPaginatedItems()[0].content[0].text.value;
-      console.log(response)
-      res.status(200).send({ data: response })
-      for (const message of messages.getPaginatedItems()) {
-        console.log(message);
-      }
-    } else {
-      throw new Error("The run did not complete successfully.");
-    }
-  } catch (error) {
-    console.error('Error occurred:', error);
-    var respu = {
-      "msg": 'error',
-      "status": 500
-    }
-    res.status(500).send(respu)
-  }
+function callguia(req, res) {
+  return askBook('guia', req, res)
 }
-
 
 module.exports = {
   callBook,
