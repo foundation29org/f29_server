@@ -1,0 +1,21 @@
+INFORME DE NEUROLOGIA (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+
+Paciente: T.H.G. (ficticio). Varon, 52 años.
+Fecha: 28/08/2026
+
+Diagnostico: Esclerosis lateral amiotrofica de inicio espinal (miembro superior derecho). Diagnostico en 02/2026.
+
+Dependencia: tiene reconocido Grado II (resolucion 06/2026). Ha solicitado revision de grado, pendiente de valoracion.
+
+Evolucion: ALSFRS-R 40/48 (febrero 2026) -> 29/48 (agosto 2026). Perdida de funcion en ambos miembros superiores. Precisa ayuda para vestido, aseo y alimentacion. Deambula con baston y supervision.
+
+Respiratorio: CVF 68%. VMNI nocturna desde 07/2026.
+Deglucion: conservada.
+
+Ingresos urgentes: ninguno en los ultimos 12 meses.
+
+Tratamiento: riluzol. No existe tratamiento curativo.
+
+Pronostico: enfermedad irreversible y progresiva con reduccion de la supervivencia.
+
+Dr. J. Ficticio. Neurologo.

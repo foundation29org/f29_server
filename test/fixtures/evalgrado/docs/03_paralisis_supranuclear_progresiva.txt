@@ -1,0 +1,29 @@
+INFORME CLINICO (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+Neurologia - Consulta de Trastornos del Movimiento
+
+Paciente: C.G.M. (ficticio). Mujer, 72 años.
+Fecha: 25/08/2026
+
+Juicio clinico: Paralisis supranuclear progresiva (PSP), sindrome de Richardson. Diagnostico en 2024.
+Dependencia: Grado III reconocido (resolucion de 10/01/2026).
+
+Evolucion en los ultimos 6 meses:
+- Febrero 2026: marcha con andador y supervision. PSP Rating Scale 38.
+- Julio 2026: imposibilidad de marcha y bipedestacion. PSP Rating Scale 56.
+- Ha perdido autonomia para transferencias, aseo, vestido y alimentacion (4 ABVD) en 5 meses. Barthel 45 -> 5.
+
+Deglucion: disfagia grave con atragantamientos diarios. Gastrostomia (PEG) colocada el 14/07/2026.
+
+Respiratorio: sin insuficiencia respiratoria. No precisa ventilacion.
+
+Ingresos urgentes ultimos 12 meses:
+1) 12/2025 - Traumatismo craneoencefalico por caida.
+2) 05/2026 - Neumonia por broncoaspiracion.
+
+Tratamiento: no existe tratamiento eficaz que modifique la evolucion. Ensayo con levodopa sin respuesta.
+
+Pronostico: enfermedad neurodegenerativa progresiva irreversible con reduccion significativa de la esperanza de vida.
+
+Cuidados: precisa atencion continua por dos cuidadores para movilizaciones, alimentacion por PEG, prevencion de caidas y de aspiraciones.
+
+Dra. C. Ficticia. Neurologa.

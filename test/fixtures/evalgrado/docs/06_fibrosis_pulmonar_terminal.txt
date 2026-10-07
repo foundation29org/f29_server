@@ -1,0 +1,22 @@
+INFORME DE NEUMOLOGIA (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+Unidad de Enfermedades Pulmonares Intersticiales
+
+Paciente: A.V.N. (ficticio). Varon, 74 años.
+Fecha: 05/09/2026
+
+Diagnostico: Fibrosis pulmonar idiopatica (FPI), patron NIU en TCAR, diagnostico en 2021.
+Dependencia: Grado III reconocido (resolucion de 03/2026).
+
+Funcion pulmonar: CVF 41% (marzo 2026: 55%). DLCO no realizable. Caida de CVF del 14% en 6 meses.
+Oxigenoterapia continua domiciliaria 24 h a 4-6 L/min con concentrador y oxigeno portatil. Desaturacion grave con minimos esfuerzos.
+
+Funcionalidad: hasta marzo de 2026 independiente para aseo y vestido. Actualmente precisa ayuda para aseo, vestido y deambulacion dentro del domicilio por disnea de reposo (mMRC 4).
+
+Exacerbaciones agudas con ingreso urgente (ultimos 12 meses):
+- 10/2025, 02/2026 y 07/2026 (la ultima con ingreso en UCI respiratoria).
+
+Tratamiento: nintedanib suspendido en 05/2026 por intolerancia y progresion. No candidato a trasplante pulmonar por edad y comorbilidad. No existen alternativas terapeuticas eficaces.
+
+Pronostico: enfermedad irreversible con mal pronostico vital a corto-medio plazo. Seguimiento compartido con cuidados paliativos.
+
+Dr. F. Ficticio. Neumologo.
