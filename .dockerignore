@@ -9,6 +9,7 @@ npm-debug.log*
 jasmine.json
 spec
 test
+docs
 .git
 .gitignore
 .github

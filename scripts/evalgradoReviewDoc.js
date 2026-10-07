@@ -2,7 +2,7 @@
 
 // Builds a self-contained Markdown review document for the clinical reviewer from the latest
 // synthetic run of a deployment.
-// Usage (from server/): node scripts/evalgradoReviewDoc.js [--deployment gpt-5.4-mini] [--out ../docs/evalgrado/REVISION_DAVID.md]
+// Usage (from server/): node scripts/evalgradoReviewDoc.js [--deployment gpt-5.4-mini] [--out ../docs/evalgrado/REVISION_DAVID.md]  (relative to scripts/)
 
 const fs = require('fs');
 const path = require('path');
@@ -29,7 +29,7 @@ function latestRunDir(deployment) {
 
 function main() {
   const deployment = arg('--deployment', config.EVALGRADO_OPENAI_DEPLOYMENT);
-  const out = path.resolve(__dirname, arg('--out', '../../docs/evalgrado/REVISION_DAVID.md'));
+  const out = path.resolve(__dirname, arg('--out', '../docs/evalgrado/REVISION_DAVID.md'));
   const { cases } = JSON.parse(fs.readFileSync(path.join(FIXTURES_DIR, 'cases.json'), 'utf8'));
   const run = latestRunDir(deployment);
 
