@@ -7,6 +7,8 @@ npm-debug.log*
 .env*
 *.test.js
 jasmine.json
+spec
+test
 .git
 .gitignore
 .github
