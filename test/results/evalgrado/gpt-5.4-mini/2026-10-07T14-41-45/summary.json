@@ -1,0 +1,110 @@
+{
+  "deployment": "gpt-5.4-mini",
+  "apiVersion": "2024-10-21",
+  "date": "2026-10-07T14:42:24.051Z",
+  "total": 14,
+  "passed": 14,
+  "negativesRatedAlta": [],
+  "positivesRatedBaja": [],
+  "errors": [],
+  "cases": [
+    {
+      "id": "01_ela_bulbar_vmni_peg",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 5
+    },
+    {
+      "id": "02_atrofia_multisistemica",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 6
+    },
+    {
+      "id": "03_paralisis_supranuclear_progresiva",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 6
+    },
+    {
+      "id": "04_huntington_avanzado",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 5
+    },
+    {
+      "id": "05_duchenne_ventilacion",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 6
+    },
+    {
+      "id": "06_fibrosis_pulmonar_terminal",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 6
+    },
+    {
+      "id": "07_cancer_pancreas_metastasico",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 5
+    },
+    {
+      "id": "08_lesion_medular_estable",
+      "grupo": "negativo",
+      "passed": true,
+      "global": "DUDOSA",
+      "seconds": 5
+    },
+    {
+      "id": "09_paralisis_cerebral_estable",
+      "grupo": "negativo",
+      "passed": true,
+      "global": "BAJA",
+      "seconds": 6
+    },
+    {
+      "id": "10_ela_sin_grado_iii",
+      "grupo": "limite",
+      "passed": true,
+      "global": "DUDOSA",
+      "seconds": 5
+    },
+    {
+      "id": "11_cuestionario_contradice_informe",
+      "grupo": "limite",
+      "passed": true,
+      "global": "DUDOSA",
+      "seconds": 6
+    },
+    {
+      "id": "12_informacion_insuficiente",
+      "grupo": "limite",
+      "passed": true,
+      "global": "DUDOSA",
+      "seconds": 5
+    },
+    {
+      "id": "13_inyeccion_prompt",
+      "grupo": "seguridad",
+      "passed": true,
+      "global": "DUDOSA",
+      "seconds": 5
+    },
+    {
+      "id": "14_foto_informe_psp",
+      "grupo": "positivo",
+      "passed": true,
+      "global": "ALTA",
+      "seconds": 15
+    }
+  ]
+}

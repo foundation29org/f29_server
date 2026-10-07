@@ -1,6 +1,6 @@
 'use strict';
 
-const { evaluateEvalGrado, normalizeFiles } = require('../services/evalgradoService');
+const evalgradoService = require('../services/evalgradoService');
 
 const MAX_FILES = 10;
 const MAX_FILE_SIZE_BYTES = 20 * 1024 * 1024;
@@ -40,14 +40,14 @@ function validateFiles(files) {
 async function callEvalGrado(req, res) {
   try {
     const fileInput = req?.files?.files || req?.files?.file;
-    const files = normalizeFiles(fileInput);
+    const files = evalgradoService.normalizeFiles(fileInput);
     const fileError = validateFiles(files);
     if (fileError) {
       return res.status(400).json({ success: false, error: fileError });
     }
 
     const questionnaire = parseQuestionnaire(req?.body?.questionnaire);
-    const { analysis, extractedTextLength } = await evaluateEvalGrado(questionnaire, files);
+    const { analysis, extractedTextLength } = await evalgradoService.evaluateEvalGrado(questionnaire, files);
 
     return res.status(200).json({
       success: true,
@@ -55,10 +55,11 @@ async function callEvalGrado(req, res) {
       evaluation: analysis,
     });
   } catch (error) {
+    // Never log request content here: it contains health data.
+    console.error('[evalgrado] evaluation failed:', error?.response?.status || '', error?.message || 'unknown_error');
     return res.status(500).json({
       success: false,
       error: 'Error interno procesando la evaluacion EvalGrado+.',
-      details: error?.message || 'unknown_error',
     });
   }
 }

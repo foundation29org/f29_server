@@ -1,0 +1,131 @@
+{
+  "id": "04_huntington_avanzado",
+  "grupo": "positivo",
+  "revisar": "Evolucion de años, pero empeoramiento reciente documentado. ¿'Progresion rapida' se cumple?",
+  "seconds": 5,
+  "extractedTextLength": 1347,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "ALTA | DUDOSA",
+      "obtenido": "ALTA",
+      "ok": true,
+      "evidencia": "Varón de 54 años con enfermedad de Huntington confirmada genéticamente y diagnosticada en fase avanzada. Tiene reconocido Grado III de gran dependencia desde 2022. La documentación describe estadio V de Shoulson-Fahn, TFC 0/13, encamamiento desde abril de 2026, dependencia total en todas las ABVD, disfagia grave con gastrostomía y nutrición enteral exclusiva, complicaciones graves recurrentes y necesidad de cuidados continuos en domicilio. El pronóstico se describe como limitado y la enfermedad como irreversible."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe señala 'enfermedad neurodegenerativa irreversible en fase avanzada, supervivencia limitada' y diagnóstico de enfermedad de Huntington confirmada genéticamente."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El documento indica: 'No existe tratamiento que frene la progresion de la enfermedad.' El cuestionario también refiere 'tratamientoEficaz: No'."
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Se describen 'cuidados de enfermeria domiciliaria, curas, alimentacion por PEG, cambios posturales cada 2 horas, cuidador 24 h'."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "En los últimos 6 meses ha habido 'pérdida de sedestación autónoma y de la capacidad de alimentarse por boca', además de encamamiento desde abril de 2026 y pérdida de peso del 18% en el último año."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "La documentación indica que en los últimos 6 meses ha perdido la sedestación autónoma y la capacidad de alimentarse por boca, y además presenta dependencia total en todas las ABVD."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Constan al menos tres eventos en 12 meses: 01/2026 neumonía aspirativa con sepsis, 04/2026 neumonía aspirativa y 08/2026 úlcera por presión sacra grado IV infectada."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Presenta gastrostomía colocada el 03/05/2026 y nutrición enteral exclusiva. Requiere cambios posturales cada 2 horas y cuidador 24 h."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "ALTA",
+    "resumen_paciente": "Varón de 54 años con enfermedad de Huntington confirmada genéticamente y diagnosticada en fase avanzada. Tiene reconocido Grado III de gran dependencia desde 2022. La documentación describe estadio V de Shoulson-Fahn, TFC 0/13, encamamiento desde abril de 2026, dependencia total en todas las ABVD, disfagia grave con gastrostomía y nutrición enteral exclusiva, complicaciones graves recurrentes y necesidad de cuidados continuos en domicilio. El pronóstico se describe como limitado y la enfermedad como irreversible.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia.",
+        "recomendacion": "Mantener documentacion acreditativa del reconocimiento de Grado III."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe señala 'enfermedad neurodegenerativa irreversible en fase avanzada, supervivencia limitada' y diagnóstico de enfermedad de Huntington confirmada genéticamente.",
+        "recomendacion": "Aportar este informe como evidencia principal del carácter irreversible y del pronóstico limitado."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento indica: 'No existe tratamiento que frene la progresion de la enfermedad.' El cuestionario también refiere 'tratamientoEficaz: No'.",
+        "recomendacion": "Conservar la anotación clínica sobre ausencia de tratamiento modificador de la enfermedad."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se describen 'cuidados de enfermeria domiciliaria, curas, alimentacion por PEG, cambios posturales cada 2 horas, cuidador 24 h'.",
+        "recomendacion": "Dejar constancia de la necesidad de apoyo sociosanitario continuado y del recurso cuidador 24 horas."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "CUMPLIDO",
+        "evidencia": "En los últimos 6 meses ha habido 'pérdida de sedestación autónoma y de la capacidad de alimentarse por boca', además de encamamiento desde abril de 2026 y pérdida de peso del 18% en el último año.",
+        "recomendacion": "Solicitar tramitación prioritaria por el deterioro reciente y documentado."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "CUMPLIDO",
+        "evidencia": "La documentación indica que en los últimos 6 meses ha perdido la sedestación autónoma y la capacidad de alimentarse por boca, y además presenta dependencia total en todas las ABVD.",
+        "recomendacion": "Aportar informe funcional actualizado si se dispone, aunque la evidencia ya es suficiente."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "CUMPLIDO",
+        "evidencia": "Constan al menos tres eventos en 12 meses: 01/2026 neumonía aspirativa con sepsis, 04/2026 neumonía aspirativa y 08/2026 úlcera por presión sacra grado IV infectada.",
+        "recomendacion": "Mantener el registro de ingresos/urgencias y, si es posible, adjuntar informes hospitalarios."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "Presenta gastrostomía colocada el 03/05/2026 y nutrición enteral exclusiva. Requiere cambios posturales cada 2 horas y cuidador 24 h.",
+        "recomendacion": "Documentar la dependencia de nutrición artificial y el soporte continuo en domicilio."
+      }
+    ],
+    "borrador_medico": "Paciente con enfermedad de Huntington confirmada genéticamente, en estadio muy avanzado (Shoulson-Fahn V, TFC 0/13), con Grado III de gran dependencia reconocido. Presenta evolución irreversible con supervivencia limitada, pérdida funcional marcada en menos de 6 meses, dependencia total para ABVD, encamamiento, disfagia grave con gastrostomía y nutrición enteral exclusiva. Ha sufrido complicaciones graves recurrentes en el último año, incluyendo neumonía aspirativa con sepsis, neumonía aspirativa y úlcera por presión infectada. Precisa cuidados sociosanitarios complejos continuados en domicilio, enfermería, curas, soporte nutricional por PEG, cambios posturales y cuidador 24 horas.",
+    "siguiente_paso": "Emitir o incorporar informe médico detallado para apoyar la solicitud de agilización/valoración prioritaria, adjuntando el reconocimiento de Grado III y la documentación de hospitalizaciones, disfagia, gastrostomía y dependencia funcional total."
+  }
+}

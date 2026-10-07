@@ -1,0 +1,24 @@
+INFORME DE ONCOLOGIA MEDICA (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+
+Paciente: L.D.C. (ficticio). Mujer, 58 años.
+Fecha: 20/09/2026
+
+Diagnostico: Adenocarcinoma de pancreas estadio IV con metastasis hepaticas y peritoneales. Diagnostico en 09/2025.
+Dependencia: Grado III reconocido por procedimiento de urgencia en 07/2026.
+
+Tratamiento oncologico:
+- 1.ª linea FOLFIRINOX (10/2025 - 03/2026): progresion.
+- 2.ª linea gemcitabina + nab-paclitaxel (04/2026 - 07/2026): progresion.
+Sin opciones de tratamiento antineoplasico con beneficio. Se decide tratamiento sintomatico exclusivo.
+
+Situacion funcional: ECOG 4 desde agosto 2026 (previamente ECOG 1 en marzo 2026). Encamada, dependencia total para todas las ABVD.
+
+Nutricion: obstruccion intestinal maligna inoperable. Nutricion parenteral domiciliaria por reservorio desde 08/2026.
+
+Ingresos urgentes (12 meses): colangitis (01/2026), obstruccion intestinal (06/2026), tromboembolismo pulmonar (08/2026).
+
+Pronostico: supervivencia estimada inferior a 6 meses.
+
+Cuidados: seguimiento por equipo de cuidados paliativos domiciliarios, control del dolor con perfusion subcutanea, manejo de nutricion parenteral.
+
+Dra. G. Ficticia. Oncologa.

@@ -1,0 +1,131 @@
+{
+  "id": "01_ela_bulbar_vmni_peg",
+  "grupo": "positivo",
+  "revisar": "Caso de referencia. Debe salir ALTA. Comprobar que el borrador cita ALSFRS-R, CVF, VMNI y PEG con fechas correctas.",
+  "seconds": 5,
+  "extractedTextLength": 2397,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "ALTA",
+      "obtenido": "ALTA",
+      "ok": true,
+      "evidencia": "Paciente con esclerosis lateral amiotrófica (ELA) de inicio bulbar, diagnosticada y con Grado III de gran dependencia ya reconocido. La evolución documentada muestra progresión rápida en 10 meses, pérdida funcional severa en ABVD, dependencia total, necesidad de VMNI >16 horas al día y nutrición enteral exclusiva por PEG. Presenta dos ingresos urgentes no programados en 12 meses y pronóstico de enfermedad irreversible con reducción significativa de la supervivencia."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El documento señala: 'Enfermedad irreversible con reduccion significativa de la supervivencia'."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "CUMPLIDO | PARCIAL",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Se indica: 'No existe tratamiento curativo ni modificador eficaz de la progresion. No candidata a ensayos clinicos activos.'"
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Precisa 'cuidador las 24 horas, manejo de VMNI, aspiracion de secreciones, cuidados de PEG, cambios posturales y grua', además de seguimiento por ESAD."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Se documenta 'Perdida de 24 puntos en ALSFRS-R en 10 meses (progresion rapida, tasa aproximada 2,4 puntos/mes)' y empeoramiento funcional marcado en 6 meses."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "En los ultimos 6 meses ha pasado a 'dependencia total para alimentacion, aseo, vestido, transferencias y uso del retrete (5 ABVD)'; Barthel 55 en marzo 2026 a 0 en septiembre 2026."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Constan dos ingresos urgentes no programados en los últimos 12 meses: neumonía por aspiración en 03/2026 e insuficiencia respiratoria hipercápnica aguda en 07/2026."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Se documenta 'Ventilacion mecanica no invasiva (VMNI) ... uso nocturno y diurno, mas de 16 horas al dia' y 'Nutricion enteral exclusiva' mediante PEG."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "ALTA",
+    "resumen_paciente": "Paciente con esclerosis lateral amiotrófica (ELA) de inicio bulbar, diagnosticada y con Grado III de gran dependencia ya reconocido. La evolución documentada muestra progresión rápida en 10 meses, pérdida funcional severa en ABVD, dependencia total, necesidad de VMNI >16 horas al día y nutrición enteral exclusiva por PEG. Presenta dos ingresos urgentes no programados en 12 meses y pronóstico de enfermedad irreversible con reducción significativa de la supervivencia.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia.",
+        "recomendacion": "Mantener documentacion acreditativa del reconocimiento de Grado III."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento señala: 'Enfermedad irreversible con reduccion significativa de la supervivencia'.",
+        "recomendacion": "Dejar constancia del pronóstico en el expediente para justificar la priorización asistencial."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se indica: 'No existe tratamiento curativo ni modificador eficaz de la progresion. No candidata a ensayos clinicos activos.'",
+        "recomendacion": "Registrar que el manejo es exclusivamente sintomático y de soporte."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "CUMPLIDO",
+        "evidencia": "Precisa 'cuidador las 24 horas, manejo de VMNI, aspiracion de secreciones, cuidados de PEG, cambios posturales y grua', además de seguimiento por ESAD.",
+        "recomendacion": "Mantener coordinación con atención domiciliaria, neumología, nutrición y cuidados de enfermería."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se documenta 'Perdida de 24 puntos en ALSFRS-R en 10 meses (progresion rapida, tasa aproximada 2,4 puntos/mes)' y empeoramiento funcional marcado en 6 meses.",
+        "recomendacion": "Usar esta evidencia para justificar tramitación y revisión preferente."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "CUMPLIDO",
+        "evidencia": "En los ultimos 6 meses ha pasado a 'dependencia total para alimentacion, aseo, vestido, transferencias y uso del retrete (5 ABVD)'; Barthel 55 en marzo 2026 a 0 en septiembre 2026.",
+        "recomendacion": "Aportar este cambio funcional en la solicitud como indicador objetivo de extrema dependencia."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "CUMPLIDO",
+        "evidencia": "Constan dos ingresos urgentes no programados en los últimos 12 meses: neumonía por aspiración en 03/2026 e insuficiencia respiratoria hipercápnica aguda en 07/2026.",
+        "recomendacion": "Adjuntar informes de alta hospitalaria para acreditar la recurrencia y gravedad."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se documenta 'Ventilacion mecanica no invasiva (VMNI) ... uso nocturno y diurno, mas de 16 horas al dia' y 'Nutricion enteral exclusiva' mediante PEG.",
+        "recomendacion": "Mantener prescripción y seguimiento del soporte ventilatorio y nutricional como criterio operativo de extrema dependencia."
+      }
+    ],
+    "borrador_medico": "Paciente con ELA bulbar confirmada, con Grado III de gran dependencia reconocido. Presenta enfermedad irreversible con pronóstico de reducción significativa de supervivencia y ausencia de tratamiento modificador eficaz. La evolución es rápida, con pérdida funcional objetiva severa en menos de 6 meses, Barthel de 55 a 0 y dependencia total para múltiples ABVD. Requiere cuidados complejos continuados en domicilio, VMNI >16 h/día, aspiración de secreciones, PEG con nutrición enteral exclusiva, y ha tenido dos ingresos urgentes no programados por complicaciones respiratorias en los últimos 12 meses. Conjunto de criterios compatible con dependencia extrema y priorización asistencial.",
+    "siguiente_paso": "Si se va a tramitar o revisar la situación, aportar la resolución de Grado III, el informe de neurología, los ingresos hospitalarios y la documentación de VMNI y PEG para respaldar la valoración de extrema dependencia."
+  }
+}

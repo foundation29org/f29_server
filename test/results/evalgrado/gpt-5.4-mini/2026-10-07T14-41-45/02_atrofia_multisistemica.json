@@ -1,0 +1,131 @@
+{
+  "id": "02_atrofia_multisistemica",
+  "grupo": "positivo",
+  "revisar": "Patologia parecida a ELA (neurodegenerativa sin tratamiento modificador). ¿Encaja clinicamente en Grado III+?",
+  "seconds": 6,
+  "extractedTextLength": 1692,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "ALTA | DUDOSA",
+      "obtenido": "ALTA",
+      "ok": true,
+      "evidencia": "Varón de 66 años con atrofia multisistémica (AMS-C) probable, diagnosticada en 2023, con Grado III reconocido en 2025. Presenta deterioro funcional marcado y rápido entre marzo y agosto de 2026, con pérdida completa de la deambulación y necesidad de ayuda total para ABVD. Tiene disfagia orofaríngea grave con sonda nasogástrica, estridor nocturno con CPAP, hipotensión ortostática grave con síncopes e ingresos urgentes repetidos por fractura y neumonías aspirativas. La enfermedad se describe como neurodegenerativa, progresiva e irreversible, sin tratamiento modificador eficaz."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El documento describe la atrofia multisistémica como \"enfermedad neurodegenerativa progresiva e irreversible\" y estima supervivencia media desde el inicio de síntomas de 6 a 10 años."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Se indica que \"no existe tratamiento modificador de la enfermedad\" y que \"Levodopa sin respuesta\"; la midodrina solo tiene respuesta parcial."
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe menciona \"cuidados continuos en domicilio\" y manejo de sonda, CPAP, prevención de úlceras y sondaje vesical intermitente, además de ayuda total para vestido, aseo, alimentación y transferencias."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Entre marzo 2026 y agosto 2026 pasa de deambular con andador y ayuda de una persona a no deambular y permanecer en vida cama-sillón; además se documenta empeoramiento significativo en menos de 6 meses."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El documento registra empeoramiento objetivo entre marzo y agosto de 2026, con UMSARS parte II de 28 a 39, no deambula y precisa ayuda total para vestido, aseo, alimentación y transferencias desde mayo 2026."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Se documentan tres ingresos urgentes en los últimos 12 meses: 11/2025 por fractura de cadera tras síncope, 04/2026 por neumonía aspirativa y 07/2026 por neumonía aspirativa con ingreso de 15 días."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "CUMPLIDO | PARCIAL",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Consta estridor nocturno documentado y uso de CPAP nocturna desde mayo 2026, además de disfagia grave con sonda nasogástrica desde julio 2026 y necesidad de manejo continuo de estos soportes."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "ALTA",
+    "resumen_paciente": "Varón de 66 años con atrofia multisistémica (AMS-C) probable, diagnosticada en 2023, con Grado III reconocido en 2025. Presenta deterioro funcional marcado y rápido entre marzo y agosto de 2026, con pérdida completa de la deambulación y necesidad de ayuda total para ABVD. Tiene disfagia orofaríngea grave con sonda nasogástrica, estridor nocturno con CPAP, hipotensión ortostática grave con síncopes e ingresos urgentes repetidos por fractura y neumonías aspirativas. La enfermedad se describe como neurodegenerativa, progresiva e irreversible, sin tratamiento modificador eficaz.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia.",
+        "recomendacion": "Mantener documentacion acreditativa del reconocimiento de Grado III."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento describe la atrofia multisistémica como \"enfermedad neurodegenerativa progresiva e irreversible\" y estima supervivencia media desde el inicio de síntomas de 6 a 10 años.",
+        "recomendacion": "Aportar este informe neurológico como soporte principal del carácter irreversible y del pronóstico."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se indica que \"no existe tratamiento modificador de la enfermedad\" y que \"Levodopa sin respuesta\"; la midodrina solo tiene respuesta parcial.",
+        "recomendacion": "Dejar constancia de la ausencia de tratamiento modificador y de la respuesta insuficiente a tratamientos sintomáticos."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe menciona \"cuidados continuos en domicilio\" y manejo de sonda, CPAP, prevención de úlceras y sondaje vesical intermitente, además de ayuda total para vestido, aseo, alimentación y transferencias.",
+        "recomendacion": "Solicitar/continuar plan integrado domiciliario con enfermería, apoyo social y cuidador principal."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "CUMPLIDO",
+        "evidencia": "Entre marzo 2026 y agosto 2026 pasa de deambular con andador y ayuda de una persona a no deambular y permanecer en vida cama-sillón; además se documenta empeoramiento significativo en menos de 6 meses.",
+        "recomendacion": "Presentar esta cronología como evidencia de progresión acelerada para agilización del expediente."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento registra empeoramiento objetivo entre marzo y agosto de 2026, con UMSARS parte II de 28 a 39, no deambula y precisa ayuda total para vestido, aseo, alimentación y transferencias desde mayo 2026.",
+        "recomendacion": "Incluir escalas funcionales y fechas en el informe de solicitud para reforzar la variación objetiva."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se documentan tres ingresos urgentes en los últimos 12 meses: 11/2025 por fractura de cadera tras síncope, 04/2026 por neumonía aspirativa y 07/2026 por neumonía aspirativa con ingreso de 15 días.",
+        "recomendacion": "Adjuntar informes de urgencias y altas hospitalarias para acreditar la recurrencia y gravedad."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "Consta estridor nocturno documentado y uso de CPAP nocturna desde mayo 2026, además de disfagia grave con sonda nasogástrica desde julio 2026 y necesidad de manejo continuo de estos soportes.",
+        "recomendacion": "Mantener documentación de soporte respiratorio y nutricional, y valorar continuidad/adecuación de soporte enteral."
+      }
+    ],
+    "borrador_medico": "Paciente con atrofia multisistémica (AMS-C) probable, diagnosticada en 2023, con dependencia grado III ya reconocida. Presenta evolución neurodegenerativa rápida e irreversible, con pérdida de la marcha en pocos meses, dependencia total para ABVD, hipotensión ortostática grave con síncopes, disfagia orofaríngea grave con sonda nasogástrica, estridor nocturno con CPAP e ingresos urgentes reiterados por complicaciones. No existe tratamiento modificador eficaz y la respuesta a levodopa es nula. El cuadro cumple criterios generales y operativos de extrema complejidad y necesidad de cuidados continuados.",
+    "siguiente_paso": "Reunir resolución de Grado III, informe de neurología, altas de urgencias y pruebas de disfagia/respiratorio, y tramitar o reforzar la solicitud/expediente con estos documentos por la clara evidencia de dependencia extrema y progresión rápida."
+  }
+}

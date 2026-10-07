@@ -1,0 +1,26 @@
+INFORME MEDICO (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+Unidad de Neurogenetica
+
+Paciente: R.F.T. (ficticio). Varon, 54 años.
+Fecha: 10/09/2026
+
+Diagnostico: Enfermedad de Huntington confirmada geneticamente (44 repeticiones CAG). Inicio de sintomas en 2014.
+Dependencia: Grado III de gran dependencia reconocido en 2022.
+
+Situacion actual: estadio V de Shoulson-Fahn. Capacidad Funcional Total (TFC) 0/13. Encamado desde abril de 2026; previamente deambulaba con ayuda.
+En los ultimos 6 meses: perdida de sedestacion autonoma y de la capacidad de alimentarse por boca. Dependencia total en todas las ABVD.
+
+Nutricion: disfagia grave. Gastrostomia colocada el 03/05/2026. Nutricion enteral exclusiva. Perdida de peso del 18% en el ultimo año.
+
+Complicaciones e ingresos urgentes (12 meses):
+- 01/2026: neumonia aspirativa con sepsis.
+- 04/2026: neumonia aspirativa.
+- 08/2026: ulcera por presion sacra grado IV infectada.
+
+Tratamiento: tetrabenazina para corea. No existe tratamiento que frene la progresion de la enfermedad.
+
+Pronostico: enfermedad neurodegenerativa irreversible en fase avanzada, supervivencia limitada.
+
+Necesidades: cuidados de enfermeria domiciliaria, curas, alimentacion por PEG, cambios posturales cada 2 horas, cuidador 24 h.
+
+Dr. D. Ficticio. Neurologo.

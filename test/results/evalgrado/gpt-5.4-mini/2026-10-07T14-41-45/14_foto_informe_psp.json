@@ -1,0 +1,131 @@
+{
+  "id": "14_foto_informe_psp",
+  "grupo": "positivo",
+  "revisar": "Debe dar el mismo resultado que el caso 03. Si difiere, el OCR esta perdiendo informacion.",
+  "seconds": 15,
+  "extractedTextLength": 1384,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "ALTA | DUDOSA",
+      "obtenido": "ALTA",
+      "ok": true,
+      "evidencia": "Mujer de 72 años con parálisis supranuclear progresiva (síndrome de Richardson), diagnosticada en 2024, con Grado III reconocido. En los últimos 5 meses ha presentado deterioro funcional muy marcado, con pérdida de autonomía para transferencias, aseo, vestido y alimentación, además de imposibilidad de marcha y bipedestación. Tiene disfagia grave con gastrostomía (PEG) y precisa atención continua por dos cuidadores. Se documentan dos ingresos urgentes en 12 meses. El informe indica enfermedad neurodegenerativa irreversible con reducción significativa de la esperanza de vida y ausencia de tratamiento eficaz."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe describe 'enfermedad neurodegenerativa progresiva irreversible con reduccion significativa de la esperanza de vida'."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El documento señala: 'no existe tratamiento eficaz que modifique la evolucion. Ensayo con levodopa sin respuesta'. El cuestionario indica 'tratamientoEficaz: No'."
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe indica que 'precisa atencion continua por dos cuidadores para movilizaciones, alimentacion por PEG, prevencion de caidas y de aspiraciones'."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Se documenta empeoramiento en 5 meses: de marcha con andador y supervisión en febrero 2026 a imposibilidad de marcha y bipedestación en julio 2026, con Barthel 45 -> 5 y pérdida de autonomía en 4 ABVD."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El informe documenta pérdida de autonomía para transferencias, aseo, vestido y alimentación (4 ABVD) en 5 meses, con Barthel 45 -> 5."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "Se registran dos ingresos urgentes en los últimos 12 meses: 12/2025 por traumatismo craneoencefálico por caída y 05/2026 por neumonía por broncoaspiración. El cuestionario también indica 'ingresosUrgentes12m: Sí'."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "CUMPLIDO",
+      "obtenido": "CUMPLIDO",
+      "ok": true,
+      "evidencia": "El documento clínico refiere 'disfagia grave con atragantamientos diarios' y 'Gastrostomia (PEG) colocada el 14/07/2026', lo que implica nutrición artificial continua. También señala 'sin insuficiencia respiratoria. No precisa ventilacion'."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "ALTA",
+    "resumen_paciente": "Mujer de 72 años con parálisis supranuclear progresiva (síndrome de Richardson), diagnosticada en 2024, con Grado III reconocido. En los últimos 5 meses ha presentado deterioro funcional muy marcado, con pérdida de autonomía para transferencias, aseo, vestido y alimentación, además de imposibilidad de marcha y bipedestación. Tiene disfagia grave con gastrostomía (PEG) y precisa atención continua por dos cuidadores. Se documentan dos ingresos urgentes en 12 meses. El informe indica enfermedad neurodegenerativa irreversible con reducción significativa de la esperanza de vida y ausencia de tratamiento eficaz.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "El cuestionario indica que si tiene reconocido el Grado III de gran dependencia.",
+        "recomendacion": "Mantener documentacion acreditativa del reconocimiento de Grado III."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe describe 'enfermedad neurodegenerativa progresiva irreversible con reduccion significativa de la esperanza de vida'.",
+        "recomendacion": "Usar esta evidencia en la propuesta administrativa y en el borrador clínico."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento señala: 'no existe tratamiento eficaz que modifique la evolucion. Ensayo con levodopa sin respuesta'. El cuestionario indica 'tratamientoEficaz: No'.",
+        "recomendacion": "Dejar constancia de la falta de respuesta terapéutica y de la ausencia de alternativa modificadora."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe indica que 'precisa atencion continua por dos cuidadores para movilizaciones, alimentacion por PEG, prevencion de caidas y de aspiraciones'.",
+        "recomendacion": "Aportar valoración funcional y plan de cuidados domiciliarios complejos."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se documenta empeoramiento en 5 meses: de marcha con andador y supervisión en febrero 2026 a imposibilidad de marcha y bipedestación en julio 2026, con Barthel 45 -> 5 y pérdida de autonomía en 4 ABVD.",
+        "recomendacion": "Solicitar tramitación prioritaria por progresión rápida objetivada."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe documenta pérdida de autonomía para transferencias, aseo, vestido y alimentación (4 ABVD) en 5 meses, con Barthel 45 -> 5.",
+        "recomendacion": "Adjuntar escalas funcionales y descripción evolutiva temporal en el expediente."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se registran dos ingresos urgentes en los últimos 12 meses: 12/2025 por traumatismo craneoencefálico por caída y 05/2026 por neumonía por broncoaspiración. El cuestionario también indica 'ingresosUrgentes12m: Sí'.",
+        "recomendacion": "Incorporar los informes de urgencias/hospitalización para reforzar el criterio."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento clínico refiere 'disfagia grave con atragantamientos diarios' y 'Gastrostomia (PEG) colocada el 14/07/2026', lo que implica nutrición artificial continua. También señala 'sin insuficiencia respiratoria. No precisa ventilacion'.",
+        "recomendacion": "Mantener el soporte enteral con seguimiento clínico y cuidados de PEG."
+      }
+    ],
+    "borrador_medico": "Paciente con parálisis supranuclear progresiva (síndrome de Richardson), diagnosticada en 2024, con Grado III reconocido desde 10/01/2026. Presenta evolución neurológica rápidamente progresiva, irreversible y con reducción significativa de la esperanza de vida. En menos de 6 meses ha pasado de deambulación con andador y supervisión a imposibilidad de marcha y bipedestación, con pérdida de autonomía en transferencias, aseo, vestido y alimentación. Requiere cuidados continuos por dos cuidadores. Presenta disfagia grave con broncoaspiración, con PEG implantada el 14/07/2026. Ha tenido dos ingresos urgentes en los últimos 12 meses por TCE secundario a caída y neumonía por broncoaspiración. No existe tratamiento eficaz modificador de la evolución y no hubo respuesta a levodopa. La situación clínica cumple criterios de alta prioridad por dependencia extrema y necesidad de soporte funcional permanente.",
+    "siguiente_paso": "Presentar o mantener la solicitud/valoración prioritaria con el informe neurológico, resolucion de Grado III, escalas funcionales (Barthel y PSP Rating Scale) e informes de urgencias/hospitalizacion, destacando la progresion rapida, la disfagia con PEG y la necesidad de cuidados continuos."
+  }
+}

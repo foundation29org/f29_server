@@ -1,0 +1,41 @@
+HOSPITAL UNIVERSITARIO (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+SERVICIO DE NEUROLOGIA - UNIDAD DE ENFERMEDADES NEUROMUSCULARES
+INFORME CLINICO DE SEGUIMIENTO
+
+Paciente: M.R.L. (ficticio). Mujer, 61 años. NHC: 000000.
+Fecha del informe: 15/09/2026
+
+DIAGNOSTICO PRINCIPAL
+Esclerosis lateral amiotrofica (ELA) de inicio bulbar, criterios de Gold Coast. Diagnostico confirmado en noviembre de 2025 (EMG compatible, RM cerebral y medular sin otras causas).
+
+RESOLUCION DE DEPENDENCIA
+Grado III de gran dependencia reconocido por resolucion de la Consejeria de fecha 12/04/2026.
+
+EVOLUCION
+- Noviembre 2025: disartria y disfagia a liquidos. ALSFRS-R 38/48.
+- Marzo 2026: perdida de marcha autonoma, precisa silla de ruedas. ALSFRS-R 27/48.
+- Septiembre 2026: anartria, comunicacion mediante comunicador ocular. ALSFRS-R 14/48.
+Perdida de 24 puntos en ALSFRS-R en 10 meses (progresion rapida, tasa aproximada 2,4 puntos/mes).
+En los ultimos 6 meses ha pasado de necesitar ayuda parcial a dependencia total para alimentacion, aseo, vestido, transferencias y uso del retrete (5 ABVD). Indice de Barthel: 55 (marzo 2026) -> 0 (septiembre 2026).
+
+FUNCION RESPIRATORIA
+CVF 48% del teorico (julio 2026), previamente 71% (enero 2026). Hipoventilacion nocturna confirmada por poligrafia.
+Ventilacion mecanica no invasiva (VMNI) iniciada el 02/05/2026; actualmente uso nocturno y diurno, mas de 16 horas al dia. Asistente de tos mecanico.
+
+NUTRICION
+Disfagia grave a solidos y liquidos con perdida de peso del 12%. Gastrostomia endoscopica percutanea (PEG) colocada el 20/06/2026. Nutricion enteral exclusiva.
+
+INGRESOS URGENTES NO PROGRAMADOS (ULTIMOS 12 MESES)
+1) 03/2026 - Neumonia por aspiracion. 9 dias de ingreso.
+2) 07/2026 - Insuficiencia respiratoria hipercapnica aguda. 12 dias de ingreso, ajuste de VMNI.
+
+TRATAMIENTO
+Riluzol 50 mg/12 h. No existe tratamiento curativo ni modificador eficaz de la progresion. No candidata a ensayos clinicos activos.
+
+NECESIDADES DE CUIDADOS
+Precisa cuidador las 24 horas, manejo de VMNI, aspiracion de secreciones, cuidados de PEG, cambios posturales y grua. Seguimiento por Equipo de Soporte de Atencion Domiciliaria (ESAD).
+
+PRONOSTICO
+Enfermedad irreversible con reduccion significativa de la supervivencia.
+
+Firmado: Dra. A. Ficticia. Neurologa. N.º colegiado 00/00000 (ficticio).

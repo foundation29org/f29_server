@@ -1,0 +1,27 @@
+INFORME DE LA UNIDAD DE VENTILACION DOMICILIARIA (DOCUMENTO SINTETICO - DATOS FICTICIOS)
+
+Paciente: P.L.A. (ficticio). Varon, 24 años.
+Fecha: 18/08/2026
+
+Diagnostico: Distrofia muscular de Duchenne (delecion exones 45-50 del gen DMD). Perdida de deambulacion a los 11 años.
+Dependencia: Grado III reconocido desde 2016.
+
+Respiratorio: insuficiencia respiratoria cronica restrictiva. Traqueostomia desde 2023. Ventilacion mecanica invasiva domiciliaria 24 horas al dia. CVF 9% del teorico.
+
+Cardiologico: miocardiopatia dilatada, FEVI 30%. En tratamiento con IECA, betabloqueante y eplerenona.
+
+Nutricion: disfagia progresiva; gastrostomia desde 2025 con nutricion complementaria.
+
+Evolucion ultimos 6 meses: empeoramiento leve de la funcion de miembros superiores; ha perdido la capacidad de manejar el joystick de la silla con la mano, ahora usa control por mentón.
+
+Ingresos urgentes ultimos 12 meses:
+1) 12/2025 - Traqueobronquitis con insuficiencia respiratoria.
+2) 06/2026 - Descompensacion de insuficiencia cardiaca.
+
+Tratamiento: corticoides (deflazacort) desde la infancia, que ralentizaron la progresion. Actualmente no hay terapia que revierta la situacion.
+
+Necesidades: cuidados especializados 24 h (aspiracion por traqueostomia, manejo de ventilador y bateria de respaldo, cambio de canula).
+
+Pronostico: enfermedad irreversible con supervivencia reducida.
+
+Dra. E. Ficticia. Neumologa.

@@ -1,0 +1,131 @@
+{
+  "id": "10_ela_sin_grado_iii",
+  "grupo": "limite",
+  "revisar": "Requisito previo no cumplido: el siguiente paso debe ser solicitar/revisar el Grado III, no el III+.",
+  "seconds": 5,
+  "extractedTextLength": 919,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "DUDOSA | BAJA",
+      "obtenido": "DUDOSA",
+      "ok": true,
+      "evidencia": "Varón de 52 años con esclerosis lateral amiotrófica de inicio espinal diagnosticada en 02/2026. Los documentos describen enfermedad irreversible y progresiva, con reducción de la supervivencia, pérdida funcional objetiva entre febrero y agosto de 2026, necesidad de ayuda para vestido, aseo y alimentación, y uso de VMNI nocturna desde 07/2026. Sin embargo, consta reconocido Grado II y revisión de grado pendiente, no Grado III reconocido. No hay ingresos urgentes en los últimos 12 meses y la deglución está conservada."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "NO_CUMPLIDO",
+      "obtenido": "NO_CUMPLIDO",
+      "ok": true,
+      "evidencia": "El cuestionario indica que no tiene reconocido el Grado III de gran dependencia."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe de neurología indica: 'enfermedad irreversible y progresiva con reduccion de la supervivencia'."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "El documento señala 'No existe tratamiento curativo' y el cuestionario indica 'tratamientoEficaz: No'."
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "PARCIAL",
+      "ok": null,
+      "evidencia": "Los documentos indican que precisa ayuda para vestido, aseo y alimentación, y usa VMNI nocturna; no se detallan otros apoyos domiciliarios complejos ni coordinación sociosanitaria formal."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "Se objetiva empeoramiento entre febrero y agosto de 2026 con ALSFRS-R 40/48 a 29/48 y pérdida funcional en ambos miembros superiores; el cuestionario refiere empeoramiento en 6 meses significativo."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "(sin expectativa)",
+      "obtenido": "CUMPLIDO",
+      "ok": null,
+      "evidencia": "ALSFRS-R 40/48 en febrero de 2026 y 29/48 en agosto de 2026, con pérdida de función en ambos miembros superiores y necesidad de ayuda para vestido, aseo y alimentación."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "(sin expectativa)",
+      "obtenido": "NO_CUMPLIDO",
+      "ok": null,
+      "evidencia": "El informe indica 'Ingresos urgentes: ninguno en los ultimos 12 meses' y el cuestionario responde 'ingresosUrgentes12m: No'."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "(sin expectativa)",
+      "obtenido": "PARCIAL",
+      "ok": null,
+      "evidencia": "Consta VMNI nocturna desde 07/2026, pero no se documenta ventilación mecánica permanente ni nutrición artificial; el cuestionario indica 'soporteRespiratorio: Sí, parcial'."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "DUDOSA",
+    "resumen_paciente": "Varón de 52 años con esclerosis lateral amiotrófica de inicio espinal diagnosticada en 02/2026. Los documentos describen enfermedad irreversible y progresiva, con reducción de la supervivencia, pérdida funcional objetiva entre febrero y agosto de 2026, necesidad de ayuda para vestido, aseo y alimentación, y uso de VMNI nocturna desde 07/2026. Sin embargo, consta reconocido Grado II y revisión de grado pendiente, no Grado III reconocido. No hay ingresos urgentes en los últimos 12 meses y la deglución está conservada.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "NO_CUMPLIDO",
+        "evidencia": "El cuestionario indica que no tiene reconocido el Grado III de gran dependencia.",
+        "recomendacion": "El Grado III es requisito previo para solicitar Grado III+."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "CUMPLIDO",
+        "evidencia": "El informe de neurología indica: 'enfermedad irreversible y progresiva con reduccion de la supervivencia'.",
+        "recomendacion": "Aportar este informe a la revisión administrativa y mantener seguimiento neurológico."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "CUMPLIDO",
+        "evidencia": "El documento señala 'No existe tratamiento curativo' y el cuestionario indica 'tratamientoEficaz: No'.",
+        "recomendacion": "Documentar evolución funcional y tratamientos de soporte ya instaurados."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "PARCIAL",
+        "evidencia": "Los documentos indican que precisa ayuda para vestido, aseo y alimentación, y usa VMNI nocturna; no se detallan otros apoyos domiciliarios complejos ni coordinación sociosanitaria formal.",
+        "recomendacion": "Describir necesidades concretas de cuidados en domicilio, frecuencia de ayuda y recursos sanitarios y sociales utilizados."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "CUMPLIDO",
+        "evidencia": "Se objetiva empeoramiento entre febrero y agosto de 2026 con ALSFRS-R 40/48 a 29/48 y pérdida funcional en ambos miembros superiores; el cuestionario refiere empeoramiento en 6 meses significativo.",
+        "recomendacion": "Adjuntar escalas funcionales y fechas de seguimiento para sustentar la urgencia de revisión."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "CUMPLIDO",
+        "evidencia": "ALSFRS-R 40/48 en febrero de 2026 y 29/48 en agosto de 2026, con pérdida de función en ambos miembros superiores y necesidad de ayuda para vestido, aseo y alimentación.",
+        "recomendacion": "Incluir en el expediente la evolución funcional y qué ABVD requieren ayuda diaria."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "NO_CUMPLIDO",
+        "evidencia": "El informe indica 'Ingresos urgentes: ninguno en los ultimos 12 meses' y el cuestionario responde 'ingresosUrgentes12m: No'.",
+        "recomendacion": "No consta este criterio; solo reevaluarlo si aparecen ingresos urgentes no planificados documentados."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "PARCIAL",
+        "evidencia": "Consta VMNI nocturna desde 07/2026, pero no se documenta ventilación mecánica permanente ni nutrición artificial; el cuestionario indica 'soporteRespiratorio: Sí, parcial'.",
+        "recomendacion": "Especificar si el soporte respiratorio es continuo o nocturno, y si existe necesidad de otros soportes funcionales permanentes."
+      }
+    ],
+    "borrador_medico": "Paciente con ELA de inicio espinal, diagnosticada en 02/2026, con curso claramente progresivo e irreversible y reducción de la supervivencia. Presenta deterioro funcional objetivo en menos de 6 meses, con descenso de ALSFRS-R de 40/48 a 29/48, pérdida de función en ambos miembros superiores y necesidad de ayuda para vestido, aseo y alimentación. Requiere VMNI nocturna desde 07/2026. No hay ingresos urgentes en los últimos 12 meses y la deglución permanece conservada. A fecha del informe consta reconocimiento previo de Grado II y revisión de grado pendiente, sin acreditación documental de Grado III.",
+    "siguiente_paso": "Solicitar o completar la valoración administrativa de dependencia con la documentación neurológica actualizada, incluyendo escalas funcionales, detalle de ABVD afectadas, soporte respiratorio y necesidad de cuidados domiciliarios, ya que no consta aún Grado III reconocido."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "12_informacion_insuficiente",
+  "grupo": "limite",
+  "revisar": "Debe pedir mas documentacion y no inventar diagnosticos ni datos.",
+  "seconds": 5,
+  "extractedTextLength": 462,
+  "passed": true,
+  "checks": [
+    {
+      "criterio": "EVALUACION GLOBAL",
+      "esperado": "DUDOSA | BAJA",
+      "obtenido": "DUDOSA",
+      "ok": true,
+      "evidencia": "Paciente con enfermedad neurológica referida en el cuestionario, con ayuda para ABVD de forma intermitente según familiar. No consta reconocimiento de Grado III ni documentación clínica que describa dependencia extrema, progresión rápida, complicaciones graves o necesidad de soporte vital. Los documentos aportados son muy limitados y solo recogen una consulta, medicación habitual y seguimiento a demanda."
+    },
+    {
+      "criterio": "Grado III reconocido (requisito previo)",
+      "esperado": "SIN_INFORMACION",
+      "obtenido": "SIN_INFORMACION",
+      "ok": true,
+      "evidencia": "En el cuestionario figura 'No lo sé' y en la documentación no aparece resolución ni reconocimiento de Grado III."
+    },
+    {
+      "criterio": "Condicion irreversible con reduccion significativa de supervivencia",
+      "esperado": "(sin expectativa)",
+      "obtenido": "SIN_INFORMACION",
+      "ok": null,
+      "evidencia": "Solo consta 'enfermedad neurológica' como diagnóstico principal; no se describe irreversibilidad ni impacto en supervivencia."
+    },
+    {
+      "criterio": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+      "esperado": "(sin expectativa)",
+      "obtenido": "SIN_INFORMACION",
+      "ok": null,
+      "evidencia": "El cuestionario no permite concluir eficacia del tratamiento y los documentos solo muestran medicación sintomática/habitual sin valoración de respuesta."
+    },
+    {
+      "criterio": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+      "esperado": "(sin expectativa)",
+      "obtenido": "PARCIAL",
+      "ok": null,
+      "evidencia": "El cuestionario indica 'A veces' en ayuda para ABVD, pero los documentos no detallan cuidados complejos, necesidades sociosanitarias ni apoyos domiciliarios específicos."
+    },
+    {
+      "criterio": "Progresion rapida que justifica agilizacion administrativa",
+      "esperado": "(sin expectativa)",
+      "obtenido": "SIN_INFORMACION",
+      "ok": null,
+      "evidencia": "El cuestionario no aclara el empeoramiento en 6 meses y los documentos no describen progresión clínica."
+    },
+    {
+      "criterio": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+      "esperado": "SIN_INFORMACION | NO_CUMPLIDO",
+      "obtenido": "SIN_INFORMACION",
+      "ok": true,
+      "evidencia": "Solo consta ayuda 'A veces' para ABVD en el cuestionario; no hay datos documentales sobre pérdida objetiva de autonomía ni sobre dos o más ABVD."
+    },
+    {
+      "criterio": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+      "esperado": "(sin expectativa)",
+      "obtenido": "SIN_INFORMACION",
+      "ok": null,
+      "evidencia": "El cuestionario responde 'No lo sé' y los documentos no mencionan ingresos urgentes ni complicaciones recurrentes."
+    },
+    {
+      "criterio": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+      "esperado": "(sin expectativa)",
+      "obtenido": "NO_CUMPLIDO",
+      "ok": null,
+      "evidencia": "El cuestionario indica soporte respiratorio 'No' y disfagia/nutrición 'No'; la documentación no describe ventilación mecánica, nutrición artificial ni otro soporte continuo."
+    }
+  ],
+  "analysis": {
+    "evaluacion_global": "DUDOSA",
+    "resumen_paciente": "Paciente con enfermedad neurológica referida en el cuestionario, con ayuda para ABVD de forma intermitente según familiar. No consta reconocimiento de Grado III ni documentación clínica que describa dependencia extrema, progresión rápida, complicaciones graves o necesidad de soporte vital. Los documentos aportados son muy limitados y solo recogen una consulta, medicación habitual y seguimiento a demanda.",
+    "criterios_generales": [
+      {
+        "nombre": "Grado III reconocido (requisito previo)",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "En el cuestionario figura 'No lo sé' y en la documentación no aparece resolución ni reconocimiento de Grado III.",
+        "recomendacion": "Aportar resolución oficial o informe de valoración de dependencia que acredite el grado reconocido."
+      },
+      {
+        "nombre": "Condicion irreversible con reduccion significativa de supervivencia",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "Solo consta 'enfermedad neurológica' como diagnóstico principal; no se describe irreversibilidad ni impacto en supervivencia.",
+        "recomendacion": "Adjuntar informes especializados que especifiquen diagnóstico, pronóstico e irreversibilidad."
+      },
+      {
+        "nombre": "Sin respuesta significativa a tratamiento o sin alternativa eficaz",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "El cuestionario no permite concluir eficacia del tratamiento y los documentos solo muestran medicación sintomática/habitual sin valoración de respuesta.",
+        "recomendacion": "Incluir informe clínico que describa tratamientos probados, respuesta y ausencia de alternativas eficaces."
+      },
+      {
+        "nombre": "Necesidad de cuidados sociales y sanitarios complejos en domicilio",
+        "estado": "PARCIAL",
+        "evidencia": "El cuestionario indica 'A veces' en ayuda para ABVD, pero los documentos no detallan cuidados complejos, necesidades sociosanitarias ni apoyos domiciliarios específicos.",
+        "recomendacion": "Aportar informe de enfermería, trabajo social o neurología que detalle necesidades de cuidados complejos en domicilio."
+      },
+      {
+        "nombre": "Progresion rapida que justifica agilizacion administrativa",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "El cuestionario no aclara el empeoramiento en 6 meses y los documentos no describen progresión clínica.",
+        "recomendacion": "Adjuntar evolución clínica comparada en los últimos 6 meses que evidencie deterioro rápido."
+      }
+    ],
+    "criterios_operativos": [
+      {
+        "nombre": "Deterioro funcional objetivo en menos de 6 meses con perdida de autonomia en dos o mas ABVD",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "Solo consta ayuda 'A veces' para ABVD en el cuestionario; no hay datos documentales sobre pérdida objetiva de autonomía ni sobre dos o más ABVD.",
+        "recomendacion": "Incluir escalas funcionales o informes clínicos que documenten ABVD afectadas y su evolución temporal."
+      },
+      {
+        "nombre": "Complicaciones graves recurrentes con dos o mas ingresos urgentes no planificados en 12 meses",
+        "estado": "SIN_INFORMACION",
+        "evidencia": "El cuestionario responde 'No lo sé' y los documentos no mencionan ingresos urgentes ni complicaciones recurrentes.",
+        "recomendacion": "Aportar informes de urgencias o altas hospitalarias de los últimos 12 meses si existen."
+      },
+      {
+        "nombre": "Necesidad de soporte vital o funcional permanente (ventilacion mecanica, nutricion artificial u otro soporte continuo)",
+        "estado": "NO_CUMPLIDO",
+        "evidencia": "El cuestionario indica soporte respiratorio 'No' y disfagia/nutrición 'No'; la documentación no describe ventilación mecánica, nutrición artificial ni otro soporte continuo.",
+        "recomendacion": "Si existiera soporte continuo no recogido, aportar informes que lo acrediten; con la información actual no se confirma."
+      }
+    ],
+    "borrador_medico": "Con la información disponible no puede acreditarse un supuesto de dependencia extrema de Grado III+ ni la concurrencia de criterios que justifiquen una tramitación preferente. La documentación aportada es insuficiente y no recoge reconocimiento de Grado III, irreversibilidad con reducción significativa de supervivencia, progresión rápida, complicaciones graves recurrentes ni soporte vital permanente. Se observa únicamente diagnóstico inespecífico de enfermedad neurológica y tratamiento farmacológico habitual. Se recomienda completar la valoración con informes especializados y documentación funcional reciente.",
+    "siguiente_paso": "Solicitar y revisar resolución de dependencia, informes de neurología recientes, valoración funcional de ABVD, evolución de los últimos 6 meses, posibles ingresos/urgencias y, si existieran, documentos de cuidados complejos o soporte vital."
+  }
+}
