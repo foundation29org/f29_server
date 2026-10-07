@@ -4,7 +4,7 @@ Herramienta: `client/app/[locale]/gradodependencia/` (frontend) y `server/servic
 
 Objetivo: dejar la herramienta en un estado mínimo publicable con Plena inclusión. Que funcione de forma verificada, que cumpla el RGPD (datos en Europa y borrado tras procesar), que informe claramente de que es una IA y que tenga una revisión clínica mínima (David) y una pequeña EIPD/PIA ([`EIPD.md`](EIPD.md)). Los documentos viven en `server/docs/evalgrado/` (repo del server).
 
-**Estado a 07/10/2026:** implementado y probado todo lo que depende del código, y el modelo (`gpt-5.4-mini`) ya está en Data Zone Standard EU. Regiones de OpenAI (Alemania) y Document Intelligence (West Europe) confirmadas. Para publicar faltan: la exención de *abuse monitoring* (o informar de los 30 días) y la revisión de David.
+**Estado a 07/10/2026:** implementado y probado todo lo que depende del código, y el modelo (`gpt-5.4-mini`) ya está en Data Zone Standard EU. Regiones de OpenAI (Alemania) y Document Intelligence (West Europe) confirmadas. *Abuse monitoring*: decisión (Julián, 07/10/2026) de **no solicitar la exención** a Microsoft e informar de la retención de 30 días en los textos de la herramienta (hecho). Para publicar faltan: confirmar la región del App Service y la revisión de David.
 
 ---
 
@@ -22,7 +22,7 @@ Objetivo: dejar la herramienta en un estado mínimo publicable con Plena inclusi
 - **El prompt dejaba marcar CUMPLIDO solo con el cuestionario.** En el caso 11, `gpt-5.4-mini` marcaba "soporte vital" CUMPLIDO aunque el informe decía lo contrario. → El prompt exige evidencia documental para CUMPLIDO y da prioridad a los documentos si hay contradicción.
 - **No había definición de ALTA, DUDOSA y BAJA.** Pacientes estables salían DUDOSA en vez de BAJA. → Definición añadida al prompt (*David debe validarla*, ver §2).
 - **Datos fuera de la UE.** El despliegue `gpt-4o` es *Global Standard*. → **Pendiente (portal Azure).**
-- **Retención.** Document Intelligence guardaba el resultado 24 h. → Ahora se borra justo después de leerlo (verificado: DELETE da 204 y un GET posterior da 404). Azure OpenAI *abuse monitoring*, hasta 30 días → **pendiente**.
+- **Retención.** Document Intelligence guardaba el resultado 24 h. → Ahora se borra justo después de leerlo (verificado: DELETE da 204 y un GET posterior da 404). Azure OpenAI *abuse monitoring*, hasta 30 días → se acepta y se informa al usuario (ver §3).
 - **Fuga de errores.** El controlador devolvía `error.message` al cliente. → Eliminado.
 - **Aviso de IA.** Solo aparecía en el borrador. → Ahora está en la bienvenida, el resultado, el borrador, el documento impreso y los textos legales.
 - **Modelo fijo en el código** (`gpt-4o`, `api-version 2023-06-01-preview`). → Configurable por variables de entorno, con `api-version 2024-10-21` y `response_format: json_object`.
@@ -106,14 +106,14 @@ Preguntas abiertas para David (también están en el documento):
 
 - [x] **Hecho (07/10/2026):** `gpt-5.4-mini` desplegado en Data Zone Standard (EU). Es el valor por defecto de `EVALGRADO_OPENAI_DEPLOYMENT`. Set sintético re-ejecutado contra él: 14/14. Si en App Service el nombre del despliegue es otro, hay que poner la variable.
 - [x] **Regiones confirmadas (07/10/2026):** `iaclarodocumentai` en West Europe y `f29webopenai` en Alemania. Ambas en la UE.
-- [ ] **(Tú, Microsoft)** Solicitar la exención de *abuse monitoring* (*modified abuse monitoring*). Es un formulario de acceso limitado ("Register to modify abuse monitoring", enlazado desde https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/openai/limited-access). Microsoft solo la concede a clientes gestionados por un equipo de cuenta de Microsoft o dentro de un programa elegible; no es automática. Si se aprueba, comprobar en el recurso que `ContentLogging = false`. Si no se concede, añadir a la política de privacidad que Microsoft puede conservar datos hasta 30 días por seguridad, en el mismo país (UE) y con revisores en el EEE.
+- [x] **Abuse monitoring: decisión de no solicitar la exención** (Julián, 07/10/2026). La exención ("Register to modify abuse monitoring") solo se concede a clientes con equipo de cuenta de Microsoft o programa elegible y no es automática. En su lugar se informa de que Microsoft puede conservar peticiones y respuestas hasta 30 días (en la UE, con revisión solo por personal del EEE y solo si el sistema las marca como posible abuso). Textos actualizados en la bienvenida, la subida de documentos, el paso de recursos y la política de privacidad. Si más adelante se consigue la exención (comprobable con `ContentLogging = false` en el recurso), hay que revertir esos textos.
 - [x] Despliegue y versión de API configurables (`EVALGRADO_OPENAI_DEPLOYMENT`, `EVALGRADO_OPENAI_API_VERSION` en `server/config.js`).
 - [x] Borrado del resultado de Document Intelligence tras leerlo (verificado).
 - [x] Sin `error.message` al cliente; los logs no incluyen contenido clínico.
 - [x] Verificado que el cliente no usa almacenamiento local y que el proxy no registra el contenido.
 - [x] Textos legales actualizados: responsable, datos, conservación, encargado (Azure UE), no entrenamiento y derechos.
 - [x] Aviso de minimización en la subida ("tacha tu nombre, DNI...").
-- [ ] **No publicar** hasta resolver *abuse monitoring* (exención o texto de 30 días en la política) y la región de App Service. Modelo, OpenAI y Document Intelligence ya están en la UE.
+- [ ] **No publicar** hasta confirmar la región del App Service. Modelo, OpenAI y Document Intelligence ya están en la UE y la retención de 30 días está informada.
 
 ## 4. Cumplimiento normativo mínimo e información de IA
 
@@ -156,7 +156,7 @@ Los dos modelos pasan el criterio de aceptación con el mismo prompt.
 
 1. **Responsable del tratamiento:** ¿Foundation 29 solo, o corresponsabilidad con Plena inclusión? Cambia los textos legales y la EIPD. Ahora figura Foundation 29 como responsable.
 2. **Permiso de marca:** ¿hay un acuerdo formal con Plena inclusión para usar su logo y su imagen? ¿Tienen manual de marca o SVG?
-3. **Abuse monitoring:** ¿está aprobada la exención en la suscripción de Azure?
+3. **Abuse monitoring:** resuelto: no se pide la exención y se informa de los 30 días. Pendiente de que el DPO o responsable de protección de datos valide el texto.
 4. **Región de Static Web Apps y App Service del backend:** por confirmar (Document Intelligence en West Europe y OpenAI en Alemania ya confirmados).
 5. **Modelo final:** ver la decisión de modelo. Propuesta: `gpt-5.4-mini` en Data Zone EU.
 6. **Validación de los resultados esperados y de la definición de ALTA, DUDOSA y BAJA:** los propuse yo; los tiene que confirmar David (ver las preguntas de §2).

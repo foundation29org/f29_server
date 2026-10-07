@@ -56,7 +56,7 @@ Navegador: el resultado se guarda solo en memoria (estado React). Al cerrar la p
 | Proxy Next.js | Nada (solo reenvía) | — | Sí: revisión de código |
 | Backend | Buffers en memoria durante la petición | Mientras dura la petición (~10-40 s) | Sí: sin disco, sin BD; los logs de error no incluyen el contenido |
 | Document Intelligence | Resultado del análisis | Se borra al terminar (por defecto serían 24 h) | Sí: prueba DELETE → 204 y GET posterior → 404 |
-| Azure OpenAI | Prompts y respuestas para *abuse monitoring* | **Hasta 30 días** salvo exención aprobada | **Pendiente**: solicitar o confirmar *modified abuse monitoring* |
+| Azure OpenAI | Prompts y respuestas para *abuse monitoring* | **Hasta 30 días**, en la UE; revisión humana solo si se marca como posible abuso, por personal del EEE | Aceptado. No se solicita la exención (decisión 07/10/2026) y se informa al usuario en los textos de la herramienta |
 | Azure OpenAI | Uso para entrenamiento | Nunca (condiciones de Azure OpenAI) | Condiciones contractuales de Microsoft |
 
 **Ubicación.** El modelo (`gpt-5.4-mini`) está desplegado en *Data Zone Standard (EU)* desde el 07/10/2026 (antes `gpt-4o` era *Global Standard*). Regiones confirmadas el 07/10/2026: Document Intelligence (`iaclarodocumentai`) en West Europe y Azure OpenAI (`f29webopenai`) en Alemania. **Pendiente** confirmar la región del backend (App Service) y del proxy (Static Web Apps).
@@ -75,7 +75,7 @@ Navegador: el resultado se guarda solo en memoria (estado React). Al cerrar la p
 | # | Riesgo | Prob. | Impacto | Medidas aplicadas | Riesgo residual |
 |---|---|---|---|---|---|
 | R1 | Datos de salud procesados fuera de la UE | Baja | Alto | Modelo en Data Zone Standard EU, OpenAI en Alemania y Document Intelligence en West Europe; **pendiente** confirmar región de App Service y Static Web Apps | Bajo |
-| R2 | Conservación de datos por el proveedor (OCR 24 h, abuse monitoring 30 días) | Media | Alto | Borrado explícito del OCR (verificado); exención de abuse monitoring **pendiente** | Medio hasta tener la exención |
+| R2 | Conservación de datos por el proveedor (OCR 24 h, abuse monitoring 30 días) | Media | Alto | Borrado explícito del OCR (verificado). Abuse monitoring aceptado: retención de 30 días en la UE informada al usuario en bienvenida, subida, recursos y política de privacidad. Limitación: Foundation 29 no puede borrar esos datos antes del plazo (se informa) | Medio (aceptado e informado). Recomendado minimizar datos identificativos en los documentos |
 | R3 | Fuga por logs o mensajes de error | Baja | Alto | Los logs no incluyen contenido; el error al cliente no expone detalles internos | Bajo |
 | R4 | La IA se equivoca o inventa datos y el usuario toma decisiones con ello | Media | Medio | Avisos de IA en bienvenida, resultado, borrador e impreso; la evidencia debe citarse; prompt con "nunca inventes" y "el cuestionario no basta para CUMPLIDO"; revisión clínica con 14 casos sintéticos | Medio-bajo (depende de la revisión de David) |
 | R5 | Manipulación del resultado con instrucciones ocultas en un documento (*prompt injection*) | Baja | Medio | Instrucción explícita de ignorar órdenes dentro de documentos; caso de prueba 13 superado en ambos modelos | Bajo |
@@ -97,7 +97,7 @@ Navegador: el resultado se guarda solo en memoria (estado React). Al cerrar la p
 
 El tratamiento es **aceptable** cuando se completen las medidas pendientes que bloquean la publicación:
 1. Confirmar la región de App Service y Static Web Apps (R1). El modelo, OpenAI y Document Intelligence ya están en la UE.
-2. Conseguir la exención de *abuse monitoring* o, si no, informar en la política de privacidad de la conservación de hasta 30 días (R2).
+2. Informar de la conservación de hasta 30 días por Microsoft (R2): **hecho**. Pendiente de que el DPO valide que el consentimiento y los textos son suficientes para datos de salud con esta retención.
 3. Que David valide los resultados de los casos sintéticos (R4).
 
 Recomendado, aunque no bloqueante: limitar las peticiones (R9).
