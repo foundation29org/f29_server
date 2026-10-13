@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 """Genera el vídeo infográfico de EvalGrado+ (≈1 minuto) a partir del guion de GUION.md.
 
-Requisitos (Windows, por la voz de System.Speech):
-  pip install playwright imageio-ffmpeg
+Requisitos:
+  pip install playwright imageio-ffmpeg numpy scipy piper-tts onnx
   python -m playwright install chromium
-  Una voz es-ES instalada (por defecto "Microsoft Laura") y conexión para cargar los logotipos
-  desde foundation29.org.
+  Conexión a internet: la primera vez descarga la voz de Piper; en cada render carga la
+  fuente Nunito y los logotipos desde foundation29.org.
 
 Uso:
   python docs/evalgrado/video/generar_video.py                # vídeo completo
   python docs/evalgrado/video/generar_video.py --fotogramas   # solo un fotograma por escena
 
 Salida en docs/evalgrado/video/out/ (ignorada por git): evalgrado.mp4, evalgrado.srt,
-narracion.wav y fotogramas/.
+narracion.wav, mezcla.wav y fotogramas/.
 """
 import argparse
+import base64
 import json
 import math
 import re
@@ -28,6 +29,7 @@ from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
 OUT = AQUI / "out"
+VOZ_PIPER = "es_ES-sharvard-medium"
 
 # Locución por escena (id de la <section> en infografia.html), dividida en subtítulos.
 # Cada subtítulo es (texto en pantalla, texto para la voz). El segundo solo cambia la
@@ -91,9 +93,13 @@ PROHIBIDO = [
 ]
 
 ENTRADA = 0.8   # s de imagen antes de la primera frase
-ADELANTO = 0.35  # cada escena aparece este tiempo antes de su locución
-PAUSA = 0.45    # silencio entre escenas
-COLA = 2.8      # cierre tras la última frase
+ADELANTO = 0.4  # cada escena aparece este tiempo antes de su locución
+PAUSA = 0.35    # silencio entre escenas
+PAUSA_FRASE = 0.22  # silencio entre frases de una misma escena (Piper)
+COLA = 3.0      # cierre tras la última frase
+# Tiempo extra al final de una escena para leer un texto que aparece con la última palabra.
+RETENCION = {"s3": 1.8}
+PUNTUACION = set(",.;:?!¿¡\"«»()…—-")
 
 
 def comprobar_textos(texto_html):
@@ -112,14 +118,16 @@ def comprobar_textos(texto_html):
         sys.exit("Revisión de textos fallida:\n  " + "\n  ".join(errores))
 
 
-def sintetizar(voz, velocidad):
+def sintetizar_sapi(voz, velocidad):
+    """Voz de System.Speech (Windows), con marcas de palabra de SAPI."""
+    import numpy as np
     carpeta = OUT / "voz"
     entrada = OUT / "voz-entrada.json"
     datos = [{"id": id_, "texto": " ".join(v for _, v in subs)} for id_, subs in ESCENAS]
     entrada.write_text(json.dumps(datos, ensure_ascii=False), encoding="utf-8")
     shell = shutil.which("pwsh") or shutil.which("powershell")
     if not shell:
-        sys.exit("Hace falta PowerShell (Windows) para la voz.")
+        sys.exit("Hace falta PowerShell (Windows) para la voz de SAPI.")
     subprocess.run([shell, "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
                     "-File", str(AQUI / "tts.ps1"), "-Escenas", str(entrada), "-Salida", str(carpeta),
                     "-Voz", voz, "-Velocidad", str(velocidad)], check=True)
@@ -135,11 +143,60 @@ def sintetizar(voz, velocidad):
         voces[d["id"]] = {
             "texto": d["texto"], "marcas": marcas[d["id"]],
             "duracion": len(muestras) / frecuencia, "frecuencia": frecuencia,
-            "pcm": muestras.tobytes(),
+            "muestras": np.frombuffer(muestras.tobytes(), dtype="<i2").astype(np.float32) / 32768,
         }
         ultima = voces[d["id"]]["marcas"][-1][1]
         if ultima >= voces[d["id"]]["duracion"]:
             sys.exit(f"{d['id']}: marcas de tiempo fuera del audio ({ultima:.2f}s); revisa tts.ps1.")
+    return voces
+
+
+def sintetizar_piper(nombre, hablante, ritmo):
+    """Voz neuronal local de Piper. Las marcas de palabra salen de la alineación de fonemas."""
+    import numpy as np
+    from piper import PiperVoice, SynthesisConfig
+
+    carpeta = OUT / "voces"
+    modelo = carpeta / f"{nombre}.onnx"
+    if not modelo.exists():
+        carpeta.mkdir(parents=True, exist_ok=True)
+        subprocess.run([sys.executable, "-m", "piper.download_voices", "--download-dir", str(carpeta), nombre],
+                       check=True)
+    voz = PiperVoice.load(str(modelo), include_alignments=True)
+    frecuencia = voz.config.sample_rate
+    cfg = SynthesisConfig(speaker_id=hablante, length_scale=ritmo)
+    voces = {}
+    for id_, subs in ESCENAS:
+        texto = " ".join(v for _, v in subs)
+        palabras = [m.start() for m in re.finditer(r"\S+", texto)]
+        trozos, inicios, desplazamiento = [], [], 0
+        for k, trozo in enumerate(voz.synthesize(texto, syn_config=cfg, include_alignments=True)):
+            if not trozo.phoneme_alignments:
+                sys.exit("La voz no devuelve la alineación de fonemas: instala el paquete onnx.")
+            if k:
+                trozos.append(np.zeros(int(PAUSA_FRASE * frecuencia), dtype=np.float32))
+                desplazamiento += len(trozos[-1])
+            pos, nueva = 0, True
+            for al in trozo.phoneme_alignments:
+                if al.phoneme == " ":
+                    nueva = True
+                elif nueva and al.phoneme not in "^$_" and al.phoneme not in PUNTUACION:
+                    inicios.append(desplazamiento + pos)
+                    nueva = False
+                pos += int(al.num_samples)
+            trozos.append(trozo.audio_float_array.astype(np.float32))
+            desplazamiento += len(trozos[-1])
+        muestras = np.concatenate(trozos)
+        voz_activa = np.nonzero(np.abs(muestras) > 0.02)[0]
+        muestras = muestras[:min(len(muestras), voz_activa[-1] + int(0.12 * frecuencia))]
+        if len(inicios) != len(palabras):
+            print(f"Aviso: {id_}: {len(inicios)} palabras en la voz y {len(palabras)} en el texto; "
+                  "las marcas se reparten por longitud.")
+            inicios = [int(p / len(texto) * len(muestras)) for p in palabras]
+        voces[id_] = {
+            "texto": texto, "marcas": [[p, round(s / frecuencia, 3)] for p, s in zip(palabras, inicios)],
+            "duracion": len(muestras) / frecuencia, "frecuencia": frecuencia, "muestras": muestras,
+        }
     return voces
 
 
@@ -149,7 +206,7 @@ def montar_linea_temporal(voces):
         v = voces[id_]
         adelanto = ENTRADA if i == 0 else ADELANTO
         voz_inicio = t + adelanto
-        fin = voz_inicio + v["duracion"] + (COLA if i == len(ESCENAS) - 1 else PAUSA)
+        fin = voz_inicio + v["duracion"] + (COLA if i == len(ESCENAS) - 1 else PAUSA) + RETENCION.get(id_, 0.0)
         escenas.append({
             "id": id_, "inicio": round(t, 3), "fin": round(fin, 3), "voz_inicio": round(voz_inicio, 3),
             "texto": v["texto"], "marcas": [[pos, round(seg + adelanto, 3)] for pos, seg in v["marcas"]],
@@ -167,18 +224,39 @@ def montar_linea_temporal(voces):
     return {"escenas": escenas, "subtitulos": subtitulos, "total": round(t, 3)}
 
 
-def escribir_audio(voces, tl, destino):
-    frecuencia = voces[ESCENAS[0][0]]["frecuencia"]
-    pcm = bytearray(int(math.ceil(tl["total"] * frecuencia)) * 2)
-    for e in tl["escenas"]:
-        datos = voces[e["id"]]["pcm"]
-        o = int(round(e["voz_inicio"] * frecuencia)) * 2
-        pcm[o:o + len(datos)] = datos
+def escribir_wav(destino, x, frecuencia):
+    import numpy as np
+    x = np.clip(x, -1, 1)
     with wave.open(str(destino), "wb") as w:
-        w.setnchannels(1)
+        w.setnchannels(1 if x.ndim == 1 else x.shape[1])
         w.setsampwidth(2)
         w.setframerate(frecuencia)
-        w.writeframes(bytes(pcm))
+        w.writeframes((x * 32767).astype("<i2").tobytes())
+
+
+def montar_narracion(voces, tl):
+    """Pista de voz (mono, 48 kHz) con cada escena en su sitio."""
+    import numpy as np
+    import musica
+    voz = np.zeros(int(math.ceil(tl["total"] * musica.SR)), dtype=np.float64)
+    for e in tl["escenas"]:
+        v = voces[e["id"]]
+        datos = musica.remuestrear(v["muestras"].astype(np.float64), v["frecuencia"])
+        datos *= 0.75 / (np.max(np.abs(datos)) + 1e-9)
+        o = int(round(e["voz_inicio"] * musica.SR))
+        datos = datos[:len(voz) - o]
+        voz[o:o + len(datos)] += datos
+    return voz
+
+
+def medir_sonoridad(ffmpeg, wav):
+    r = subprocess.run([ffmpeg, "-hide_banner", "-nostats", "-i", str(wav), "-af",
+                        "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
+    datos = json.loads(r.stderr[r.stderr.rindex("{"):r.stderr.rindex("}") + 1])
+    return (f"loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={datos['input_i']}:measured_TP={datos['input_tp']}"
+            f":measured_LRA={datos['input_lra']}:measured_thresh={datos['input_thresh']}"
+            f":offset={datos['target_offset']}:linear=true")
 
 
 def escribir_srt(tl, destino):
@@ -199,30 +277,44 @@ def abrir_plantilla(p):
     rotas = pag.evaluate("[...document.images].filter(i => !i.complete || !i.naturalWidth).map(i => i.src)")
     if rotas:
         sys.exit("No se pudieron cargar los logotipos:\n  " + "\n  ".join(rotas))
+    if not pag.evaluate("document.fonts.check('900 40px Nunito')"):
+        print("Aviso: no se cargó la fuente Nunito; se usa la alternativa del sistema.")
     return nav, pag
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--voz", default="Microsoft Laura")
-    ap.add_argument("--velocidad", type=int, default=2, help="velocidad de la voz, de -10 a 10")
+    ap.add_argument("--voz", default=VOZ_PIPER,
+                    help=f"voz de Piper (por defecto {VOZ_PIPER}) o de Windows («Microsoft Laura»)")
+    ap.add_argument("--hablante", type=int, default=1, help="Piper: hablante de la voz (sharvard: 0 hombre, 1 mujer)")
+    ap.add_argument("--ritmo", type=float, default=0.9, help="Piper: duración relativa (>1 más lento)")
+    ap.add_argument("--velocidad", type=int, default=2, help="Windows: velocidad de la voz, de -10 a 10")
     ap.add_argument("--fps", type=int, default=30)
-    ap.add_argument("--fotogramas", action="store_true", help="solo exporta un fotograma por escena")
+    ap.add_argument("--crf", type=int, default=16, help="calidad x264 (menor = mejor)")
+    ap.add_argument("--sin-musica", action="store_true", help="solo voz y efectos")
+    ap.add_argument("--fotogramas", action="store_true", help="solo exporta fotogramas de revisión")
+    ap.add_argument("--por-escena", type=int, default=1, help="fotogramas de revisión por escena")
     args = ap.parse_args()
 
+    import numpy as np
     from playwright.sync_api import sync_playwright
     import imageio_ffmpeg
+    import musica
 
     OUT.mkdir(exist_ok=True)
-    voces = sintetizar(args.voz, args.velocidad)
+    if args.voz.lower().startswith("microsoft"):
+        voces = sintetizar_sapi(args.voz, args.velocidad)
+    else:
+        voces = sintetizar_piper(args.voz, args.hablante, args.ritmo)
     tl = montar_linea_temporal(voces)
-    escribir_audio(voces, tl, OUT / "narracion.wav")
+    voz = montar_narracion(voces, tl)
+    escribir_wav(OUT / "narracion.wav", voz, musica.SR)
     escribir_srt(tl, OUT / "evalgrado.srt")
 
     with sync_playwright() as p:
         nav, pag = abrir_plantilla(p)
         comprobar_textos(pag.evaluate("document.getElementById('stage').textContent"))
-        tiempos = pag.evaluate("tl => setup(tl)", tl)
+        info = pag.evaluate("tl => setup(tl)", tl)
 
         print("Escena  inicio   fin    locución")
         for e in tl["escenas"]:
@@ -230,34 +322,50 @@ def main():
         print(f"Duración total: {tl['total']:.2f} s")
 
         carpeta = OUT / "fotogramas"
-        carpeta.mkdir(exist_ok=True)
-        for e, anims in zip(tl["escenas"], tiempos):
-            t = min(e["inicio"] + max(anims["anims"] + [0]) + 0.7, e["fin"] - 0.4)
+        shutil.rmtree(carpeta, ignore_errors=True)
+        carpeta.mkdir()
+        for e, anims in zip(tl["escenas"], info["escenas"]):
+            listo = min(e["inicio"] + max(anims["anims"] + [0]) + 0.9, e["fin"] - 0.35)
             if e is tl["escenas"][-1]:
-                t = e["fin"] - 0.5
-            pag.evaluate("t => render(t)", t)
-            pag.screenshot(path=str(carpeta / f"{e['id']}.png"))
+                listo = e["fin"] - 0.6
+            n = args.por_escena
+            instantes = [listo] if n == 1 else [e["inicio"] + (listo - e["inicio"]) * (k + 1) / n for k in range(n)]
+            for k, t in enumerate(instantes):
+                pag.evaluate("t => render(t)", t)
+                pag.screenshot(path=str(carpeta / f"{e['id']}{'' if n == 1 else f'-{k + 1}'}.png"))
         if args.fotogramas:
             nav.close()
             print(f"Fotogramas en {carpeta}")
             return
 
+        print("Componiendo la música y los efectos…")
+        musica_ = np.zeros((len(voz), 2)) if args.sin_musica else musica.componer(tl["escenas"], tl["total"])
+        efectos = musica.efectos(info["sfx"], tl["total"])
+        escribir_wav(OUT / "mezcla.wav", musica.mezclar(voz, musica_, efectos), musica.SR)
+        ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
+        sonoridad = medir_sonoridad(ffmpeg, OUT / "mezcla.wav")
+
         mp4 = OUT / "evalgrado.mp4"
-        cmd = [imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error",
+        cmd = [ffmpeg, "-y", "-loglevel", "error",
                "-f", "image2pipe", "-framerate", str(args.fps), "-c:v", "png", "-i", "-",
-               "-i", str(OUT / "narracion.wav"),
+               "-i", str(OUT / "mezcla.wav"),
                "-map", "0:v", "-map", "1:a",
-               "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-               "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", "-c:a", "aac", "-b:a", "160k",
+               "-vf", "scale=out_color_matrix=bt709:out_range=tv,format=yuv420p",
+               "-c:v", "libx264", "-preset", "slow", "-tune", "animation", "-crf", str(args.crf),
+               "-x264-params", "aq-mode=3", "-g", str(args.fps * 2),
+               "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
+               "-af", f"{sonoridad},aresample=48000", "-c:a", "aac", "-b:a", "192k", "-ac", "2",
                "-metadata", "title=EvalGrado+ · Qué es y condiciones de uso",
                "-metadata:s:a:0", "language=spa", "-movflags", "+faststart",
                "-t", f"{tl['total']:.3f}", str(mp4)]
         ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+        cdp = pag.context.new_cdp_session(pag)
         total = int(math.ceil(tl["total"] * args.fps))
         inicio = time.time()
         for n in range(total):
             pag.evaluate("t => render(t)", n / args.fps)
-            ff.stdin.write(pag.screenshot(type="png"))
+            png = cdp.send("Page.captureScreenshot", {"format": "png", "optimizeForSpeed": True})["data"]
+            ff.stdin.write(base64.b64decode(png))
             if n % (args.fps * 10) == 0:
                 print(f"  fotograma {n}/{total} ({time.time() - inicio:.0f} s)")
         ff.stdin.close()
@@ -269,3 +377,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
