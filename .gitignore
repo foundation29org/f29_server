@@ -12,3 +12,6 @@ data/apadrina/.cache/
 # Python bytecode
 **/__pycache__/
 *.pyc
+
+# EvalGrado+ video render output (reproducible with docs/evalgrado/video/generar_video.py)
+docs/evalgrado/video/out/

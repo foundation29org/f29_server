@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>EvalGrado+ · vídeo infográfico</title>
+<!--
+  Plantilla del vídeo. generar_video.py la abre en Chromium, llama a setup(timeline) y luego a
+  render(t) para cada fotograma. Los elementos con data-fx se animan; data-sync="palabra[+s]" los
+  sincroniza con el momento en que la locución dice esa palabra, y data-in="s" con un segundo fijo
+  desde el inicio de la escena. Todo el texto visible procede de la web publicada (ver GUION.md).
+-->
+<style>
+  :root {
+    --red: #e8302a; --red-dark: #9f1914; --red-soft: #fff5f5; --red-line: rgba(232, 48, 42, .25);
+    --ink: #111827; --gray: #374151; --muted: #6b7280; --line: #e5e7eb;
+    --alta: #22c55e; --dudosa: #f59e0b; --baja: #ef4444;
+    --ai-bg: #eef2ff; --ai-line: #c7d2fe; --ai-ink: #1e1b4b; --ai-accent: #4f46e5;
+    --eu: #003399; --eu-star: #ffcc00;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #fff; }
+  body { font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--ink); }
+  svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #fff; }
+
+  .deco { position: absolute; border-radius: 50%; background: var(--red-soft); }
+  .deco.d1 { width: 760px; height: 760px; right: -260px; top: -300px; }
+  .deco.d2 { width: 420px; height: 420px; left: -180px; bottom: -200px; }
+
+  header { position: absolute; top: 40px; left: 96px; right: 96px; display: flex; align-items: center; justify-content: space-between; }
+  .kicker { font-size: 26px; font-weight: 800; letter-spacing: .18em; color: var(--red); text-transform: uppercase; }
+  .brand { display: inline-flex; align-items: center; gap: 14px; padding: 10px 16px; border-radius: 16px; background: var(--ink); }
+  .brand img.f29 { height: 36px; width: auto; display: block; }
+  .brand span { color: #d1d5db; font-size: 19px; }
+  .brand .plena { background: #fff; border-radius: 9px; padding: 4px 9px; line-height: 0; }
+  .brand .plena img { height: 36px; width: auto; display: block; }
+  .brand.big { gap: 22px; padding: 16px 24px; border-radius: 22px; }
+  .brand.big img.f29, .brand.big .plena img { height: 54px; }
+  .brand.big span { font-size: 26px; }
+
+  .progress { position: absolute; top: 118px; left: 96px; right: 96px; display: flex; gap: 10px; }
+  .progress i { flex: 1; height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; position: relative; }
+  .progress i b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--red); }
+
+  .scene { position: absolute; left: 96px; right: 96px; top: 172px; height: 700px; visibility: hidden; }
+  h2 { font-size: 66px; line-height: 1.08; font-weight: 800; letter-spacing: -.01em; }
+  .lead { font-size: 36px; color: var(--gray); margin-top: 14px; }
+  .row { display: flex; gap: 40px; }
+  .card { border: 2px solid var(--line); border-radius: 28px; background: #fff; box-shadow: 0 10px 30px rgba(17, 24, 39, .06); }
+  .chip { display: inline-flex; align-items: center; gap: 14px; padding: 16px 26px; border-radius: 999px; font-size: 32px; font-weight: 700; border: 2px solid var(--line); background: #fff; }
+  .chip svg.i { font-size: 38px; }
+  .badge { flex: none; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; background: var(--red); }
+
+  /* Escena 1 */
+  #s1 .hero { display: flex; align-items: center; height: 100%; gap: 60px; }
+  #s1 .txt { flex: 1; }
+  #s1 .name { font-size: 54px; font-weight: 800; letter-spacing: .12em; color: var(--red); }
+  #s1 h1 { font-size: 88px; line-height: 1.06; font-weight: 800; letter-spacing: -.015em; margin-top: 18px; }
+  #s1 .chips { display: flex; gap: 18px; margin-top: 44px; }
+  #s1 .chip { color: var(--ink); }
+  #s1 .chip svg.i { color: var(--red); }
+  #s1 .disc { width: 560px; height: 560px; border-radius: 50%; background: var(--red); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 30px 60px rgba(232, 48, 42, .28); }
+  #s1 .disc .big { font-size: 230px; font-weight: 900; line-height: .9; letter-spacing: -.03em; }
+  #s1 .disc .sub { font-size: 34px; font-weight: 700; margin-top: 18px; text-align: center; line-height: 1.2; }
+
+  /* Escena 2 */
+  #s2 .cards { margin-top: 48px; }
+  #s2 .card { flex: 1; height: 370px; padding: 40px 40px; display: flex; flex-direction: column; justify-content: flex-start; gap: 22px; }
+  #s2 .card .badge { width: 104px; height: 104px; font-size: 56px; }
+  #s2 .card b { font-size: 46px; line-height: 1.1; }
+  #s2 .card small { font-size: 28px; color: var(--muted); font-weight: 600; }
+  #s2 .req { margin-top: 40px; border-color: var(--red-line); background: var(--red-soft); }
+  #s2 .req svg.i { color: var(--red); }
+
+  /* Escena 3 */
+  #s3 .flow { display: flex; align-items: center; margin-top: 56px; height: 470px; }
+  #s3 .inputs { display: flex; flex-direction: column; gap: 28px; width: 460px; flex: none; }
+  #s3 .in { display: flex; align-items: center; gap: 20px; padding: 26px 28px; font-size: 32px; font-weight: 700; line-height: 1.15; }
+  #s3 .in .badge { width: 76px; height: 76px; font-size: 40px; background: var(--ink); }
+  #s3 .arrow { position: relative; flex: none; width: 100px; height: 12px; margin: 0 22px; transform-origin: left center; }
+  #s3 .arrow::before { content: ""; position: absolute; left: 0; right: 20px; top: 3px; height: 6px; border-radius: 3px; background: var(--muted); }
+  #s3 .arrow::after { content: ""; position: absolute; right: 0; top: -9px; border: 15px solid transparent; border-left: 24px solid var(--muted); border-right: 0; }
+  #s3 .ia { flex: none; width: 250px; height: 250px; border-radius: 50%; background: var(--ai-bg); border: 3px solid var(--ai-line); color: var(--ai-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 32px; font-weight: 800; text-align: center; line-height: 1.1; }
+  #s3 .ia svg.i { font-size: 86px; color: var(--ai-accent); }
+  #s3 .out { flex: 1; display: flex; flex-direction: column; gap: 30px; }
+  #s3 .label { font-size: 26px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  #s3 .pills { display: flex; gap: 16px; margin-top: 12px; }
+  #s3 .pill { padding: 14px 26px; border-radius: 999px; font-size: 38px; font-weight: 900; letter-spacing: .04em; color: #fff; }
+  #s3 .pill.alta { background: var(--alta); } #s3 .pill.dudosa { background: var(--dudosa); } #s3 .pill.baja { background: var(--baja); }
+  #s3 .draft { display: flex; gap: 22px; align-items: center; padding: 24px 28px; border-color: var(--red-line); background: var(--red-soft); }
+  #s3 .draft .badge { width: 84px; height: 84px; font-size: 44px; }
+  #s3 .draft b { font-size: 38px; display: block; }
+  #s3 .draft small { font-size: 24px; color: var(--gray); display: block; margin-top: 6px; line-height: 1.3; }
+
+  /* Escena 4 */
+  #s4 .tiles { margin-top: 48px; }
+  #s4 .tile { flex: 1; height: 400px; padding: 44px 40px; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+  #s4 .tile .badge { width: 104px; height: 104px; font-size: 56px; }
+  #s4 .tile b { font-size: 50px; line-height: 1.08; }
+  #s4 .tile p { font-size: 30px; color: var(--gray); line-height: 1.3; }
+  #s4 .logos { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+  #s4 .logos .f29box { background: var(--ink); border-radius: 14px; padding: 14px 18px; line-height: 0; }
+  #s4 .logos .f29box img { height: 52px; }
+  #s4 .logos .plena { border: 2px solid var(--line); border-radius: 14px; padding: 8px 14px; line-height: 0; }
+  #s4 .logos .plena img { height: 60px; }
+  #s4 .logos span { font-size: 26px; color: var(--muted); font-weight: 600; }
+  #s4 .no { display: flex; flex-direction: column; gap: 18px; margin-top: 6px; }
+  #s4 .no div { display: flex; align-items: center; gap: 16px; font-size: 34px; font-weight: 700; }
+  #s4 .no .badge { width: 54px; height: 54px; font-size: 30px; background: var(--ink); }
+
+  /* Escena 5 */
+  #s5 .ai { margin-top: 10px; height: 640px; border-radius: 34px; background: var(--ai-bg); border: 3px solid var(--ai-line); color: var(--ai-ink); padding: 56px 64px; display: flex; gap: 60px; align-items: center; }
+  #s5 .ai .orb { width: 300px; height: 300px; border-radius: 50%; background: #fff; border: 3px solid var(--ai-line); display: flex; align-items: center; justify-content: center; flex: none; }
+  #s5 .ai .orb svg.i { font-size: 170px; color: var(--ai-accent); }
+  #s5 .tag { font-size: 34px; font-weight: 800; }
+  #s5 .warn { display: flex; align-items: center; gap: 22px; font-size: 92px; font-weight: 900; line-height: 1; margin-top: 22px; color: var(--ink); }
+  #s5 .warn svg.i { color: var(--dudosa); font-size: 96px; stroke-width: 2.4; }
+  #s5 .checks { display: flex; flex-direction: column; gap: 22px; margin-top: 46px; }
+  #s5 .check { display: flex; align-items: center; gap: 22px; font-size: 40px; font-weight: 700; color: var(--ink); }
+  #s5 .box { width: 62px; height: 62px; border-radius: 14px; border: 3px solid var(--ai-accent); background: #fff; display: flex; align-items: center; justify-content: center; flex: none; }
+  #s5 .box svg.i { font-size: 44px; color: var(--ai-accent); stroke-width: 3; }
+
+  /* Escena 6 */
+  #s6 .items { margin-top: 44px; }
+  #s6 .item { flex: 1; height: 220px; position: relative; display: flex; align-items: center; gap: 26px; padding: 0 40px; }
+  #s6 .item .badge { width: 96px; height: 96px; font-size: 52px; background: var(--ink); }
+  #s6 .item b { font-size: 46px; }
+  #s6 .item .x { position: absolute; top: -22px; right: -22px; width: 72px; height: 72px; font-size: 40px; background: var(--red); border: 5px solid #fff; stroke-width: 3; }
+  #s6 .facts { margin-top: 52px; display: flex; gap: 22px; flex-wrap: wrap; }
+  #s6 .chip svg.i { color: var(--red); }
+  #s6 .chip.eu-chip { border-color: #c9d6f3; background: #f3f6fd; }
+
+  .eu { display: inline-block; width: 1.25em; height: 1.25em; flex: none; }
+
+  /* Escena 7 */
+  #s7 .wrap { display: flex; align-items: center; gap: 80px; height: 100%; }
+  #s7 .ring { position: relative; width: 500px; height: 500px; flex: none; }
+  #s7 .ring svg { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+  #s7 .ring .track { stroke: var(--line); }
+  #s7 .ring .val { stroke: var(--red); stroke-linecap: round; }
+  #s7 .ring .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  #s7 .ring .upto { font-size: 40px; font-weight: 700; color: var(--muted); }
+  #s7 .ring .num { font-size: 210px; font-weight: 900; line-height: .9; color: var(--ink); font-variant-numeric: tabular-nums; }
+  #s7 .ring .unit { font-size: 52px; font-weight: 800; color: var(--red); }
+  #s7 .say { font-size: 46px; line-height: 1.25; font-weight: 600; color: var(--gray); margin-top: 22px; max-width: 1000px; }
+  #s7 .say strong { color: var(--ink); }
+  #s7 .facts { display: flex; flex-direction: column; gap: 22px; margin-top: 40px; align-items: flex-start; }
+  #s7 .chip.eu-chip { border-color: #c9d6f3; background: #f3f6fd; }
+  #s7 .chip.ban svg.i { color: var(--red); }
+
+  /* Escena 8 */
+  #s8 .end { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  #s8 .stop { border: 4px solid var(--red); background: var(--red-soft); border-radius: 36px; padding: 48px 70px; max-width: 1500px; }
+  #s8 .stop b { font-size: 70px; line-height: 1.12; font-weight: 900; }
+  #s8 .final { font-size: 38px; color: var(--gray); margin-top: 34px; font-weight: 600; }
+  #s8 .url { display: inline-flex; align-items: center; gap: 16px; margin-top: 40px; padding: 18px 34px; border-radius: 999px; background: var(--red); color: #fff; font-size: 40px; font-weight: 800; letter-spacing: .01em; }
+
+  #caption { position: absolute; left: 50%; bottom: 36px; transform: translateX(-50%); width: max-content; max-width: 1640px; padding: 16px 34px; border-radius: 18px; background: rgba(17, 24, 39, .94); color: #fff; font-size: 40px; line-height: 1.3; text-align: center; font-weight: 600; opacity: 0; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="M9 11h6M9 15h4"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.9 5.6L18.5 10.5l-5.6 1.9L11 18l-1.9-5.6L3.5 10.5l5.6-1.9z"/><path d="M18.5 15l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+    <symbol id="i-draft" viewBox="0 0 24 24"><path d="M13 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"/><path d="M13 3v5h5v2"/><path d="M8.5 12h5M8.5 16h2.5"/><path d="M18 13l3 3-6 6h-3v-3z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 4.2L2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4.5"/><path d="M12 17.2v.3"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.2-5.5 4.6 11 2.2-5.5h5"/></symbol>
+    <symbol id="i-oneway" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M14 6.5l5.5 5.5-5.5 5.5"/><path d="M4 7v10"/></symbol>
+    <symbol id="i-hands" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path d="M9.5 3.5h5v6h6v5h-6v6h-5v-6h-6v-5h6z"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 9.5L12 4l9 5.5"/><path d="M5 10v8M9.7 10v8M14.3 10v8M19 10v8"/><path d="M3 20.5h18"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M9 7V4.5h6V7"/><path d="M6 7l1 13h10l1-13"/><path d="M10 11v5.5M14 11v5.5"/></symbol>
+    <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.7 5.7l12.6 12.6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+    <symbol id="i-result" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 15v-3M12 15V9M16 15v-5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3z"/></symbol>
+  </defs>
+</svg>
+
+<div id="stage">
+  <div class="deco d1"></div>
+  <div class="deco d2"></div>
+
+  <header>
+    <div class="kicker">EvalGrado+</div>
+    <div class="brand">
+      <img class="f29" src="https://foundation29.org/assets/img/logo.webp" alt="Foundation 29">
+      <span>en colaboración con</span>
+      <div class="plena"><img src="https://foundation29.org/assets/img/plena-inclusion/logo-plena-inclusion.png" alt="Plena inclusión"></div>
+    </div>
+  </header>
+  <div class="progress" id="progress"></div>
+
+  <!-- 1. Portada -->
+  <section class="scene" id="s1">
+    <div class="hero">
+      <div class="txt">
+        <div class="name" data-fx="up" data-in="0">EvalGrado+</div>
+        <h1 data-fx="up" data-in="0.15">¿Puedes solicitar el Grado III+ de dependencia extrema?</h1>
+        <div class="chips">
+          <div class="chip" data-fx="pop" data-sync="evalgrado"><svg class="i"><use href="#i-heart"/></svg>Gratuita</div>
+          <div class="chip" data-fx="pop" data-sync="evalgrado+0.2"><svg class="i"><use href="#i-lock"/></svg>Confidencial</div>
+          <div class="chip" data-fx="pop" data-sync="evalgrado+0.4"><svg class="i"><use href="#i-compass"/></svg>Orientativa</div>
+        </div>
+      </div>
+      <div class="disc" data-fx="pop" data-in="0.3">
+        <div class="big">III+</div>
+        <div class="sub">Grado III+<br>dependencia extrema</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Qué es el Grado III+ -->
+  <section class="scene" id="s2">
+    <h2 data-fx="up" data-in="0">¿Qué es el Grado III+?</h2>
+    <div class="lead" data-fx="up" data-sync="nuevo">Un nuevo nivel de protección social para personas con:</div>
+    <div class="row cards">
+      <div class="card" data-fx="up" data-sync="enfermedades">
+        <div class="badge"><svg class="i"><use href="#i-pulse"/></svg></div>
+        <b>Enfermedades graves</b>
+      </div>
+      <div class="card" data-fx="up" data-sync="irreversibles">
+        <div class="badge"><svg class="i"><use href="#i-oneway"/></svg></div>
+        <b>Irreversibles</b>
+      </div>
+      <div class="card" data-fx="up" data-sync="necesidad">
+        <div class="badge"><svg class="i"><use href="#i-hands"/></svg></div>
+        <b>Necesidad de apoyo continuo</b>
+        <small>En muchos casos, 24 horas al día</small>
+      </div>
+    </div>
+    <div class="chip req" data-fx="pop" data-sync="continuo+0.35"><svg class="i"><use href="#i-check"/></svg>Se requiere Grado III reconocido</div>
+  </section>
+
+  <!-- 3. Qué hace la herramienta -->
+  <section class="scene" id="s3">
+    <h2 data-fx="up" data-in="0">¿Qué hace esta herramienta?</h2>
+    <div class="flow">
+      <div class="inputs">
+        <div class="card in" data-fx="left" data-sync="respuestas"><div class="badge"><svg class="i"><use href="#i-clipboard"/></svg></div>Tus respuestas</div>
+        <div class="card in" data-fx="left" data-sync="documentos"><div class="badge"><svg class="i"><use href="#i-doc"/></svg></div>Tus documentos médicos</div>
+      </div>
+      <div class="arrow" data-fx="grow" data-sync="documentos+0.45"></div>
+      <div class="ia" data-fx="pop" data-sync="documentos+0.7"><svg class="i"><use href="#i-sparkle"/></svg>Análisis<br>con IA</div>
+      <div class="arrow" data-fx="grow" data-sync="orientacion"></div>
+      <div class="out">
+        <div data-fx="up" data-sync="orientacion">
+          <div class="label">Orientación</div>
+          <div class="pills">
+            <div class="pill alta" data-fx="pop" data-sync="alta">ALTA</div>
+            <div class="pill dudosa" data-fx="pop" data-sync="dudosa">DUDOSA</div>
+            <div class="pill baja" data-fx="pop" data-sync="baja">BAJA</div>
+          </div>
+        </div>
+        <div class="card draft" data-fx="up" data-sync="borrador">
+          <div class="badge"><svg class="i"><use href="#i-draft"/></svg></div>
+          <div><b>Borrador para el médico</b><small>El médico debe revisarlo, verificarlo, completarlo y firmarlo.</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Gratuita, quién la ofrece, no sustituye -->
+  <section class="scene" id="s4">
+    <h2 data-fx="up" data-in="0">Gratuita y orientativa</h2>
+    <div class="row tiles">
+      <div class="card tile" data-fx="up" data-sync="gratuita">
+        <div class="badge"><svg class="i"><use href="#i-heart"/></svg></div>
+        <b>Gratuita</b>
+      </div>
+      <div class="card tile" data-fx="up" data-sync="faundeishon">
+        <div class="logos">
+          <div class="f29box"><img src="https://foundation29.org/assets/img/logo.webp" alt="Foundation 29"></div>
+          <span>en colaboración con</span>
+          <div class="plena"><img src="https://foundation29.org/assets/img/plena-inclusion/logo-plena-inclusion.png" alt="Plena inclusión"></div>
+        </div>
+      </div>
+      <div class="card tile" data-fx="up" data-sync="no sustituye">
+        <b>No sustituye</b>
+        <div class="no">
+          <div data-fx="left" data-sync="valoracion"><span class="badge"><svg class="i"><use href="#i-cross"/></svg></span>la valoración médica</div>
+          <div data-fx="left" data-sync="resolucion"><span class="badge"><svg class="i"><use href="#i-landmark"/></svg></span>la resolución administrativa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Inteligencia artificial -->
+  <section class="scene" id="s5">
+    <div class="ai" data-fx="up" data-in="0">
+      <div class="orb" data-fx="pop" data-in="0.2"><svg class="i"><use href="#i-sparkle"/></svg></div>
+      <div>
+        <div class="tag" data-fx="up" data-in="0.1">Contenido generado por inteligencia artificial.</div>
+        <div class="warn" data-fx="pop" data-sync="puede equivocarse"><svg class="i"><use href="#i-alert"/></svg>Puede equivocarse</div>
+        <div class="checks">
+          <div class="check" data-fx="left" data-sync="revisa"><span class="box"><svg class="i"><use href="#i-search"/></svg></span>Revisa siempre la evidencia citada</div>
+          <div class="check" data-fx="left" data-sync="consultalo"><span class="box"><svg class="i"><use href="#i-check"/></svg></span>Consúltalo con un profesional sanitario</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Foundation 29 no guarda los datos -->
+  <section class="scene" id="s6">
+    <h2 data-fx="up" data-in="0">Foundation 29 no guarda tus datos</h2>
+    <div class="row items">
+      <div class="card item" data-fx="up" data-sync="documentos">
+        <div class="badge"><svg class="i"><use href="#i-doc"/></svg></div><b>Documentos</b>
+        <div class="badge x" data-fx="pop" data-sync="documentos+0.25"><svg class="i"><use href="#i-x"/></svg></div>
+      </div>
+      <div class="card item" data-fx="up" data-sync="respuestas">
+        <div class="badge"><svg class="i"><use href="#i-clipboard"/></svg></div><b>Respuestas</b>
+        <div class="badge x" data-fx="pop" data-sync="respuestas+0.25"><svg class="i"><use href="#i-x"/></svg></div>
+      </div>
+      <div class="card item" data-fx="up" data-sync="resultados">
+        <div class="badge"><svg class="i"><use href="#i-result"/></svg></div><b>Resultados</b>
+        <div class="badge x" data-fx="pop" data-sync="resultados+0.25"><svg class="i"><use href="#i-x"/></svg></div>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="chip" data-fx="pop" data-sync="memoria"><svg class="i"><use href="#i-chip"/></svg>Se procesan en memoria</div>
+      <div class="chip" data-fx="pop" data-sync="memoria+0.5"><svg class="i"><use href="#i-trash"/></svg>Se eliminan al terminar el análisis</div>
+      <div class="chip eu-chip" data-fx="pop" data-sync="union europea"><span class="eu"></span>Servidores de Microsoft Azure en la Unión Europea</div>
+    </div>
+  </section>
+
+  <!-- 7. Conservación por Microsoft -->
+  <section class="scene" id="s7">
+    <div class="wrap">
+      <div class="ring" data-fx="pop" data-in="0">
+        <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="44" fill="none" stroke-width="8"/><circle class="val" id="ringval" cx="50" cy="50" r="44" fill="none" stroke-width="8" data-fx="ring" data-sync="hasta" data-dur="1.4"/></svg>
+        <div class="center"><div class="upto">hasta</div><div class="num" data-fx="count" data-to="30" data-sync="hasta" data-dur="1.4">0</div><div class="unit">días</div></div>
+      </div>
+      <div>
+        <h2 data-fx="up" data-in="0.1">Conservación por Microsoft</h2>
+        <div class="say" data-fx="up" data-sync="puede">Puede conservar las peticiones <strong>hasta 30 días</strong> para <strong>detectar abusos</strong>.</div>
+        <div class="facts">
+          <div class="chip eu-chip" data-fx="pop" data-sync="union europea"><span class="eu"></span>Se almacenan en la Unión Europea</div>
+          <div class="chip ban" data-fx="pop" data-sync="no se usan"><svg class="i"><use href="#i-ban"/></svg>No se usan para entrenar modelos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Cierre -->
+  <section class="scene" id="s8">
+    <div class="end">
+      <div class="stop" data-fx="pop" data-in="0"><b>Esto no es un diagnóstico clínico ni una resolución oficial.</b></div>
+      <div class="final" data-fx="up" data-sync="oficial+0.3">La decisión final corresponde a la administración competente.</div>
+      <div class="url" data-fx="pop" data-sync="oficial+0.8"><svg class="i"><use href="#i-link"/></svg>foundation29.org/es/gradodependencia</div>
+    </div>
+  </section>
+
+  <div id="caption"></div>
+</div>
+
+<script>
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+  const easeOut = p => 1 - Math.pow(1 - p, 3);
+  const backOut = p => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(p - 1, 3) + c1 * Math.pow(p - 1, 2); };
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  let TL = null, scenes = [], segs = [];
+  const RING_LEN = 2 * Math.PI * 44;
+
+  function euEmblem(el) {
+    const star = (cx, cy, r) => {
+      const pts = [];
+      for (let k = 0; k < 10; k++) {
+        const a = -Math.PI / 2 + k * Math.PI / 5, rr = k % 2 ? r * 0.4 : r;
+        pts.push((cx + rr * Math.cos(a)).toFixed(2) + ',' + (cy + rr * Math.sin(a)).toFixed(2));
+      }
+      return `<polygon points="${pts.join(' ')}" fill="var(--eu-star)"/>`;
+    };
+    let s = '<svg viewBox="0 0 100 100" width="100%" height="100%"><circle cx="50" cy="50" r="50" fill="var(--eu)"/>';
+    for (let k = 0; k < 12; k++) {
+      const a = k * Math.PI / 6;
+      s += star(50 + 31 * Math.cos(a), 50 + 31 * Math.sin(a), 7);
+    }
+    el.innerHTML = s + '</svg>';
+  }
+  document.querySelectorAll('.eu').forEach(euEmblem);
+
+  // Momento (s, relativo al inicio de la escena) en que la locución dice `clave` ("palabra" o "palabra+0.3").
+  function syncTime(sc, clave) {
+    const m = clave.match(/^(.*?)([+-]\d+(?:\.\d+)?)?$/);
+    const palabra = norm(m[1].trim()), extra = parseFloat(m[2] || '0');
+    const pos = norm(sc.texto).indexOf(palabra);
+    if (pos < 0) throw new Error(`data-sync "${clave}" no aparece en la locución de ${sc.id}`);
+    const mark = sc.marcas.find(mk => mk[0] >= pos) || sc.marcas[sc.marcas.length - 1];
+    return mark[1] + extra;
+  }
+
+  function setup(timeline) {
+    TL = timeline;
+    const prog = document.getElementById('progress');
+    prog.innerHTML = '';
+    segs = TL.escenas.map(() => { const i = document.createElement('i'); i.appendChild(document.createElement('b')); prog.appendChild(i); return i.firstChild; });
+    scenes = TL.escenas.map(sc => {
+      const el = document.getElementById(sc.id);
+      if (!el) throw new Error('No existe la escena ' + sc.id);
+      const anims = [...el.querySelectorAll('[data-fx]')].map(a => ({
+        el: a, fx: a.dataset.fx,
+        t: a.dataset.sync ? syncTime(sc, a.dataset.sync) : parseFloat(a.dataset.in || '0'),
+        dur: parseFloat(a.dataset.dur || (a.dataset.fx === 'pop' ? '0.55' : '0.6')),
+      }));
+      return { sc, el, anims };
+    });
+    return scenes.map(s => ({ id: s.sc.id, anims: s.anims.map(a => +a.t.toFixed(2)) }));
+  }
+
+  function animate(a, local) {
+    const p = clamp((local - a.t) / a.dur, 0, 1), e = easeOut(p), s = a.el.style;
+    switch (a.fx) {
+      case 'up': s.opacity = e; s.transform = `translateY(${(1 - e) * 40}px)`; break;
+      case 'left': s.opacity = e; s.transform = `translateX(${(1 - e) * -50}px)`; break;
+      case 'fade': s.opacity = e; break;
+      case 'pop': s.opacity = clamp(p * 2.5, 0, 1); s.transform = `scale(${p >= 1 ? 1 : 0.55 + 0.45 * backOut(p)})`; break;
+      case 'grow': s.opacity = p > 0 ? 1 : 0; s.transform = `scaleX(${e})`; break;
+      case 'count': a.el.textContent = Math.round(e * parseFloat(a.el.dataset.to)); break;
+      case 'ring': a.el.setAttribute('stroke-dasharray', RING_LEN.toFixed(2)); a.el.setAttribute('stroke-dashoffset', ((1 - e) * RING_LEN).toFixed(2)); a.el.style.opacity = p > 0 ? 1 : 0; break;
+    }
+  }
+
+  function render(t) {
+    scenes.forEach(({ sc, el, anims }, i) => {
+      const local = t - sc.inicio;
+      const fin = i === scenes.length - 1 ? Infinity : sc.fin;
+      const pin = clamp(local / 0.4, 0, 1), pout = clamp((fin - t) / 0.35, 0, 1);
+      const vis = Math.min(pin, pout);
+      el.style.visibility = vis > 0 ? 'visible' : 'hidden';
+      el.style.opacity = vis;
+      el.style.transform = `translateY(${(1 - easeOut(pin)) * 24}px)`;
+      if (vis > 0) anims.forEach(a => animate(a, local));
+      segs[i].style.width = (clamp((t - sc.inicio) / (sc.fin - sc.inicio), 0, 1) * 100).toFixed(2) + '%';
+    });
+    const cap = document.getElementById('caption');
+    const c = TL.subtitulos.find(c => t >= c.inicio && t < c.fin);
+    cap.style.opacity = c ? 1 : 0;
+    if (c && cap.textContent !== c.texto) cap.textContent = c.texto;
+  }
+</script>
+</body>
+</html>
