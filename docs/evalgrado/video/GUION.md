@@ -11,12 +11,15 @@ Vídeo corto, en estilo infográfico, que explica qué es EvalGrado+ y sus condi
 
 - [x] Que un profesional biomédico haya revisado la herramienta. Esa revisión está pendiente. **Atención:** la web publicada sí lo afirma en el bloque «Uso de inteligencia artificial» («la ha revisado un profesional biomédico antes de su publicación»). El vídeo no recoge esa frase. Conviene corregir la web.
 - [x] Detalles internos: modelos, pruebas, fallos ni la evaluación de impacto.
+- [x] Microsoft. Por decisión del equipo no se nombra a Microsoft ni a Azure, y se ha quitado la escena sobre la conservación de peticiones hasta 30 días (en la web la conserva Microsoft, no Fundación 29).
 
-`generar_video.py` comprueba las dos cosas antes de renderizar: que la locución de cada escena aparece literal en este guion y que ni la locución ni el texto en pantalla contienen esos términos.
+**Decisiones de redacción del equipo:** la fundación se nombra «Fundación 29» (como en la web en español) y de la IA se dice que «puede cometer errores».
+
+`generar_video.py` comprueba estas cosas antes de renderizar: que la locución de cada escena aparece literal en este guion y que ni la locución ni el texto en pantalla contienen términos prohibidos (incluidos «Microsoft», «Azure», «Foundation 29» y «equivoc…»).
 
 ## Escenas
 
-La locución se muestra también como subtítulo. Duración total: 66,7 s.
+La locución se muestra también como subtítulo. Duración total: 58,5 s.
 
 ### 1. Portada (0:00–0:06)
 
@@ -44,47 +47,39 @@ La locución se muestra también como subtítulo. Duración total: 66,7 s.
 
 ### 4. Gratuita y orientativa (0:25–0:33)
 
-**Locución:** Es gratuita, de Foundation 29 en colaboración con Plena inclusión, y no sustituye la valoración médica ni la resolución administrativa.
+**Locución:** Es gratuita, de Fundación 29 en colaboración con Plena inclusión, y no sustituye la valoración médica ni la resolución administrativa.
 
-**En pantalla:** «Gratuita y orientativa» · Gratuita · logotipos de Foundation 29 «en colaboración con» Plena inclusión · No sustituye: la valoración médica, la resolución administrativa.
+**En pantalla:** «Gratuita y orientativa» · Gratuita · logotipos de Fundación 29 «en colaboración con» Plena inclusión · No sustituye: la valoración médica, la resolución administrativa.
 
 **Web (pie de la herramienta):** «EvalGrado+ es una herramienta gratuita y orientativa de Foundation 29 en colaboración con Plena inclusión. Utiliza inteligencia artificial y no sustituye valoración médica ni resolución administrativa.»
 
 ### 5. Inteligencia artificial (0:33–0:43)
 
-**Locución:** El análisis lo realiza una inteligencia artificial y puede equivocarse. Revisa siempre la evidencia citada y consúltalo con un profesional sanitario.
+**Locución:** El análisis lo realiza una inteligencia artificial y puede cometer errores. Revisa siempre la evidencia citada y consúltalo con un profesional sanitario.
 
-**En pantalla:** «Contenido generado por inteligencia artificial.» · Puede equivocarse · Revisa siempre la evidencia citada · Consúltalo con un profesional sanitario.
+**En pantalla:** «Contenido generado por inteligencia artificial.» · Puede cometer errores · Revisa siempre la evidencia citada · Consúltalo con un profesional sanitario.
 
 **Web (Bienvenida):** «El análisis lo realiza un sistema de inteligencia artificial y puede equivocarse.» · «Contenido generado por inteligencia artificial. […] Puede contener errores u omisiones: revisa siempre la evidencia citada y consúltalo con un profesional sanitario antes de tomar cualquier decisión.»
 
-### 6. Foundation 29 no guarda tus datos (0:43–0:50)
+### 6. Fundación 29 no guarda tus datos (0:43–0:51)
 
-**Locución:** Foundation 29 no guarda tus documentos, respuestas ni resultados: se procesan en memoria, en servidores de la Unión Europea.
+**Locución:** Fundación 29 no guarda tus documentos, respuestas ni resultados: se procesan en memoria, en servidores de la Unión Europea.
 
-**En pantalla:** «Foundation 29 no guarda tus datos» · Documentos ✕ · Respuestas ✕ · Resultados ✕ · Se procesan en memoria · Se eliminan al terminar el análisis · Servidores de Microsoft Azure en la Unión Europea.
+**En pantalla:** «Fundación 29 no guarda tus datos» · Documentos ✕ · Respuestas ✕ · Resultados ✕ · Se procesan en memoria · Se eliminan al terminar el análisis · Servidores en la Unión Europea.
 
 **Web (Bienvenida):** «Foundation 29 no guarda documentos, respuestas ni resultados: se procesan en memoria y se eliminan al terminar el análisis.» · «Los datos se procesan en servidores de Microsoft Azure ubicados en la Unión Europea, conforme al RGPD.» **(Política de privacidad):** «Conservación por Foundation 29: no guardamos tus datos.»
 
-### 7. Conservación por Microsoft (0:50–0:59)
-
-**Locución:** Microsoft puede conservar las peticiones hasta 30 días para detectar abusos, en la Unión Europea. No se usan para entrenar modelos.
-
-**En pantalla:** contador «hasta 30 días» · «Conservación por Microsoft» · «Puede conservar las peticiones hasta 30 días para detectar abusos.» · Se almacenan en la Unión Europea · No se usan para entrenar modelos.
-
-**Web (Bienvenida):** «Microsoft Azure, que aloja la IA en la UE, puede conservar las peticiones hasta 30 días para detectar abusos. No se usan para entrenar modelos.» **(Política de privacidad):** «Conservación por Microsoft: […] Se almacenan en la Unión Europea […]. No se usan para entrenar modelos.»
-
-### 8. Cierre (0:59–1:07)
+### 7. Cierre (0:51–0:59)
 
 **Locución:** Recuerda: esto no es un diagnóstico clínico ni una resolución oficial.
 
-**En pantalla:** «EvalGrado+» · «Esto no es un diagnóstico clínico ni una resolución oficial.» · «La decisión final corresponde a la administración competente.» · foundation29.org/es/gradodependencia · logotipos de Foundation 29 y Plena inclusión.
+**En pantalla:** «EvalGrado+» · «Esto no es un diagnóstico clínico ni una resolución oficial.» · «La decisión final corresponde a la administración competente.» · foundation29.org/es/gradodependencia · logotipos de Fundación 29 y Plena inclusión.
 
 **Web (Bienvenida):** «Esto no es un diagnóstico clínico ni una resolución oficial.» **(Resultado orientativo):** «La decisión final corresponde a la administración competente.»
 
 ## Pronunciación
 
-La voz recibe el mismo texto con estos cambios, solo para que lo lea bien: «Grado III+» → «grado tres más», «EvalGrado+» → «Evalgrado más», «Foundation 29» → «Faundéishon veintinueve», «30» → «treinta». Están en `ESCENAS` de `generar_video.py`.
+La voz recibe el mismo texto con estos cambios, solo para que lo lea bien: «Grado III+» → «grado tres más», «EvalGrado+» → «Evalgrado más», «Fundación 29» → «Fundación veintinueve». Están en `ESCENAS` de `generar_video.py`.
 
 ## Estilo, voz y música
 

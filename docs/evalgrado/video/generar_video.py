@@ -33,7 +33,7 @@ VOZ_PIPER = "es_ES-sharvard-medium"
 
 # Locución por escena (id de la <section> en infografia.html), dividida en subtítulos.
 # Cada subtítulo es (texto en pantalla, texto para la voz). El segundo solo cambia la
-# pronunciación ("III+", "EvalGrado+", "Foundation 29", cifras); dice lo mismo.
+# pronunciación ("III+", "EvalGrado+", cifras); dice lo mismo.
 # La locución en pantalla de cada escena debe aparecer literal en GUION.md.
 ESCENAS = [
     ("s1", [
@@ -55,41 +55,37 @@ ESCENAS = [
          "te da una orientación alta, dudosa o baja, y genera un borrador para tu médico."),
     ]),
     ("s4", [
-        ("Es gratuita, de Foundation 29 en colaboración con Plena inclusión,",
-         "Es gratuita, de Faundéishon veintinueve en colaboración con Plena inclusión,"),
+        ("Es gratuita, de Fundación 29 en colaboración con Plena inclusión,",
+         "Es gratuita, de Fundación veintinueve en colaboración con Plena inclusión,"),
         ("y no sustituye la valoración médica ni la resolución administrativa.",
          "y no sustituye la valoración médica ni la resolución administrativa."),
     ]),
     ("s5", [
-        ("El análisis lo realiza una inteligencia artificial y puede equivocarse.",
-         "El análisis lo realiza una inteligencia artificial y puede equivocarse."),
+        ("El análisis lo realiza una inteligencia artificial y puede cometer errores.",
+         "El análisis lo realiza una inteligencia artificial y puede cometer errores."),
         ("Revisa siempre la evidencia citada y consúltalo con un profesional sanitario.",
          "Revisa siempre la evidencia citada y consúltalo con un profesional sanitario."),
     ]),
     ("s6", [
-        ("Foundation 29 no guarda tus documentos, respuestas ni resultados:",
-         "Faundéishon veintinueve no guarda tus documentos, respuestas ni resultados:"),
+        ("Fundación 29 no guarda tus documentos, respuestas ni resultados:",
+         "Fundación veintinueve no guarda tus documentos, respuestas ni resultados:"),
         ("se procesan en memoria, en servidores de la Unión Europea.",
          "se procesan en memoria, en servidores de la Unión Europea."),
     ]),
     ("s7", [
-        ("Microsoft puede conservar las peticiones hasta 30 días para detectar abusos, en la Unión Europea.",
-         "Microsoft puede conservar las peticiones hasta treinta días para detectar abusos, en la Unión Europea."),
-        ("No se usan para entrenar modelos.",
-         "No se usan para entrenar modelos."),
-    ]),
-    ("s8", [
         ("Recuerda: esto no es un diagnóstico clínico ni una resolución oficial.",
          "Recuerda: esto no es un diagnóstico clínico ni una resolución oficial."),
     ]),
 ]
 
 # Lo que el vídeo no puede decir: la revisión biomédica está pendiente y los detalles internos
-# (modelos, pruebas, fallos, evaluación de impacto) no son para el público.
+# (modelos, pruebas, fallos, evaluación de impacto) no son para el público. Además, por
+# decisión del equipo: no se nombra a Microsoft, la fundación se llama «Fundación 29» y
+# de la IA se dice que «puede cometer errores».
 PROHIBIDO = [
     r"revisad[oa]", r"biom[eé]dic", r"\bgpt", r"modelo de lenguaje", r"\bdavid\b",
     r"\bpruebas?\b", r"probad[oa]", r"\bbugs?\b", r"evaluaci[oó]n de impacto", r"\beipd\b",
-    r"ficticio", r"sint[eé]tic",
+    r"ficticio", r"sint[eé]tic", r"microsoft", r"azure", r"foundation 29", r"equivoc",
 ]
 
 ENTRADA = 0.8   # s de imagen antes de la primera frase
