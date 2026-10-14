@@ -38,13 +38,13 @@ VOZ_PIPER = "es_ES-sharvard-medium"
 ESCENAS = [
     ("s1", [
         ("¿Puedes solicitar el Grado III+ de dependencia extrema?",
-         "¿Puedes solicitar el grado tres más de dependencia extrema?"),
+         "¿Puedes solicitar el grado tres plus de dependencia extrema?"),
         ("EvalGrado+ te ayuda a entenderlo.",
-         "Evalgrado más te ayuda a entenderlo."),
+         "Evalgrado plus te ayuda a entenderlo."),
     ]),
     ("s2", [
         ("El Grado III+ es un nuevo nivel de protección social",
-         "El grado tres más es un nuevo nivel de protección social"),
+         "El grado tres plus es un nuevo nivel de protección social"),
         ("para personas con enfermedades graves, irreversibles y con necesidad de apoyo continuo.",
          "para personas con enfermedades graves, irreversibles y con necesidad de apoyo continuo."),
     ]),

@@ -73,13 +73,13 @@ La locución se muestra también como subtítulo. Duración total: 58,5 s.
 
 **Locución:** Recuerda: esto no es un diagnóstico clínico ni una resolución oficial.
 
-**En pantalla:** «EvalGrado+» · «Esto no es un diagnóstico clínico ni una resolución oficial.» · «La decisión final corresponde a la administración competente.» · foundation29.org/es/gradodependencia · logotipos de Fundación 29 y Plena inclusión.
+**En pantalla:** «EvalGrado+» · «Esto no es un diagnóstico clínico ni una resolución oficial.» · «La decisión final corresponde a la administración competente.» · foundation29.org/gradodependencia · logotipos de Fundación 29 y Plena inclusión.
 
 **Web (Bienvenida):** «Esto no es un diagnóstico clínico ni una resolución oficial.» **(Resultado orientativo):** «La decisión final corresponde a la administración competente.»
 
 ## Pronunciación
 
-La voz recibe el mismo texto con estos cambios, solo para que lo lea bien: «Grado III+» → «grado tres más», «EvalGrado+» → «Evalgrado más», «Fundación 29» → «Fundación veintinueve». Están en `ESCENAS` de `generar_video.py`.
+La voz recibe el mismo texto con estos cambios, solo para que lo lea bien: «Grado III+» → «grado tres plus», «EvalGrado+» → «Evalgrado plus», «Fundación 29» → «Fundación veintinueve». Están en `ESCENAS` de `generar_video.py`.
 
 ## Estilo, voz y música
 
