@@ -143,8 +143,8 @@ Paciente con ELA bulbar confirmada, con Grado III de gran dependencia reconocido
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -234,8 +234,8 @@ Paciente con atrofia multisistémica (AMS-C) probable, diagnosticada en 2023, co
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -322,8 +322,8 @@ Paciente con parálisis supranuclear progresiva (síndrome de Richardson), diagn
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -407,8 +407,8 @@ Paciente con enfermedad de Huntington confirmada genéticamente, en estadio muy 
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -493,8 +493,8 @@ Paciente con distrofia muscular de Duchenne, Grado III reconocido desde 2016, qu
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -574,8 +574,8 @@ Paciente con fibrosis pulmonar idiopática avanzada, Grado III reconocido, con d
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -657,8 +657,8 @@ Paciente con adenocarcinoma pancreático metastásico estadio IV, con progresió
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -738,8 +738,8 @@ Paciente con lesión medular traumática C5 ASIA A y tetraplejia completa, con G
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -817,8 +817,8 @@ Paciente con parálisis cerebral infantil, tetraparesia espástica GMFCS V y dis
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5 
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -897,8 +897,8 @@ Paciente con ELA de inicio espinal, diagnosticada en 02/2026, con curso claramen
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -977,8 +977,8 @@ Paciente con enfermedad de Parkinson idiopática, estadio 3 de Hoehn y Yahr, y G
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -1047,8 +1047,8 @@ Con la información disponible no puede acreditarse un supuesto de dependencia e
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -1124,8 +1124,8 @@ Paciente con artrosis de rodilla bilateral y prótesis de cadera derecha, con do
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
 
 ---
 
@@ -1182,5 +1182,5 @@ Paciente con parálisis supranuclear progresiva (síndrome de Richardson), diagn
 - [ ] Resultado global razonable
 - [ ] Evidencias correctas, sin datos inventados
 - [ ] Tono adecuado
-- Calidad del borrador (1-5): 
-- Comentarios: 
+- Calidad del borrador (1-5): 5
+- Comentarios: Cada evidencia está bien citada en el informe, sin datos inventados, el lenguaje es adecuaddo y educado.
